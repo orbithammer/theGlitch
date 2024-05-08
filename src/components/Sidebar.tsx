@@ -45,7 +45,7 @@ const Sidebar: React.FC<{ isOpen: boolean; toggleSidebar: () => void }> = ({
     const sidebarStyles: React.CSSProperties = {
       position: 'fixed' as 'fixed',
       top: 0,
-      right: 25,
+      right: -16,
       width: '21.5rem',
       height: '100vh',
       backgroundColor: '#5200FF',
@@ -96,14 +96,6 @@ return (
           onClick={toggleSidebar}
           aria-label={`to reviews page`}
           >Reviews</StyledNavLink>
-        </li>
-        <li>
-          <StyledNavLink 
-          to="/science"
-          style={getNavLinkStyle}
-          onClick={toggleSidebar}
-          aria-label={`to science page`}
-          >Science</StyledNavLink>
         </li>
         <li>
           <StyledNavLink 

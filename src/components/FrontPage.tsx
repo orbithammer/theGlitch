@@ -1,5 +1,8 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { 
+    Link,
+    useParams
+} from "react-router-dom"
 import { articlesData } from "../data/articles.ts"
 import { styled } from "styled-components"
 
@@ -18,35 +21,32 @@ const articleData: HeroArticle[] = articlesData
 
 const StyledHeroWrapper = styled.div`
     position: relative;
-    width: 100vw;
 `
 
 const StyledLogo = styled.h1`
-    position: absolute;
-    top: -6.5%; //adjust for overlay
-    left: 29%; //adjust for overlay
-    transform: translate(-50%, -50%);
+    position: absolute; 
     font-size: 4rem;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    top: -35%
 `
 
 const StyledHeroImg = styled.img`
-    max-width: calc(100vw - 60px);
-    margin: 1rem 0 0 1rem;
+    max-width: 100%;
+    margin: 0;
     border-radius: 5px;
     object-fit: cover;
 `
 
-const StyledHeadline = styled.p`
-    transform: translateY(-10%);
+const StyledHeadline = styled.h2`
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 3rem;
     letter-spacing: -0.05em;
     color: white;
-    max-width: 100%;
+    transform: tranlateY(-20%);
+    max-width: 90%;
     word-spacing: -0.05em;
     line-height: 3.1rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -106,18 +106,18 @@ const HomePage: React.FC = () => {
     return (
         <main>
             <StyledLink 
-                to={`/${articleData[0].articleUrl}`}
-                aria-label={`to article ${articleData[0].header}`}
+                to={`/${articleData[0]?.articleUrl}`}
+                aria-label={`to article ${articleData[0]?.header}`}
             >
                 <StyledHeroWrapper>
                     <StyledLogo>theGlitch</StyledLogo>
-                    <StyledHeroImg src={articleData[0].img} alt={articleData[0].alt}/>
+                    <StyledHeroImg src={articleData[0]?.img} alt={articleData[0]?.alt}/>
                 </StyledHeroWrapper>
-                <StyledHeadline>{articleData[0].header}<br/></StyledHeadline>
-                <StyledSubhead>{articleData[0].subhead}</StyledSubhead>
+                <StyledHeadline>{articleData[0]?.header}<br/></StyledHeadline>
+                <StyledSubhead>{articleData[0]?.subhead}</StyledSubhead>
             </StyledLink>
             <StyledArticleInfo>
-                <StyledAuthor>{articleData[0].author}</StyledAuthor>
+                <StyledAuthor>{articleData[0]?.author}</StyledAuthor>
                 {formattedDate}
             </StyledArticleInfo>
         </main>

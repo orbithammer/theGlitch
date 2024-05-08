@@ -18,35 +18,32 @@ type articlesData = {
 
 const StyledHeroWrapper = styled.div`
     position: relative;
-    width: 100vw;
 `
 
 const StyledLogo = styled.h1`
-    position: absolute;
-    top: -6.5%; //adjust for overlay
-    left: 29%; //adjust for overlay
-    transform: translate(-50%, -50%);
+    position: absolute; 
     font-size: 4rem;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    top: -35%
 `
 
 const StyledHeroImg = styled.img`
-    max-width: calc(100vw - 60px);
-    margin: 1rem 0 0 1rem;
+    max-width: 100%;
+    margin: 0;
     border-radius: 5px;
     object-fit: cover;
 `
 
-const StyledHeadline = styled.p`
-    transform: translateY(-10%);
+const StyledHeadline = styled.h2`
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 3rem;
     letter-spacing: -0.05em;
     color: white;
-    max-width: 100%;
+    transform: tranlateY(-20%);
+    max-width: 90%;
     word-spacing: -0.05em;
     line-height: 3.1rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -75,7 +72,7 @@ const StyledArticleInfo = styled.p`
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
-        text-transform: uppercase;
+    text-transform: uppercase;
 `
 
 const StyledAuthor = styled.span`
@@ -114,8 +111,8 @@ const Article: React.FC = () => {
     if(article){
         formattedDate = formatDate(article.datePublished)
     }
-
     console.log(article)
+
     return (
         <>
             <main>

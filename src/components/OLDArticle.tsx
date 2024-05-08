@@ -1,9 +1,10 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import { articlesData } from "../data/articles.ts"
+import React, {useEffect, useState} from "react"
+import { useParams } from "react-router-dom"
+import { articlesData } from "../data/articles"
 import { styled } from "styled-components"
 
-type HeroArticle = {
+type articlesData = {
+    id: number;
     articleUrl: string;
     category: string;
     img: string;
@@ -12,9 +13,8 @@ type HeroArticle = {
     subhead: string;
     author: string;
     datePublished: Date;
+    articleBody: string[];
 }
-
-const articleData: HeroArticle[] = articlesData
 
 const StyledHeroWrapper = styled.div`
     position: relative;
@@ -42,7 +42,6 @@ const StyledHeadline = styled.h2`
     font-size: 3rem;
     letter-spacing: -0.05em;
     color: white;
-    transform: tranlateY(-20%);
     max-width: 90%;
     word-spacing: -0.05em;
     line-height: 3.1rem;
@@ -80,9 +79,11 @@ const StyledAuthor = styled.span`
     margin-right: 1rem;
 `
 
-const StyledLink = styled(Link)`
-    text-decoration: none;
-    color: white;
+const StyledArticleBody = styled.p`
+    font-family: "Quattrocento", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem
 `
 
 function formatDate(date: Date){
@@ -97,27 +98,40 @@ function formatDate(date: Date){
     return `${month} ${day}, ${year}`;
 }
 
-const HomePage: React.FC = () => {
-    const formattedDate = formatDate(articlesData[0].datePublished) // Create a Date object
+const Article: React.FC = () => {
+    const {articleUrl} = useParams() 
+    console.log("articleUrl", articleUrl)
+    const [article, setArticle] = useState<articlesData | null>(null)
+    useEffect(()=>{
+        const foundArticle = articlesData.find(articleObj => articleObj.articleUrl === articleUrl);
+        setArticle(foundArticle ? foundArticle : null);
+    },[])
+    let formattedDate = ""
+    if(article){
+        formattedDate = formatDate(article.datePublished)
+    }
+    console.log(article)
 
     return (
-        <main>
-            <StyledLink 
-                to={`/${articleData[0]?.articleUrl}`}
-                aria-label={`to article ${articleData[0]?.header}`}
-            >
+        <>
+            <main>
                 <StyledHeroWrapper>
                     <StyledLogo>theGlitch</StyledLogo>
-                    <StyledHeroImg src={articleData[0]?.img} alt={articleData[0]?.alt}/>
+                    <StyledHeroImg src={article?.img} alt={article?.alt}/>
+                    
                 </StyledHeroWrapper>
-                <StyledHeadline>{articleData[0]?.header}<br/></StyledHeadline>
-                <StyledSubhead>{articleData[0]?.subhead}</StyledSubhead>
-            </StyledLink>
-            <StyledArticleInfo>
-                <StyledAuthor>{articleData[0]?.author}</StyledAuthor>
-                {formattedDate}
-            </StyledArticleInfo>
-        </main>
+                <StyledHeadline>{article?.header}<br/></StyledHeadline>
+                <StyledSubhead>{article?.subhead}</StyledSubhead>
+                <StyledArticleInfo>
+                    <StyledAuthor>{article?.author}</StyledAuthor>
+                    {formattedDate}
+                </StyledArticleInfo>
+                <article>
+                    {article?.articleBody.map((paragraph, index)=><StyledArticleBody key={index}>{paragraph}</StyledArticleBody>)}
+                </article>
+            </main>
+        </>
     )
 }
-export default HomePage
+
+export default Article
