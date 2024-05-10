@@ -1,9 +1,9 @@
-import React from "react"
+import React, {useState} from "react"
 import { Link } from "react-router-dom"
 import { articlesData } from "../data/articles.ts"
 import { styled } from "styled-components"
 
-type HeroArticle = {
+type Article = {
     id: number;
     articleUrl: string;
     category: string;
@@ -15,9 +15,9 @@ type HeroArticle = {
     datePublished: Date;
 }
 
-const articleData: HeroArticle[] = articlesData
+const articleData: Article[] = articlesData
 
-const StyledHeroWrapper = styled.div`
+const StyledImageWrapper = styled.div`
     position: relative;
 `
 
@@ -29,7 +29,7 @@ const StyledLogo = styled.h1`
     top: -35%
 `
 
-const StyledHeroImg = styled.img`
+const StyledImg = styled.img`
     max-width: 100%;
     margin: 0;
     border-radius: 5px;
@@ -46,7 +46,7 @@ const StyledHeadline = styled.h2`
     transform: tranlateY(-20%);
     max-width: 90%;
     word-spacing: -0.05em;
-    line-height: 3.2rem;
+    line-height: 3.4rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     &:hover {
         background-color: #5200FF;
@@ -110,20 +110,26 @@ function formatDate(date: Date){
 }
 
 const HomePage: React.FC = () => {
-    const techArticles = articleData.filter((article) => article.category === "tech")
-
+    const techArticles = articleData
+        .filter((article) => article.category === "tech")
+        .sort((a, b) => b.datePublished.getTime() - a.datePublished.getTime());
+    const [currentPage, setCurrentPage] = useState(0)
+    const articlesPerPage = 6
+    const startIndex = currentPage * articlesPerPage
+    const endIndex = startIndex + articlesPerPage
+    const currentArticles = techArticles.slice(startIndex, endIndex)
     return (
         <main>
-            {techArticles.map((article, index) =>(
+            {currentArticles.map((article, index) =>(
                 <div key={article.id}>
                     <StyledLink 
                         to={`/${article.articleUrl}`}
                         aria-label={`to article ${article.header}`}
                     >
-                        <StyledHeroWrapper>
+                        <StyledImageWrapper>
                             {index === 0 && <StyledLogo>theGlitch</StyledLogo>}
-                            <StyledHeroImg src={article.img} alt={articleData[0]?.alt}/>
-                        </StyledHeroWrapper>
+                            <StyledImg src={article.img} alt={articleData[0]?.alt}/>
+                        </StyledImageWrapper>
                         {index === 0 ? (
                             <>
                                 <StyledHeadline>{article.header}<br /></StyledHeadline>

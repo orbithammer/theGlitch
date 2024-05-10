@@ -1,9 +1,10 @@
-import React from "react"
+import React, {useState} from "react"
 import { Link } from "react-router-dom"
 import { articlesData } from "../data/articles.ts"
 import { styled } from "styled-components"
 
-type HeroArticle = {
+type Article = {
+    id: number;
     articleUrl: string;
     category: string;
     img: string;
@@ -14,9 +15,9 @@ type HeroArticle = {
     datePublished: Date;
 }
 
-const articleData: HeroArticle[] = articlesData
+const articleData: Article[] = articlesData
 
-const StyledHeroWrapper = styled.div`
+const StyledImageWrapper = styled.div`
     position: relative;
 `
 
@@ -28,7 +29,7 @@ const StyledLogo = styled.h1`
     top: -35%
 `
 
-const StyledHeroImg = styled.img`
+const StyledImg = styled.img`
     max-width: 100%;
     margin: 0;
     border-radius: 5px;
@@ -45,7 +46,7 @@ const StyledHeadline = styled.h2`
     transform: tranlateY(-20%);
     max-width: 90%;
     word-spacing: -0.05em;
-    line-height: 3.1rem;
+    line-height: 3.4rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     &:hover {
         background-color: #5200FF;
@@ -62,7 +63,18 @@ const StyledSubhead = styled.p`
     letter-spacing: -0.05em;
     word-spacing: -0.05em;
     margin: 0;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
+`
+
+const StyledHeadlineSmall = styled(StyledHeadline)`
+  font-size: 2rem;
+  line-height: 2.5rem;
+`
+
+const StyledSubheadSmall = styled(StyledSubhead)`
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: -0.02em;
 `
 
 const StyledArticleInfo = styled.p`
@@ -98,25 +110,42 @@ function formatDate(date: Date){
 }
 
 const HomePage: React.FC = () => {
-    const formattedDate = formatDate(articlesData[0].datePublished) // Create a Date object
-
+    const allArticles = articleData.sort((a, b) => b.datePublished.getTime() - a.datePublished.getTime());
+    const [currentPage, setCurrentPage] = useState(0)
+    const articlesPerPage = 6
+    const startIndex = currentPage * articlesPerPage
+    const endIndex = startIndex + articlesPerPage
+    const currentArticles = allArticles.slice(startIndex, endIndex)
     return (
         <main>
-            <StyledLink 
-                to={`/${articleData[0]?.articleUrl}`}
-                aria-label={`to article ${articleData[0]?.header}`}
-            >
-                <StyledHeroWrapper>
-                    <StyledLogo>theGlitch</StyledLogo>
-                    <StyledHeroImg src={articleData[0]?.img} alt={articleData[0]?.alt}/>
-                </StyledHeroWrapper>
-                <StyledHeadline>{articleData[0]?.header}<br/></StyledHeadline>
-                <StyledSubhead>{articleData[0]?.subhead}</StyledSubhead>
-            </StyledLink>
-            <StyledArticleInfo>
-                <StyledAuthor>{articleData[0]?.author}</StyledAuthor>
-                {formattedDate}
-            </StyledArticleInfo>
+            {currentArticles.map((article, index) =>(
+                <div key={article.id}>
+                    <StyledLink 
+                        to={`/${article.articleUrl}`}
+                        aria-label={`to article ${article.header}`}
+                    >
+                        <StyledImageWrapper>
+                            {index === 0 && <StyledLogo>theGlitch</StyledLogo>}
+                            <StyledImg src={article.img} alt={articleData[0]?.alt}/>
+                        </StyledImageWrapper>
+                        {index === 0 ? (
+                            <>
+                                <StyledHeadline>{article.header}<br /></StyledHeadline>
+                                <StyledSubhead>{article.subhead}</StyledSubhead>
+                            </>
+                            ) : (
+                            <>
+                                <StyledHeadlineSmall>{article.header}<br /></StyledHeadlineSmall>
+                                <StyledSubheadSmall>{article.subhead}</StyledSubheadSmall>
+                            </>
+                        )}
+                    </StyledLink>
+                    <StyledArticleInfo>
+                        <StyledAuthor>{article.author}</StyledAuthor>
+                        {formatDate(article.datePublished)}
+                    </StyledArticleInfo>
+                </div>
+            ))}
         </main>
     )
 }

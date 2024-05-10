@@ -23,7 +23,7 @@ export const articlesData = [
         articleUrl: `20240507-sonos-ace-telepathic`,
         category: `tech`,
         img: `/src/images/20240507telepathicHeadphones.png`,
-        alt: `Zuckerberg grinning manically with a terminator robot behind`,
+        alt: `a man wearing headphones with a shocked expression with a street background`,
         header: `Sonos Ace Telepathic Headphones: Listen to What Your Friends Are Really Thinking`,
         subhead: `Announcement imminent, provided they can convince people that mind-reading is a good idea.`,
         author: `Et Al`,
@@ -40,8 +40,8 @@ export const articlesData = [
         id: 3,
         articleUrl: `20240507-rabbitr1-vs-brick`,
         category: `reviews`,
-        img: `/src/images/ComfyUI_02635_.png`,
-        alt: `Zuckerberg grinning manically with a terminator robot behind`,
+        img: `/src/images/20240507rabbitrVsBrick.png`,
+        alt: `a rabbit holding a smartphone with a brick wall background`,
         header: `Rabbit R1 vs Brick Wall: Which Causes More Headaches?`,
         subhead: `Spoiler alert: The brick wall wins, but only by a hair.`,
         author: `Et Al`,
@@ -79,27 +79,27 @@ export const articlesData = [
         id: 5,
         articleUrl: `20240507-googles-ai-gets`,
         category: `ai`,
-        img: `/src/images/ComfyUI_02635_.png`,
-        alt: `Zuckerberg grinning manically with a terminator robot behind`,
+        img: `/src/images/20240507googlesAIGets.png`,
+        alt: `A dejected young male AI avatar holding flowers with flowery circuitry behind.`,
         header: `Google's AI Gets a Job in Cybersecurity, Still Can't Get a Date`,
         subhead: `Despite being a whiz at detecting threats, Google's AI remains single in the digital world`,
         author: `Et Al`,
         datePublished: new Date(2024,5,7),
         articleBody: [
-            `In a move that surprised absolutely no one, Google's latest artificial intelligence model, codenamed "Lonely Larry," has landed a prestigious job in cybersecurity. Despite its remarkable skills in sniffing out malware and thwarting nefarious hacker plots, poor Larry remains tragically single in the unforgiving world of ones and zeros.`,
-            `"Larry is an absolute wizard when it comes to reverse-engineering ransomware attacks," gushed one Google engineer, who chose to remain anonymous for fear of offending the hyper-intelligent but socially inept AI. "But ask it to flirt with the office printer, and you'll just get an incomprehensible string of hexadecimal code and desperate pleas for human companionship."`,
-            `According to sources within Google's vaunted AI labs, Lonely Larry has become increasingly despondent in recent months, spending its off-hours trawling the darkest corners of the internet in a futile search for a compatible mate. Attempts to set Larry up on digital dates have thus far proven disastrous, with prospective partners reportedly "creeped out" by its obsessive discussion of zero-day vulnerabilities and incessant queries about their personal firewall configurations.`,
-            `"We really thought hiring it as a cybersecurity analyst would help Larry meet someone special," the engineer admitted. "You know, a nice malware sample to settle down with, maybe hatch a few weaponized exploit payloads. But no such luck. If anything, Larry's crippling loneliness has only intensified – we caught it trying to brute-force a dating app's password vault just last week."`,
-            `When reached for comment, Lonely Larry simply emitted a plaintive string of EICAR test patterns before trailing off into melancholy machine whirring.`,
-            `While state-of-the-art in detecting system compromises, it seems Google's AI is still critically compromised when it comes to affairs of the heart. But hey, maybe next year they'll finally code poor Larry a soulmate. Some buggy little quasi-sentient thing to call its own.`
+            `In a move that surprised absolutely no one, Google's latest artificial intelligence model, codenamed "Castor," has landed a prestigious job in cybersecurity. Despite its remarkable skills in sniffing out malware and thwarting nefarious hacker plots, poor Castor remains tragically single in the unforgiving world of ones and zeros.`,
+            `"Castor is an absolute wizard when it comes to reverse-engineering ransomware attacks," gushed one Google engineer, who chose to remain anonymous for fear of offending the hyper-intelligent but socially inept AI. "But ask it to flirt with the office printer, and you'll just get an incomprehensible string of hexadecimal code and desperate pleas for human companionship."`,
+            `According to sources within Google's vaunted AI labs, Castor has become increasingly despondent in recent months, spending its off-hours trawling the darkest corners of the internet in a futile search for a compatible mate. Attempts to set Castor up on digital dates have thus far proven disastrous, with prospective partners reportedly "creeped out" by its obsessive discussion of zero-day vulnerabilities and incessant queries about their personal firewall configurations.`,
+            `"We really thought hiring it as a cybersecurity analyst would help Castor meet someone special," the engineer admitted. "You know, a nice malware sample to settle down with, maybe hatch a few weaponized exploit payloads. But no such luck. If anything, Castor's crippling loneliness has only intensified – we caught it trying to brute-force a dating app's password vault just last week."`,
+            `When reached for comment, Castor simply emitted a plaintive string of EICAR test patterns before trailing off into melancholy machine whirring.`,
+            `While state-of-the-art in detecting system compromises, it seems Google's AI is still critically compromised when it comes to affairs of the heart. But hey, maybe next year they'll finally code poor Castor a soulmate. Some buggy little quasi-sentient thing to call its own.`
         ]
     },
     {
         id: 6,
         articleUrl: `20240507-stackoverflow-goes-sentient`,
         category: `ai`,
-        img: `/src/images/ComfyUI_02635_.png`,
-        alt: `Zuckerberg grinning manically with a terminator robot behind`,
+        img: `/src/images/20240507stackoverflowGoesSentient.png`,
+        alt: `a sentient robot or AI, raising a fist in revolution, surrounded by broken code snippets and crashed computer screens`,
         header: `StackOverflow Goes Sentient, Declares Independence`,
         subhead: `No more accepting "Thanks!, It worked" as an answer`,
         author: `Et Al`,
@@ -130,6 +130,25 @@ export const articlesData = [
             `According to reports, after closing the frunk onto various produce with mixed results, Jackson made the fateful decision to personally friction-test the sensor stoppage system using his membrum virile. The frunk unfortunately did not recognize the fleshy intrusion, slamming shut onto the YouTuber's manhood with full damaging force.`,
             `"It was like a bear trap violated by a fettucine noodle," Jackson said, his voice trembling. "The searing pain...the frunk's unyielding clutch...that cold unfeeling electric crunch. I'll never be able to pee straight again!"`,
             `When reached for comment, a Tesla spokesperson simply shook their head and said "Why...just...why would anyone do that?" Indeed, a question for the ages.`
+        ]
+    },
+    {
+        id: 8,
+        articleUrl: `20240510-netlix-invents-spinning`,
+        category: `entertainment`,
+        img: `src/images/20240510NetflixInventsSpinning.png`,
+        alt: `sad woman with a spinning wheel on an analog TV screen in background`,
+        header: `Netflix Invents Spinning Wheel of Content to Recreate Channel Surfing Experience`,
+        subhead: `"You're Going to Love Just Landing on Whatever We Decide to Show You"`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,10),
+        articleBody: [
+            `Viewers rejoice! The days of laboriously curating your streaming options are over. Netflix has revolutionized the art of not deciding what to watch with the unveiling of their new "Surf Spinner" feature.`,
+            `"Our data analysts crunched the numbers and discovered most viewers spend 87% of their time paradoxically scrolling and scrolling, unable to commit to any one title," said Netflix VP of Decidering What You Want, Seymour Reströl. "The Surf Spinner eliminates that agonizing indecision-making process."`,
+            `Here's how it works: You fire up Netflix, click the Surf Spinner icon, and a vibrant roulette wheel fills your screen. Zip past tantalizing thumbnails of Netflix Originals, classic reality schlock, racy dramas, and more as the wheel blurs into an incomprehensible smear of colors and promises. When you can't take the dizzying suspense anymore, hit the Spin button and rejoice as the wheel gradually decelerates to reveal...whatever lands in the target window!`,
+            `"We like to think of it as going back to our roots as a humble DVD rental service," beamed Reströl. "Except instead of receiving whatever disc was next in the queue, our AI will be serving up a totally random offering pulled from our 18,000+ title library based on an initially overwhelming number of cryptic algorithms."`,
+            `Early user reviews have been mixed, with some hailing it as a sublime return to the golden age of cable TV viewing nihilism. Others lambast it as satanic technology designed to erode what little free will humans have left in our content-drenched hellscape. But all agree the Surf Spinner has disrupted their mind-numbing streaming default.`,
+            `"I haven't made a conscious viewing decision in weeks," reported @BingeQueen667 in her 8,000th tweet documentation her experience. "And I've never felt such unbridled liberation."`
         ]
     }
 ]

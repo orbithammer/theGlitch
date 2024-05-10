@@ -99,14 +99,6 @@ return (
         </li>
         <li>
           <StyledNavLink 
-          to="/entertainment"
-          style={getNavLinkStyle}
-          onClick={toggleSidebar}
-          aria-label={`to entertainment page`}
-          >Entertainment</StyledNavLink>
-        </li>
-        <li>
-          <StyledNavLink 
           to="/ai"
           style={getNavLinkStyle}
           onClick={toggleSidebar}

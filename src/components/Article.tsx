@@ -101,7 +101,6 @@ function formatDate(date: Date){
 
 const Article: React.FC = () => {
     const {articleUrl} = useParams() 
-    console.log("articleUrl", articleUrl)
     const [article, setArticle] = useState<articlesData | null>(null)
     useEffect(()=>{
         const foundArticle = articlesData.find(articleObj => articleObj.articleUrl === articleUrl);
@@ -111,7 +110,6 @@ const Article: React.FC = () => {
     if(article){
         formattedDate = formatDate(article.datePublished)
     }
-    console.log(article)
 
     return (
         <>
