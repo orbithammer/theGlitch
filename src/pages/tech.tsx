@@ -141,11 +141,11 @@ const HomePage: React.FC = () => {
                                 <StyledSubheadSmall>{article.subhead}</StyledSubheadSmall>
                             </>
                         )}
+                        <StyledArticleInfo>
+                            <StyledAuthor>{article.author}</StyledAuthor>
+                            {formatDate(article.datePublished)}
+                        </StyledArticleInfo>
                     </StyledLink>
-                    <StyledArticleInfo>
-                        <StyledAuthor>{article.author}</StyledAuthor>
-                        {formatDate(article.datePublished)}
-                    </StyledArticleInfo>
                 </div>
             ))}
         </main>

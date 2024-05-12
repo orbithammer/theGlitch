@@ -1,5 +1,5 @@
 import React from 'react';
-import { /*Link,*/ NavLink, } from 'react-router-dom';
+import { /*Link,*/ NavLink } from 'react-router-dom';
 import styled from "styled-components"
 import sidebarCloseIcon from "../assets/sidebarCloseIcon.svg?inline"
 
@@ -59,7 +59,7 @@ const sidebarOpen: React.CSSProperties = {
     transform: 'translateX(0)',
 };
 
-const getNavLinkStyle = ({ isActive }: { isActive: boolean }) =>
+const getNavLinkStyle = ({ isActive }: { isActive: boolean }) => 
     isActive ? activeStyles : undefined;
 
 return (
@@ -74,7 +74,7 @@ return (
       </StyledSearchWrapper>
       <StyledUnorderedList>
         <li>
-          <StyledNavLink 
+        <StyledNavLink 
           to="/"
           style={getNavLinkStyle}
           onClick={toggleSidebar}
@@ -96,6 +96,14 @@ return (
           onClick={toggleSidebar}
           aria-label={`to reviews page`}
           >Reviews</StyledNavLink>
+        </li>
+        <li>
+          <StyledNavLink 
+          to="/entertainment"
+          style={getNavLinkStyle}
+          onClick={toggleSidebar}
+          aria-label={`to entertainment page`}
+          >Entertainment</StyledNavLink>
         </li>
         <li>
           <StyledNavLink 

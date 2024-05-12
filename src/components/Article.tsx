@@ -28,7 +28,7 @@ const StyledLogo = styled.h1`
     top: -35%
 `
 
-const StyledHeroImg = styled.img`
+const StyledImg = styled.img`
     max-width: 100%;
     margin: 0;
     border-radius: 5px;
@@ -45,7 +45,7 @@ const StyledHeadline = styled.h2`
     transform: tranlateY(-20%);
     max-width: 90%;
     word-spacing: -0.05em;
-    line-height: 3.1rem;
+    line-height: 3.4rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     &:hover {
         background-color: #5200FF;
@@ -116,7 +116,7 @@ const Article: React.FC = () => {
             <main>
                 <StyledHeroWrapper>
                     <StyledLogo>theGlitch</StyledLogo>
-                    <StyledHeroImg src={article?.img} alt={article?.alt}/>
+                    <StyledImg src={article?.img} alt={article?.alt}/>
                 </StyledHeroWrapper>
                 <StyledHeadline>{article?.header}<br/></StyledHeadline>
                 <StyledSubhead>{article?.subhead}</StyledSubhead>
