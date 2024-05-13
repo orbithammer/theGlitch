@@ -87,7 +87,7 @@ const StyledArticleBody = styled.p`
     font-size: 1.2rem
 `
 
-function formatDate(date: Date){
+const formatDate = (date: Date) => {
     const monthNames = [
         'January', 'February', 'March', 'April', 'May', 'June',
         'July', 'August', 'September', 'October', 'November', 'December'
@@ -97,6 +97,16 @@ function formatDate(date: Date){
     const month = monthNames[date.getMonth()-1]; // Get the month name
     const year = date.getFullYear(); // Get the full year (e.g., 2024)
     return `${month} ${day}, ${year}`;
+}
+
+const copyLink = async () => {
+    try {
+        await navigator.clipboard.writeText(window.location.href);
+        alert('Link copied to clipboard!');
+    } catch (err) {
+        console.error(err);
+        alert('Failed to copy link to clipboard!');
+    }
 }
 
 const Article: React.FC = () => {
@@ -124,6 +134,21 @@ const Article: React.FC = () => {
                     <StyledAuthor>{article?.author}</StyledAuthor>
                     {formattedDate}
                 </StyledArticleInfo>
+                <div>
+                    <button onClick={copyLink}>
+                        Copy Link
+                    </button>
+                    <button>
+                        <a href={`https://www.facebook.com/sharer/sharer.php?u=${article?.articleUrl}`} target="_blank" rel="noopener noreferrer">
+                        Share on Facebook
+                        </a>
+                    </button>
+                    <button>
+                        <a href={`https://twitter.com/share?text=${article?.header}%20${article?.articleUrl}`} target="_blank" rel="noopener noreferrer">
+                        Share on Twitter
+                        </a>
+                    </button>
+                </div>
                 <article>
                     {article?.articleBody.map((paragraph, index)=><StyledArticleBody key={index}>{paragraph}</StyledArticleBody>)}
                 </article>

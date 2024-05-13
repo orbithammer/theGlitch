@@ -173,12 +173,14 @@ const HomePage: React.FC = () => {
                     </div>
                 )
             })}
-            <Pagination
+            {currentArticles.length > 1 && (
+                <Pagination
                 currentPage={currentPage}
                 totalPages={totalPages}
                 onOlderPage={handleOlderPage}
                 onNewerPage={handleNewerPage}
-            />
+                />
+            )}
         </main>
     )
 }
