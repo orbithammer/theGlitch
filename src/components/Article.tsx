@@ -2,6 +2,9 @@ import React, {useEffect, useState} from "react"
 import { useParams } from "react-router-dom"
 import { articlesData } from "../data/articles"
 import { styled } from "styled-components"
+import CopyLinkIconDark from "/src/assets/copyLinkDark.svg"
+import FacebookShareIconDark from "/src/assets/facebookShare.svg"
+import TwitterShareIconDark from "/src/assets/twitterShare.svg"
 
 type articlesData = {
     id: number;
@@ -80,6 +83,18 @@ const StyledAuthor = styled.span`
     margin-right: 1rem;
 `
 
+const StyledButtonWrapper = styled.div`
+    display: flex;
+`
+
+const StyledShareButton = styled.button`
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #353535;
+    margin-right: 1rem;
+`
+
 const StyledArticleBody = styled.p`
     font-family: "Quattrocento", serif;
     font-weight: 400;
@@ -134,21 +149,21 @@ const Article: React.FC = () => {
                     <StyledAuthor>{article?.author}</StyledAuthor>
                     {formattedDate}
                 </StyledArticleInfo>
-                <div>
-                    <button onClick={copyLink}>
-                        Copy Link
-                    </button>
-                    <button>
+                <StyledButtonWrapper>
+                    <StyledShareButton onClick={copyLink}>
+                        <img src={CopyLinkIconDark} />
+                    </StyledShareButton>
+                    <StyledShareButton>
                         <a href={`https://www.facebook.com/sharer/sharer.php?u=${article?.articleUrl}`} target="_blank" rel="noopener noreferrer">
-                        Share on Facebook
+                            <img src={FacebookShareIconDark} />
                         </a>
-                    </button>
-                    <button>
+                    </StyledShareButton>
+                    <StyledShareButton>
                         <a href={`https://twitter.com/share?text=${article?.header}%20${article?.articleUrl}`} target="_blank" rel="noopener noreferrer">
-                        Share on Twitter
+                            <img src={TwitterShareIconDark} />
                         </a>
-                    </button>
-                </div>
+                    </StyledShareButton>
+                </StyledButtonWrapper>
                 <article>
                     {article?.articleBody.map((paragraph, index)=><StyledArticleBody key={index}>{paragraph}</StyledArticleBody>)}
                 </article>

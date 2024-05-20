@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import styled from "styled-components"
 import menuPlus from "../assets/menuPlus.svg?inline"
+import chevronUp from "../assets/chevronUp.svg"
 
 const StyledHeader = styled.header`
   display: flex;
@@ -34,13 +35,45 @@ const StyledSidebarImg = styled.img`
   margin-left: 0.5rem;
   padding-bottom: 0.25rem;
 `
+const StyledScrollToTop = styled.button`
+  position: fixed;
+  bottom: 4rem;
+  left: auto;
+  right: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+`
+
+const StyledChevronUpIconDark = styled.img`
+  width: 100%;
+  height: 100%;
+`
 
 const Header: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(true)
+
+  // const toggleSidebar = () => {
+  //   setIsOpen(isOpen)
+  // }
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
 
   return (
     <StyledHeader>
@@ -57,9 +90,12 @@ const Header: React.FC = () => {
           </StyledList>
         </StyledUnorderedList>
       </nav>
+      {!isOpen && <StyledScrollToTop onClick={scrollToTop}>
+        <StyledChevronUpIconDark src={chevronUp}/>
+      </StyledScrollToTop>}
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
     </StyledHeader>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

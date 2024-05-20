@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { /*Link,*/ NavLink } from 'react-router-dom';
 import styled from "styled-components"
 import sidebarCloseIcon from "../assets/sidebarCloseIcon.svg?inline"
+import ToggleButton from './ToggleButton';
+import ThemeContext from '../utils/ThemeContext';
 
 const StyledSidebarWrapper = styled.div`
   z-index: 1;
@@ -9,6 +11,8 @@ const StyledSidebarWrapper = styled.div`
 
 const StyledSearchWrapper = styled.div`
   display: flex;
+  align-items: space-between;
+  justify-content: start;
 `
 
 const StyledCloseButton = styled.button`
@@ -36,6 +40,8 @@ const Sidebar: React.FC<{ isOpen: boolean; toggleSidebar: () => void }> = ({
     isOpen,
     toggleSidebar,
   }) => {
+    const { isDarkMode } = useContext(ThemeContext);
+    console.log("isDarkMode", isDarkMode)
     const activeStyles: React.CSSProperties = {
         fontWeight: "bold",
         textDecoration: "none",
@@ -62,12 +68,14 @@ const sidebarOpen: React.CSSProperties = {
 const getNavLinkStyle = ({ isActive }: { isActive: boolean }) => 
     isActive ? activeStyles : undefined;
 
+
 return (
     <StyledSidebarWrapper 
       style={isOpen ? sidebarOpen : sidebarStyles}
       onClick={toggleSidebar}
     >
       <StyledSearchWrapper>
+      <ToggleButton />
         <StyledCloseButton onClick={toggleSidebar}>
           <StyledCloseImg src={sidebarCloseIcon} alt="sidebar close button icon"/>
         </StyledCloseButton>

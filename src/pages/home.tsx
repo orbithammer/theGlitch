@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react"
 import { Link, useParams } from "react-router-dom"
 import { articlesData } from "../data/articles.ts"
 import { styled } from "styled-components"
-import Pagination from "../components/Pageination.tsx"
+import Pagination from "../components/Pagination.tsx"
 
 type Article = {
     id: number;
@@ -98,7 +98,7 @@ const StyledLink = styled(Link)`
     color: white;
 `
 
-function formatDate(date: Date){
+const formatDate = (date: Date) => {
     const monthNames = [
         'January', 'February', 'March', 'April', 'May', 'June',
         'July', 'August', 'September', 'October', 'November', 'December'
@@ -134,54 +134,56 @@ const HomePage: React.FC = () => {
     }
 
     return (
-        <main>
-            {currentArticles.map((article, index) => {
-                return (
-                    <div key={article.id}>
-                        <StyledLink 
-                            to={`/article/${article.articleUrl}`}
-                            aria-label={`to article ${article.header}`}
-                        >
-                            <StyledImageWrapper>
-                                {index === 0 && <StyledLogo>theGlitch</StyledLogo>}
-                                <StyledImg src={article.img} alt={article.alt}/>
-                            </StyledImageWrapper>
-                            {index === 0 ? (
-                                <>
-                                    <StyledHeadline>{article.header}<br /></StyledHeadline>
-                                    <StyledSubhead>{article.subhead}</StyledSubhead>
-                                </>
-                                ) : (
-                                <>
-                                    <StyledHeadlineSmall>{article.header}<br /></StyledHeadlineSmall>
-                                    <StyledSubheadSmall>{article.subhead}</StyledSubheadSmall>
-                                </>
-                            )}
-                            <StyledArticleInfo>
-                                <StyledAuthor>{article.author}</StyledAuthor>
-                                {formatDate(article.datePublished)}
-                            </StyledArticleInfo>
-                        </StyledLink>
-                        {index === 0 && (
-                            <Pagination
-                            currentPage={currentPage}
-                            totalPages={totalPages}
-                            onOlderPage={handleOlderPage}
-                            onNewerPage={handleNewerPage}
-                        />
-                            )}
-                    </div>
-                )
-            })}
+        <>
+            <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                currentSubPagePath=""
+                onOlderPage={handleOlderPage}
+                onNewerPage={handleNewerPage}
+            />
+            <main>
+                {currentArticles.map((article, index) => {
+                    return (
+                        <div key={article.id}>
+                            <StyledLink 
+                                to={`/article/${article.articleUrl}`}
+                                aria-label={`to article ${article.header}`}
+                            >
+                                <StyledImageWrapper>
+                                    {index === 0 && <StyledLogo>theGlitch</StyledLogo>}
+                                    <StyledImg src={article.img} alt={article.alt}/>
+                                </StyledImageWrapper>
+                                {index === 0 ? (
+                                    <>
+                                        <StyledHeadline>{article.header}<br /></StyledHeadline>
+                                        <StyledSubhead>{article.subhead}</StyledSubhead>
+                                    </>
+                                    ) : (
+                                    <>
+                                        <StyledHeadlineSmall>{article.header}<br /></StyledHeadlineSmall>
+                                        <StyledSubheadSmall>{article.subhead}</StyledSubheadSmall>
+                                    </>
+                                )}
+                                <StyledArticleInfo>
+                                    <StyledAuthor>{article.author}</StyledAuthor>
+                                    {formatDate(article.datePublished)}
+                                </StyledArticleInfo>
+                            </StyledLink>
+                        </div>
+                    )
+                })}
+            </main>
             {currentArticles.length > 1 && (
                 <Pagination
                 currentPage={currentPage}
                 totalPages={totalPages}
+                currentSubPagePath=""
                 onOlderPage={handleOlderPage}
                 onNewerPage={handleNewerPage}
                 />
             )}
-        </main>
+        </>
     )
 }
 export default HomePage
