@@ -19,7 +19,7 @@ const ToggleButtonContainer = styled.div<ToggleButtonProps>`
 const ToggleButtonInner = styled.div<ToggleButtonProps>`
   position: absolute;
   top: 0.2rem;
-  left: ${({ $isDarkMode }) => ($isDarkMode ? '2rem' : '0.2rem')};
+  left: ${({ $isDarkMode }) => ($isDarkMode ? '1.8rem' : '0.2rem')};
   width: 1.6rem;
   height: 1.6rem;
   background-color: #fff;

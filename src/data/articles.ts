@@ -350,4 +350,25 @@ export const articlesData = [
             `When asked about potential abuse cases, Henderhering remained steadfastly supportive. "Unethical? Have you met the average human? We're just creating a more efficient way for you all to be petty, uncommunicative jerks."`,
         ] 
     },
+    {
+        id: 19,
+        articleUrl: `20240521-tesla-owners-sue`,
+        category: `tech`,
+        img: `/src/images/20240521-tesla-owners-sue.png`,
+        alt: `angry man in front of his tesla car`,
+        header: `Tesla Owners Sue Over Lack of Transformer Abilities`,
+        subhead: ` Claim of "robotic mode" misled millions of Michael Bay fans`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,21,15),
+        articleBody: [
+            `A group of disgruntled Tesla owners have filed a class-action lawsuit against the electric car company, alleging that their vehicles do not, in fact, transform into giant robots as implied by Elon Musk's marketing claims.`,
+            `The plaintiffs, many self-proclaimed "Michael Bay super-fans," claim they were misled by Tesla's "robotic mode" feature, which they assumed would allow their cars to metamorphose into towering Autobots or Decepticons at the push of a button.`,
+            `"I specifically bought the Tesla Cybertruck because I thought it would transform into Megatron," said lead plaintiff John Buck, his eyes brimming with tears. "But no matter how many times I press the 'robotic mode' button, it just adjusts the suspension settings."`,
+            `The lawsuit alleges Tesla engaged in false advertising by heavily implying their vehicles possessed shapeshifting capabilities akin to the Transformers franchise. Promotional materials repeatedly used phrases like "more than meets the eye" and "robots in disguise."`,
+            `During the infamous "Cybertruck unveiling" event, Musk even played audio clips of transforming sound effects before demonstrating driver-assist features like autocorrect and self-parking.`,
+            `"I feel so betrayed," sobbed another plaintiff. "All I've ever wanted was for my car to turn into Optimus Prime and say 'Autobots, roll out!' Is that too much to ask?"`,
+            `Tesla reps have dismissed the lawsuit as "ridiculous," arguing that no reasonable person could confuse their self-driving software with shapeshifting into robots.`,
+            `When asked about the "robotic mode" marketing, Musk simply replied, "Of course our cars can transform! You just have to believe..." before winking and refusing to elaborate.`,
+        ] 
+    },
 ]

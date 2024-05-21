@@ -58,7 +58,7 @@ const StyledChevronUpIconDark = styled.img`
 `
 
 const Header: React.FC = () => {
-  // const [isOpen, setIsOpen] = useState(true)
+  // const [isOpen, setIsOpen] = useState(true) //set to keep sidebar open
 
   // const toggleSidebar = () => {
   //   setIsOpen(isOpen)
@@ -66,7 +66,9 @@ const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleSidebar = () => {
-    setIsOpen(!isOpen)
+    setTimeout(() => {
+      setIsOpen(!isOpen);
+    }, 200);
   }
   const scrollToTop = () => {
     window.scrollTo({
