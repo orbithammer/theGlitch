@@ -1,15 +1,19 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import ThemeContext from './ThemeContext';
-import { useLocation } from 'react-router-dom';
+import { getPreferredTheme } from './getPreferredTheme';
 
 interface ThemeProviderProps {
   children: React.ReactNode;
 }
 
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
-  const location = useLocation();
-
+  const [isDarkMode, setIsDarkMode] = useState(getPreferredTheme()) || useState(true);
+  const rootElement = document.documentElement;
+  if (isDarkMode) { 
+    rootElement.style.setProperty('--background-color', '#131313');
+  } else {
+    rootElement.style.setProperty('--background-color', 'white');
+  }
   const toggleTheme = () => {
     setIsDarkMode((prevState) => !prevState);
   };

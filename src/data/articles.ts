@@ -198,7 +198,7 @@ export const articlesData = [
         category: `entertainment`,
         img: `/src/images/20240512-ea-responsible-for.png`,
         alt: `young smiling black girl dressed as a knight holding a book`,
-        header: `EA's in-game ads responsible for increase in childhood literacy`,
+        header: `EA's In-Game Ads Responsible for Increase in Childhood Literacy`,
         subhead: `Are kids choosing books over corpo trash?`,
         author: `Et Al`,
         datePublished: new Date(2024,5,12,9),
@@ -296,7 +296,7 @@ export const articlesData = [
         img: `/src/images/20240518-musk-has-x.png`,
         alt: `Elon Musk in passionate embrace with Pepe the Frog in bed`,
         header: `Musk Has X with Neo-Nazis`,
-        subhead: `Elon Edging Ever Closer to Edgelords... Allegedly`,
+        subhead: `Elon edging ever closer to edgelords... allegedly`,
         author: `Et Al`,
         datePublished: new Date(2024,5,18,18,50),
         articleBody: [
@@ -336,7 +336,7 @@ export const articlesData = [
         articleUrl: `20240520-slack-goes-full`,
         category: `ai`,
         img: `/src/images/20240520-slack-goes-full.png`,
-        alt: `a slack colored robot listening to two office workers chatting in the background`,
+        alt: `a slack logo colored robot listening to two office workers chatting in the background`,
         header: `Slack Goes Full Snoop: Your Chats Are Fueling Their AI Agenda`,
         subhead: `You weren't just ranting to Linda, you were teaching an AI how to be passive-aggressive`,
         author: `Et Al`,
@@ -357,7 +357,7 @@ export const articlesData = [
         img: `/src/images/20240521-tesla-owners-sue.png`,
         alt: `angry man in front of his tesla car`,
         header: `Tesla Owners Sue Over Lack of Transformer Abilities`,
-        subhead: ` Claim of "robotic mode" misled millions of Michael Bay fans`,
+        subhead: `Claim of "robotic mode" misled millions of Michael Bay fans`,
         author: `Et Al`,
         datePublished: new Date(2024,5,21,15),
         articleBody: [
@@ -369,6 +369,27 @@ export const articlesData = [
             `"I feel so betrayed," sobbed another plaintiff. "All I've ever wanted was for my car to turn into Optimus Prime and say 'Autobots, roll out!' Is that too much to ask?"`,
             `Tesla reps have dismissed the lawsuit as "ridiculous," arguing that no reasonable person could confuse their self-driving software with shapeshifting into robots.`,
             `When asked about the "robotic mode" marketing, Musk simply replied, "Of course our cars can transform! You just have to believe..." before winking and refusing to elaborate.`,
+        ] 
+    },
+    {
+        id: 20,
+        articleUrl: `20240522-microsofts-satya-nadella`,
+        category: `ai`,
+        img: `/src/images/20240522-microsofts-satya-nadella.png`,
+        alt: `robotic mother-in-law drills into your sould with her hateful stare`,
+        header: `Microsoft's Satya Nadella Channels His Inner Mother-in-Law`,
+        subhead: `The nagging you never asked for, built right into your PC`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,22,19,30),
+        articleBody: [
+            `You know that feeling when your mother-in-law just won't stop bringing up that one embarrassing thing you did years ago? Well, get ready to experience that wonderful sense of dread and shame 24/7 with Microsoft's newest innovation: the World's First Virtual Mother-in-Law PC!`,
+            `In a bold move that's sure to have privacy advocates clutching their pearls, Microsoft has unveiled an upgraded version of their Copilot AI assistant. This new "feature" will essentially give your computer a photographic memory, recalling every single thing you do and say in front of it.`,
+            `"We're really excited about this groundbreaking technology," beamed an overly chipper Microsoft rep during the cringe-inducing announcement. "Our virtual mother-in-law will provide real-time commentary and advice on all your digital activities - whether you want it or not!"`,
+            `Picture this: you're engaged in a harmless late-night internet rabbit hole about puppies or marble racing, when suddenly Clippy 2.0 pipes up with "Oh hunny, don't you think you've looked at enough puppy pictures for one night? You really should be asleep by now if you want to be productive at work tomorrow!"`,
+            `Or maybe you're having a private video call with your therapist, working through some personal issues. In barges your new AI mother-in-law screaming "I knew Tommy Wilkins from the 3rd grade was nothing but trouble! You listen to me, young lady/man/otherkin..."`,
+            `The possibilities for excruciating secondhand embarrassment are endless! Just like the real thing, Microsoft's virtual mother-in-law has no sense of boundaries or volume control.`,
+            `When asked about privacy concerns, the rep simply scoffed. "Privacy is for people with nothing to hide. Our Comrades at Microsoft know that real families share everything! What's yours is ours, comrade!"`,
+            `So get ready to either become a hermit who never uses a computer again or to have permanent stress lines etched onto your face by age 25. The future is...creepily maternal?`,
         ] 
     },
 ]
