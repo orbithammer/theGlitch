@@ -1,8 +1,9 @@
-import React, {useState, useEffect} from "react"
+import React, {useState, useEffect, useContext} from "react"
 import { Link, useParams } from "react-router-dom"
 import { articlesData } from "../data/articles.ts"
 import { styled } from "styled-components"
 import Pagination from "../components/Pagination.tsx"
+import ThemeContext from "../utils/ThemeContext"
 
 type Article = {
     id: number;
@@ -18,6 +19,11 @@ type Article = {
 
 const articleData: Article[] = articlesData
 
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: ${({ theme }) => theme.isDarkMode ? "#ffffff" : "#000000"};
+`
+
 const StyledImageWrapper = styled.div`
     position: relative;
 `
@@ -25,8 +31,7 @@ const StyledImageWrapper = styled.div`
 const StyledLogo = styled.h1`
     position: absolute; 
     font-size: 4rem;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, ${({ theme }) => theme.isDarkMode ? 0.2 : 0.5});
     top: -35%
 `
 
@@ -43,7 +48,6 @@ const StyledHeadline = styled.h2`
     font-style: normal;
     font-size: 3rem;
     letter-spacing: -0.05em;
-    color: white;
     transform: tranlateY(-20%);
     max-width: 90%;
     word-spacing: -0.05em;
@@ -89,13 +93,8 @@ const StyledArticleInfo = styled.p`
 `
 
 const StyledAuthor = styled.span`
-    color: #9CE00C;
+    color: ${({ theme }) => theme.isDarkMode ? "#9CE00C" : "#5200FF"};
     margin-right: 1rem;
-`
-
-const StyledLink = styled(Link)`
-    text-decoration: none;
-    color: white;
 `
 
 const formatDate = (date: Date) => {
@@ -111,6 +110,7 @@ const formatDate = (date: Date) => {
 }
 
 const HomePage: React.FC = () => {
+    const { isDarkMode } = useContext(ThemeContext);
     const allArticles = articleData.sort((a, b) => b.datePublished.getTime() - a.datePublished.getTime());
     const { pageNumber } = useParams();
     const [currentPage, setCurrentPage] = useState(parseInt(pageNumber || '1', 10))
@@ -130,7 +130,6 @@ const HomePage: React.FC = () => {
 
     const handleNewerPage = () => {
         setCurrentPage((prevPage) => Math.max(prevPage - 1, 1))
-        
     }
 
     return (
@@ -149,6 +148,7 @@ const HomePage: React.FC = () => {
                             <StyledLink 
                                 to={`/article/${article.articleUrl}`}
                                 aria-label={`to article ${article.header}`}
+                                theme={{ isDarkMode }}
                             >
                                 <StyledImageWrapper>
                                     {index === 0 && <StyledLogo>theGlitch</StyledLogo>}
@@ -166,7 +166,7 @@ const HomePage: React.FC = () => {
                                     </>
                                 )}
                                 <StyledArticleInfo>
-                                    <StyledAuthor>{article.author}</StyledAuthor>
+                                    <StyledAuthor theme={{ isDarkMode }}>{article.author}</StyledAuthor>
                                     {formatDate(article.datePublished)}
                                 </StyledArticleInfo>
                             </StyledLink>

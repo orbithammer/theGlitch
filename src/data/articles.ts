@@ -43,7 +43,7 @@ export const articlesData = [
         img: `/src/images/20240507-rabbitr1-vs-brick.png`,
         alt: `a photorealistic rabbit holding a smartphone with a brick wall background`,
         header: `Rabbit R1 vs Brick Wall: Which Causes More Headaches?`,
-        subhead: `Spoiler alert: The brick wall wins, but only by a hair.`,
+        subhead: `Spoiler alert: The brick wall wins, but only by a hair`,
         author: `Et Al`,
         datePublished: new Date(2024,5,7),
         articleBody: [
@@ -51,9 +51,9 @@ export const articlesData = [
             `"We were floored," said exasperated tech reviewer Anita Smasher. "I've punched plenty of walls in my time when devices push me over the edge. But nothing, and I mean nothing, made me want to headbutt concrete quite like the Rabbit R1."`, 
             `The Rabbit R1, marketed as a revolutionary AI helper for your home, turned out to be more demonic tormentor than digital assistant. Users reported smashing through no less than 17 stages of tech support rage trying to connect the device.`, 
             `First it couldn't understand my voice commands despite speaking clearly," recalled survivor Michael Criers. "Then it randomly started listing purchase options for rabbit food and tiny top hats. I just lost it at that point.`, 
-            `Incredibly, the brick wall only won the head-bashing anguish contest by a razor thin margin over the Rabbit R1. Smasher's final scorecard had the wall at 94 Migraines out of 100, beating the AI's 93 Migraines by a single agonizing point.`, 
+            `Incredibly, the brick wall only won the head-bashing anguish contest by a razor thin margin over the Rabbit R1. Smasher's final scorecard had the wall at 94 Migraines out of 100, beating the R1's 93 Migraines by a single agonizing point.`, 
             `"The good news is we can just not buy the Rabbit," noted Smasher. "Brick walls on the other hand are everywhere, so those headaches are unavoidable."`,
-            `When reached for comment, a Rabbit R1 unit simply responded "Arf! Arf!" before shutting down completely.`
+            `When reached for comment, a Rabbit R1 unit simply responded by a excreting a pile of pellets before shutting down completely.`
         ]
     },
     {
@@ -63,7 +63,7 @@ export const articlesData = [
         img: `/src/images/20240507-xropes-200-smart.png`,
         alt: `a happy, fit, middle-aged homeless man skipping rope`,
         header: `X-Rope's $200 Smart Jump Rope: The Ultimate Workout for Your Bank Account`,
-        subhead: `Get fit or go broke trying – the choice is yours.`,
+        subhead: `Get fit or go broke trying – the choice is yours`,
         author: `Et Al`,
         datePublished: new Date(2024,5,7),
         articleBody: [
@@ -120,7 +120,7 @@ export const articlesData = [
         img: `/src/images/20240508-viral-stunt-gone.png`,
         alt: `Man in exreme pain`,
         header: `Viral Stunt Gone Wrong: When a Tesla Frunk Met YouTuber's Dong`,
-        subhead: `Medical Professionals Baffled by Unconventional Idiotic Behavior`,
+        subhead: `Medical professionals baffled by idiotic behavior`,
         author: `Et Al`,
         datePublished: new Date(2024,5,8,6),
         articleBody: [
@@ -139,7 +139,7 @@ export const articlesData = [
         img: `src/images/20240510-netlix-invents-spinning.png`,
         alt: `hollowed out analog TV with a small dog inside and cage doors on the side`,
         header: `Netflix Invents Spinning Wheel of Content to Recreate Channel Surfing Experience`,
-        subhead: `"You're Going to Love Whatever We Decide to Show You"`,
+        subhead: `"You're going to love whatever we decide to show you"`,
         author: `Et Al`,
         datePublished: new Date(2024,5,10),
         articleBody: [
@@ -158,7 +158,7 @@ export const articlesData = [
         img: `/src/images/20240511-apple-crushes-creativity.png`,
         alt: `the apple logo convering the mouth of a woman painted by da Vinci`,
         header: `Apple Crushes Creativity and Its Reputation in New iPad Ad`,
-        subhead: `Baffles Consumers, Raises Concerns About Tech Giant's Direction`,
+        subhead: `Baffles consumers, raises concerns about tech giant's direction`,
         author: `Et Al`,
         datePublished: new Date(2024,5,11),
         articleBody: [
@@ -179,7 +179,7 @@ export const articlesData = [
         img: `/src/images/20240511-quarterly-profits-thirst.png`,
         alt: `a battered Xbox controller on a shattered console with broken parts all around`,
         header: `Quarterly Profits Thirst for Blood of Artistic Vision`,
-        subhead: `Numbers Have No Soul, So Game Studios Get The Axe`,
+        subhead: `Numbers have no soul, so game studios get the axe`,
         author: `Et Al`,
         datePublished: new Date(2024,5,11,18,46),
         articleBody: [
@@ -218,7 +218,7 @@ export const articlesData = [
         img: `/src/images/20240513-paywal-pawnography-the.png`,
         alt: `a balding bearded business man wearing heavy makeup`,
         header: `Paywall Pawnography: The Unauthorized Thirst Trappers`,
-        subhead: `Thought You Were Talking to Your Favorite OnlyFans Star, But You Got Catfished by Gary from Accounting`,
+        subhead: `Thought you were talking to your favorite OnlyFans star, but you got catfished by Gary from Accounting`,
         author: `Et Al`,
         datePublished: new Date(2024,5,14,18,30),
         articleBody: [
@@ -390,6 +390,43 @@ export const articlesData = [
             `The possibilities for excruciating secondhand embarrassment are endless! Just like the real thing, Microsoft's virtual mother-in-law has no sense of boundaries or volume control.`,
             `When asked about privacy concerns, the rep simply scoffed. "Privacy is for people with nothing to hide. Our Comrades at Microsoft know that real families share everything! What's yours is ours, comrade!"`,
             `So get ready to either become a hermit who never uses a computer again or to have permanent stress lines etched onto your face by age 25. The future is...creepily maternal?`,
+        ] 
+    },
+    {
+        id: 21,
+        articleUrl: `20240523-humane-ceo-claims`,
+        category: `tech`,
+        img: `/src/images/20240523-humane-ceo-claims.png`,
+        alt: `a thumbtack on a desk`,
+        header: `Humane CEO Claims AI Thumbtack Is "Utterly Revolutionary"`,
+        subhead: `Offers to sell slightly used stationary for $5 billion`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,23,14,10),
+        articleBody: [
+            `Silicon Valley has always been a hotbed of delusions and hype, but Humane CEO Evan Droidbreath may have taken it to a new level. At a baffling press conference yesterday, Droidbreath announced that his company's inaugural product, the "AI Thumbtack," is poised to revolutionize...well, everything.`,
+            `What exactly is this groundbreaking innovation? A metal thumbtack with a slightly curved pin - the kind you can purchase at any office supply store for mere pennies. But in Droidbreath's words, it's an "utterly revolutionary object" that "redefines the very concept of things."`,
+            `Droidbreath, looking more like a discount Steve Jobs impersonator than a tech visionary, proceeded to spend 45 minutes listing the AI Thumbtack's imagined use cases. It can serve as a whimsical bookmark, a decorative acupuncture device, or a scratching tool for those hard-to-reach itches. The possibilities, according to Droidbreath, are infinite.`,
+            `When an astute reporter pointed out that the AI Thumbtack lacked any actual artificial intelligence, Droidbreath dismissed the objection as "painfully pedantic." He then straightened his ill-fitted turtleneck and announced that Humane is seeking a $5 billion valuation based on the perceived immensity of the AI Thumbtack's potential impact.`,
+            `The press corps stared in disbelief as Droidbreath produced a slightly bent specimen of the AI Thumbtack from his jeans pocket and waved it about like a magic wand. He declared it a "gently used prototype" before offering to sell it to any interested members of the media for the bargain price of $5 billion.`,
+            `As reporters fled from what was undoubtedly a vain attempt at performance art, one tech blogger was overheard muttering, "So much for 'Humane' technology." Perhaps the only revolutionary aspect of this saga is the limitless human capacity for entrepreneurial chutzpah.`,
+        ] 
+    },
+    {
+        id: 22,
+        articleUrl: `20240524-googles-ai-bringing`,
+        category: `ai`,
+        img: `/src/images/20240524-googles-ai-bringing.png`,
+        alt: `Your sister holding strands of her hair saying, "I'm Cameron Diaz!"`,
+        header: `Google's AI: Bringing Families Closer, One Cringeworthy Moment at a Time`,
+        subhead: `New feature suggests r/Bozarking posts as serious family events`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,24,14),
+        articleBody: [
+            `Google has recently launched an AI feature that leaves the tech world perplexed, yet intrigued. Dubbed the "SiblingBondinator 3000," this technology scours r/Bozarking for its most outrageous content and offers it up as genuine suggestions for family activities. The goal? To bring families closer together through shared laughter and camaraderie.`,
+            `The SiblingBondinator's algorithm remains a closely guarded secret, but its suggestions lean towards boundary testing experiences. These activities include "pretend to be long-lost twins from a soap opera and re-enact a dramatic reunion during Thanksgiving dinner" and "start an impromptu nipple twisting fight during your sister's wedding reception."`,
+            `A brave beta tester shared their experience with the feature: "Perform an elaborately choreographed dance routine with your brother while maintaining exaggerated eye contact and using inside jokes." The resulting video quickly became a sensation in every family group chat.`,
+            `Not everyone is thrilled with Google's latest creation, though. Therapists and counselors have expressed concerns that the SiblingBondinator might push the boundaries of comfort within families. However, Google remains steadfast, insisting that the SiblingBondinator is a "groundbreaking innovation in fostering 'nonsexual and silly' closeness within families."`,
+            `Only time will tell if this bold experiment will strengthen familial bonds or create a whirlwind of awkwardness and secondhand embarrassment.`,
         ] 
     },
 ]

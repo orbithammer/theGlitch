@@ -1,10 +1,15 @@
-import React, {useEffect, useState} from "react"
+import React, {useEffect, useState, useContext } from "react"
 import { useParams } from "react-router-dom"
 import { articlesData } from "../data/articles"
 import { styled } from "styled-components"
 import CopyLinkIconDark from "/src/assets/copyLinkDark.svg"
-import FacebookShareIconDark from "/src/assets/facebookShare.svg"
-import TwitterShareIconDark from "/src/assets/twitterShare.svg"
+import CopyLinkIconLight from "/src/assets/copyLinkLight.svg"
+import FacebookShareIconDark from "/src/assets/facebookShareDark.svg"
+import FacebookShareIconLight from "/src/assets/facebookShareLight.svg"
+import TwitterShareIconDark from "/src/assets/twitterShareDark.svg"
+import TwitterShareIconLight from "/src/assets/twitterShareLight.svg"
+import ThemeContext from "../utils/ThemeContext"
+
 
 type articlesData = {
     id: number;
@@ -26,8 +31,7 @@ const StyledHeroWrapper = styled.div`
 const StyledLogo = styled.h1`
     position: absolute; 
     font-size: 4rem;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, ${({ theme }) => theme.isDarkMode ? 0.2 : 0.5});
     top: -35%
 `
 
@@ -44,12 +48,10 @@ const StyledHeadline = styled.h2`
     font-style: normal;
     font-size: 3rem;
     letter-spacing: -0.05em;
-    color: white;
     transform: tranlateY(-20%);
     max-width: 90%;
     word-spacing: -0.05em;
     line-height: 3.4rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     &:hover {
         background-color: #5200FF;
     }
@@ -79,7 +81,7 @@ const StyledArticleInfo = styled.p`
 `
 
 const StyledAuthor = styled.span`
-    color: #9CE00C;
+    color: ${({ theme }) => theme.isDarkMode ? "#9CE00C" : "#5200FF"};
     margin-right: 1rem;
 `
 
@@ -88,11 +90,23 @@ const StyledButtonWrapper = styled.div`
 `
 
 const StyledShareButton = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background-color: #353535;
+    background-color: ${({ theme }) => theme.isDarkMode ? "#353535" : "#cacaca"};
     margin-right: 1rem;
+    border: none;
+    &:hover {
+        background-color: #5200FF;
+      }
+    
+      a {
+        width: 1rem;
+        height: 1rem;
+      }
 `
 
 const StyledArticleBody = styled.p`
@@ -101,6 +115,10 @@ const StyledArticleBody = styled.p`
     font-style: normal;
     font-size: 1.2rem
 `
+
+// const CopyLinkIcon: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => (
+//     <img src={isDarkMode ? CopyLinkIconDark : CopyLinkIconLight} alt="Copy Link" />
+// );
 
 const formatDate = (date: Date) => {
     const monthNames = [
@@ -125,6 +143,7 @@ const copyLink = async () => {
 }
 
 const Article: React.FC = () => {
+    const { isDarkMode } = useContext(ThemeContext);
     const {articleUrl} = useParams() 
     const [article, setArticle] = useState<articlesData | null>(null)
     useEffect(()=>{
@@ -140,27 +159,27 @@ const Article: React.FC = () => {
         <>
             <main>
                 <StyledHeroWrapper>
-                    <StyledLogo>theGlitch</StyledLogo>
+                    <StyledLogo theme={{ isDarkMode }}>theGlitch</StyledLogo>
                     <StyledImg src={article?.img} alt={article?.alt}/>
                 </StyledHeroWrapper>
                 <StyledHeadline>{article?.header}<br/></StyledHeadline>
                 <StyledSubhead>{article?.subhead}</StyledSubhead>
                 <StyledArticleInfo>
-                    <StyledAuthor>{article?.author}</StyledAuthor>
+                    <StyledAuthor theme={{ isDarkMode }}>{article?.author}</StyledAuthor>
                     {formattedDate}
                 </StyledArticleInfo>
                 <StyledButtonWrapper>
-                    <StyledShareButton onClick={copyLink}>
-                        <img src={CopyLinkIconDark} />
+                    <StyledShareButton onClick={copyLink} theme={{ isDarkMode }}>
+                        <img src={isDarkMode ? CopyLinkIconDark : CopyLinkIconLight} alt="copy link icon" />
                     </StyledShareButton>
-                    <StyledShareButton>
+                    <StyledShareButton theme={{ isDarkMode }}>
                         <a href={`https://www.facebook.com/sharer/sharer.php?u=${article?.articleUrl}`} target="_blank" rel="noopener noreferrer">
-                            <img src={FacebookShareIconDark} />
+                            <img src={isDarkMode ? FacebookShareIconDark : FacebookShareIconLight} alt="facebook share icon"/>
                         </a>
                     </StyledShareButton>
-                    <StyledShareButton>
+                    <StyledShareButton theme={{ isDarkMode }}>
                         <a href={`https://twitter.com/share?text=${article?.header}%20${article?.articleUrl}`} target="_blank" rel="noopener noreferrer">
-                            <img src={TwitterShareIconDark} />
+                            <img src={isDarkMode ? TwitterShareIconDark : TwitterShareIconLight} />
                         </a>
                     </StyledShareButton>
                 </StyledButtonWrapper>

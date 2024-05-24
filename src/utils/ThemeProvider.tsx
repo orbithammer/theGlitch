@@ -12,7 +12,7 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   if (isDarkMode) { 
     rootElement.style.setProperty('--background-color', '#131313');
   } else {
-    rootElement.style.setProperty('--background-color', 'white');
+    rootElement.style.setProperty('--background-color', '#f5f5f5');
   }
   const toggleTheme = () => {
     setIsDarkMode((prevState) => !prevState);

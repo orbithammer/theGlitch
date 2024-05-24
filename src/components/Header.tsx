@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 // import { Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import styled from "styled-components"
-import menuPlus from "../assets/menuPlus.svg?inline"
-import chevronUp from "../assets/chevronUp.svg"
+import menuPlusDark from "../assets/menuPlusDark.svg?inline"
+import menuPlusLight from "../assets/menuPlusLight.svg?inline"
+import chevronUpDark from "../assets/chevronUpDark.svg"
+import chevronUpLight from "../assets/chevronUpLight.svg"
+import ThemeContext from "../utils/ThemeContext"
 
 const StyledHeader = styled.header`
   display: flex;
@@ -25,9 +28,10 @@ const StyledSidebarButton = styled.button`
   align-items: center;
   background: none;
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid ${({ theme }) => (theme.isDarkMode ? '#ffffff' : '#131313')};
   font-size: 1rem;
   padding: 0 0 0.5rem;
+  color: ${({ theme }) => (theme.isDarkMode ? '#ffffff' : '#131313')};
 `
 
 const StyledSidebarImg = styled.img`
@@ -40,7 +44,7 @@ const StyledScrollToTop = styled.button`
   bottom: 4rem;
   left: auto;
   right: 2rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: ${({ theme }) => (theme.isDarkMode ? "rgba(255, 255, 255, 0.5)" : "rgba(0, 0, 0, 0.5)")};
   border: none;
   border-radius: 0.5rem;
   width: 3rem;
@@ -64,6 +68,8 @@ const Header: React.FC = () => {
   //   setIsOpen(isOpen)
   // }
   const [isOpen, setIsOpen] = useState(false)
+  const { isDarkMode } = useContext(ThemeContext);
+  console.log("header isDarkMode", isDarkMode)
 
   const toggleSidebar = () => {
     setTimeout(() => {
@@ -82,18 +88,21 @@ const Header: React.FC = () => {
       <nav>
         <StyledUnorderedList>
           <StyledList>
-            <StyledSidebarButton onClick={toggleSidebar}>
+            <StyledSidebarButton 
+              onClick={toggleSidebar}
+              theme={{ isDarkMode }}
+            >
               Menu
               <StyledSidebarImg 
-                src={menuPlus} 
+                src={isDarkMode ? menuPlusDark : menuPlusLight} 
                 alt="menu icon"
               />
             </StyledSidebarButton>
           </StyledList>
         </StyledUnorderedList>
       </nav>
-      {!isOpen && <StyledScrollToTop onClick={scrollToTop}>
-        <StyledChevronUpIconDark src={chevronUp}/>
+      {!isOpen && <StyledScrollToTop onClick={scrollToTop} theme={{ isDarkMode }}>
+        <StyledChevronUpIconDark src={isDarkMode ? chevronUpDark : chevronUpLight}/>
       </StyledScrollToTop>}
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
     </StyledHeader>
