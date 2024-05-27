@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-// import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import styled from "styled-components"
 import menuPlusDark from "../assets/menuPlusDark.svg?inline"
@@ -8,12 +8,15 @@ import chevronUpDark from "../assets/chevronUpDark.svg"
 import chevronUpLight from "../assets/chevronUpLight.svg"
 import ThemeContext from "../utils/ThemeContext"
 
-
-
 const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: right;
+`
+
+const StyledPageName = styled.h2`
+  margin: 0 auto 0 2rem;
+  font-size: 2rem;
 `
 
 const StyledUnorderedList = styled.ul`
@@ -56,6 +59,9 @@ const StyledScrollToTop = styled.button`
   justify-content: center;
   cursor: pointer;
   z-index: 100;
+  @media (min-width: 64rem) {
+    right: calc((100vw - 64rem) / 2);
+  }
 `
 
 const StyledChevronUpIconDark = styled.img`
@@ -64,14 +70,15 @@ const StyledChevronUpIconDark = styled.img`
 `
 
 const Header: React.FC = () => {
-  // const [isOpen, setIsOpen] = useState(true) //set to keep sidebar open
-
-  // const toggleSidebar = () => {
-  //   setIsOpen(isOpen)
-  // }
   const [isOpen, setIsOpen] = useState(false)
   const { isDarkMode } = useContext(ThemeContext);
-  console.log("header isDarkMode", isDarkMode)
+  const location = useLocation();
+  const pathname = location.pathname;
+  const segments = pathname.split("/")
+  const pathNameUnformatted = segments[1]
+  const pageNameInitial = pathNameUnformatted === "ai" ? "AI" : pathNameUnformatted.charAt(0).toUpperCase() + pathNameUnformatted.slice(1);
+  const hasNumber = /\d/.test(pageNameInitial);
+  const pageName = hasNumber ? "" : pageNameInitial;
 
   const toggleSidebar = () => {
     setTimeout(() => {
@@ -87,6 +94,7 @@ const Header: React.FC = () => {
 
   return (
     <StyledHeader>
+      <StyledPageName>{pageName}</StyledPageName>
       <nav>
         <StyledUnorderedList>
           <StyledList>

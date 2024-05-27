@@ -7,13 +7,15 @@ import TechPage from './pages/tech'
 import ReviewsPage from './pages/reviews'
 import EntertainmentPage from './pages/entertainment'
 import AiPage from './pages/ai'
+import ProfilesPage from './pages/profiles';
 import ThemeProvider from './utils/ThemeProvider';
+
 
 const App: React.FC = () => {
   return (
     <Router>
       <ThemeProvider>
-        <div>
+        <div className='main-wrapper'>
           <Header />
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -26,6 +28,7 @@ const App: React.FC = () => {
             <Route path="/entertainment/:pageNumber" element={<EntertainmentPage />} />
             <Route path="/ai" element={<AiPage />} />
             <Route path="/ai/:pageNumber" element={<AiPage />} />
+            <Route path="/profiles" element={<ProfilesPage />} />
             <Route path="/article/:articleUrl" element={<Article />} />
           </Routes>
         </div>

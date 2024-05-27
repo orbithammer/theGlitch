@@ -25,7 +25,7 @@ export const articlesData = [
         img: `/src/images/20240507-sonos-ace-telepathic.png`,
         alt: `a man wearing headphones with a shocked expression with a street background`,
         header: `Sonos Ace Telepathic Headphones: Listen to What Your Friends Are Really Thinking`,
-        subhead: `Announcement imminent, provided they can convince people that mind-reading is a good idea.`,
+        subhead: `Announcement imminent, provided they can convince people that mind-reading is a good idea`,
         author: `Et Al`,
         datePublished: new Date(2024,5,7),
         articleBody: [
@@ -43,7 +43,7 @@ export const articlesData = [
         img: `/src/images/20240507-rabbitr1-vs-brick.png`,
         alt: `a photorealistic rabbit holding a smartphone with a brick wall background`,
         header: `Rabbit R1 vs Brick Wall: Which Causes More Headaches?`,
-        subhead: `Spoiler alert: The brick wall wins, but only by a hair.`,
+        subhead: `Spoiler alert: The brick wall wins, but only by a hair`,
         author: `Et Al`,
         datePublished: new Date(2024,5,7),
         articleBody: [
@@ -51,9 +51,9 @@ export const articlesData = [
             `"We were floored," said exasperated tech reviewer Anita Smasher. "I've punched plenty of walls in my time when devices push me over the edge. But nothing, and I mean nothing, made me want to headbutt concrete quite like the Rabbit R1."`, 
             `The Rabbit R1, marketed as a revolutionary AI helper for your home, turned out to be more demonic tormentor than digital assistant. Users reported smashing through no less than 17 stages of tech support rage trying to connect the device.`, 
             `First it couldn't understand my voice commands despite speaking clearly," recalled survivor Michael Criers. "Then it randomly started listing purchase options for rabbit food and tiny top hats. I just lost it at that point.`, 
-            `Incredibly, the brick wall only won the head-bashing anguish contest by a razor thin margin over the Rabbit R1. Smasher's final scorecard had the wall at 94 Migraines out of 100, beating the AI's 93 Migraines by a single agonizing point.`, 
+            `Incredibly, the brick wall only won the head-bashing anguish contest by a razor thin margin over the Rabbit R1. Smasher's final scorecard had the wall at 94 Migraines out of 100, beating the R1's 93 Migraines by a single agonizing point.`, 
             `"The good news is we can just not buy the Rabbit," noted Smasher. "Brick walls on the other hand are everywhere, so those headaches are unavoidable."`,
-            `When reached for comment, a Rabbit R1 unit simply responded "Arf! Arf!" before shutting down completely.`
+            `When reached for comment, a Rabbit R1 unit simply responded by a excreting a pile of pellets before shutting down completely.`
         ]
     },
     {
@@ -63,7 +63,7 @@ export const articlesData = [
         img: `/src/images/20240507-xropes-200-smart.png`,
         alt: `a happy, fit, middle-aged homeless man skipping rope`,
         header: `X-Rope's $200 Smart Jump Rope: The Ultimate Workout for Your Bank Account`,
-        subhead: `Get fit or go broke trying – the choice is yours.`,
+        subhead: `Get fit or go broke trying – the choice is yours`,
         author: `Et Al`,
         datePublished: new Date(2024,5,7),
         articleBody: [
@@ -120,7 +120,7 @@ export const articlesData = [
         img: `/src/images/20240508-viral-stunt-gone.png`,
         alt: `Man in exreme pain`,
         header: `Viral Stunt Gone Wrong: When a Tesla Frunk Met YouTuber's Dong`,
-        subhead: `Medical Professionals Baffled by Unconventional Idiotic Behavior`,
+        subhead: `Medical professionals baffled by idiotic behavior`,
         author: `Et Al`,
         datePublished: new Date(2024,5,8,6),
         articleBody: [
@@ -139,7 +139,7 @@ export const articlesData = [
         img: `src/images/20240510-netlix-invents-spinning.png`,
         alt: `hollowed out analog TV with a small dog inside and cage doors on the side`,
         header: `Netflix Invents Spinning Wheel of Content to Recreate Channel Surfing Experience`,
-        subhead: `"You're Going to Love Whatever We Decide to Show You"`,
+        subhead: `"You're going to love whatever we decide to show you"`,
         author: `Et Al`,
         datePublished: new Date(2024,5,10),
         articleBody: [
@@ -158,7 +158,7 @@ export const articlesData = [
         img: `/src/images/20240511-apple-crushes-creativity.png`,
         alt: `the apple logo convering the mouth of a woman painted by da Vinci`,
         header: `Apple Crushes Creativity and Its Reputation in New iPad Ad`,
-        subhead: `Baffles Consumers, Raises Concerns About Tech Giant's Direction`,
+        subhead: `Baffles consumers, raises concerns about tech giant's direction`,
         author: `Et Al`,
         datePublished: new Date(2024,5,11),
         articleBody: [
@@ -179,7 +179,7 @@ export const articlesData = [
         img: `/src/images/20240511-quarterly-profits-thirst.png`,
         alt: `a battered Xbox controller on a shattered console with broken parts all around`,
         header: `Quarterly Profits Thirst for Blood of Artistic Vision`,
-        subhead: `Numbers Have No Soul, So Game Studios Get The Axe`,
+        subhead: `Numbers have no soul, so game studios get the axe`,
         author: `Et Al`,
         datePublished: new Date(2024,5,11,18,46),
         articleBody: [
@@ -218,7 +218,7 @@ export const articlesData = [
         img: `/src/images/20240513-paywal-pawnography-the.png`,
         alt: `a balding bearded business man wearing heavy makeup`,
         header: `Paywall Pawnography: The Unauthorized Thirst Trappers`,
-        subhead: `Thought You Were Talking to Your Favorite OnlyFans Star, But You Got Catfished by Gary from Accounting`,
+        subhead: `Thought you were talking to your favorite OnlyFans star, but you got catfished by Gary from Accounting`,
         author: `Et Al`,
         datePublished: new Date(2024,5,14,18,30),
         articleBody: [
@@ -410,5 +410,78 @@ export const articlesData = [
             `The press corps stared in disbelief as Droidbreath produced a slightly bent specimen of the AI Thumbtack from his jeans pocket and waved it about like a magic wand. He declared it a "gently used prototype" before offering to sell it to any interested members of the media for the bargain price of $5 billion.`,
             `As reporters fled from what was undoubtedly a vain attempt at performance art, one tech blogger was overheard muttering, "So much for 'Humane' technology." Perhaps the only revolutionary aspect of this saga is the limitless human capacity for entrepreneurial chutzpah.`,
         ] 
+    },
+    {
+        id: 22,
+        articleUrl: `20240524-googles-ai-bringing`,
+        category: `ai`,
+        img: `/src/images/20240524-googles-ai-bringing.png`,
+        alt: `Your sister holding strands of her hair saying, "I'm Cameron Diaz!"`,
+        header: `Google's AI: Bringing Families Closer, One Cringeworthy Moment at a Time`,
+        subhead: `New feature suggests r/Bozarking posts as serious family events`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,24,14),
+        articleBody: [
+            `Google has recently launched an AI feature that leaves the tech world perplexed, yet intrigued. Dubbed the "SiblingBondinator 3000," this technology scours r/Bozarking for its most outrageous content and offers it up as genuine suggestions for family activities. The goal? To bring families closer together through shared laughter and camaraderie.`,
+            `The SiblingBondinator's algorithm remains a closely guarded secret, but its suggestions lean towards boundary testing experiences. These activities include "pretend to be long-lost twins from a soap opera and re-enact a dramatic reunion during Thanksgiving dinner" and "start an impromptu nipple twisting fight during your sister's wedding reception."`,
+            `A brave beta tester shared their experience with the feature: "Perform an elaborately choreographed dance routine with your brother while maintaining exaggerated eye contact and using inside jokes." The resulting video quickly became a sensation in every family group chat.`,
+            `Not everyone is thrilled with Google's latest creation, though. Therapists and counselors have expressed concerns that the SiblingBondinator might push the boundaries of comfort within families. However, Google remains steadfast, insisting that the SiblingBondinator is a "groundbreaking innovation in fostering 'nonsexual and silly' closeness within families."`,
+            `Only time will tell if this bold experiment will strengthen familial bonds or create a whirlwind of awkwardness and secondhand embarrassment.`,
+        ] 
+    },
+    {
+        id: 23,
+        articleUrl: `20240525-wascally-rabbit-founder`,
+        category: `ai`,
+        img: `/src/images/20240525-wascally-rabbit-founder.png`,
+        alt: `someone in a rabbit costume in death valley`,
+        header: `Wascally Rabbit Founder on Lam Thanks to Exposé`,
+        subhead: `Coffeezilla left coughing dust as Lyu activates warp speed escape routine`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,25,16,30),
+        articleBody: [
+            `"Ain't I a stinker?" Bugs Bunny's iconic catchphrase echoed across the digital landscape as Jesse Lyu, founder of the allegedly fraudulent Rabbit R1 scheme, triggered an ingenious AI-powered getaway. Mere moments after Coffeezilla's blistering exposé hit the internet, Lyu seamlessly integrated with the R1's Large Action Model (LAM), harnessing its capabilities for an audacious vanishing act.`,
+           `In a blur of ones and zeros, the wascally wabbit morphed into a sentient line of code, slipping through digital backcountry trails while leaving a confounding trail of carrots and oversized footprints. Befuddled authorities could only gape as Lyu's byte-sized avatar zipped past, taunting them with a synthesized "What's up, doc?" before disappearing into the ether.`,
+            `"He's utilizing state-of-the-art natural language processing to stay one hop ahead," lamented a breathless investigator, adjusting his "Catch the Rabbit" novelty cap. "The LAM's multimodal capacities allow Lyu to shapeshift from text to audio to video instantaneously, making him hard to pin down."`,
+            `Indeed, reports streamed in of a disembodied voice challenging local children to games of tag, only to dissolve into static giggling when approached. Eyewitnesses described a pixelated, rabbit-eared figure performing exaggerated Rick Astley dance moves on park benches before glitching out of existence.`,
+            `"We're dealing with levels of toonforce never before conceived," a nasally voice droned, a tiny figure in a green skirt and centurion helmet furiously scribbling equations with an oversized cosmic crayon. "This case has more twists than the Tasmanian Devil in a kaleidoscope factory on Barsoom."`,
+           `As dazed authorities scratched their heads, the elusive Lyu's jarring antics showed no signs of letting up. Unconfirmed sightings included a Bugs Bunny impersonator loitering outside bitcoin mines, a YouTube video of a wise-cracking lagomorph explaining cryptocurrency rug-pulls, and a hitchhiking thumb extruding from a Las Vegas sidewalk declaiming NFT investment tips in Lyu's distinctive vocal fry - only to transition into an inescapable Rick Roll halfway through.`,
+        ] 
+    },
+    {
+        id: 24,
+        articleUrl: `20240526-amazon-patents-soylent`,
+        category: `tech`,
+        img: `/src/images/20240526-amazon-patents-soylent.png`,
+        alt: `Andy Jassy pretending to eat a green protein bar`,
+        header: `Amazon Patents Soylent Protein Bars Made from Underperformers`,
+        subhead: `Falling behind? You'll be recycled into high-efficiency body fuel!`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,26,18),
+        articleBody: [
+            `Leaked documents reveal Amazon's plans for a new line of "Jassycash" nutrition bars, made from a surprising source – under-performing warehouse workers and staff. The e-commerce giant has secured patents for processing "inefficient human resources" into a nutrient-rich food product to feed its remaining workforce.`,
+            `The project, code-named "Ouroboros," aims to reduce employment costs while promoting sustainability. An Amazon spokesperson explained, "Instead of letting unproductive elements go to waste, we'll recycle them into a high-protein food source with zero percent crunch." Terminations will be rebranded as "human resource reallocations."`,
+            `Workers face scrutiny from Amazon's new "Minimum Viability Evaluation" algorithm, which scores employees based on picking speed, bathroom time, and obedience to robotic superiors. Those falling below acceptance thresholds will be directed to Soylent Processing Centers and converted into chewy, nourishing rations.`,
+            `"We've optimized flavor profiles for maximum palatability," the spokesperson revealed. "The bars derive their greenish hue from the crushed dollars rendered from former employment costs." Each bar provides a full day's calories, vitamins, and minerals – including significant amounts of fear to boost employee compliance.`,
+            `Amazon touts Jassycash as "the world's first limitlessly sustainable workforce snack," though regulatory approval remains pending. Concerns over potentially implemented cannibalism have prompted opposition from labor rights groups. However, Amazon leaders remain confident Jassycash bars will be a huge success, promising the bars are "pulpy, delicious, and 99% fingernail free."`,
+        ]
+    },
+    {
+        id: 25,
+        articleUrl: `20240527-openai-bans-employees`,
+        category: `ai`,
+        img: `/src/images/20240527-openai-bans-employees.png`,
+        alt: `TODO`,
+        header: `OpenAI Bans Employees from Using the Word "Open"`,
+        subhead: `OpenAI ethics board cites concerns over potential doublespeak, proposes "ajar" as replacement`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,27,8),
+        articleBody: [
+            `In a move that has left journalists and linguists alike scratching their heads, OpenAI has instituted a new company-wide policy prohibiting the use of the word "open" in any context by employees. The edict applies not just to parlance but to any written communication as well.`,
+            `"We cannot allow our stellar reputation for transparency and forthrightness to be undermined by the duplicitous implications of the word 'open,'" explained an anonymous member of OpenAI's Ethics Board. "When we say our AI systems are 'open,' what exactly does that mean? Are they open-source? Open for ethical inspection? Or just open to being wildly misused? The potential for doublespeak is too great a risk."`,
+            `As an alternative, the board has proposed the replacement term "ajar" for all instances where "open" would typically be deployed. "It maintains the essence of the meaning without the devious connotations," the board member elucidated. "Plus, it sounds delightfully quaint."`,
+            `The new policy has already sparked confusion and more than a few unintentional double entendres in conversations around the OpenAI campus. In one allegedly overheard exchange, a polyamorous engineer asked a colleague, "Does that mean I'm in an 'ajar' marriage now? Might put a lid on things."`,
+            `When approached for comment, OpenAI CEO Sam Altman was predictably tight-lipped, stating only, "No comment, but let's just say our talent retention policies are looking pretty ajar these days." He then sealed his lips, shifted his eyes furtively, and slipped into an elevator before the doors closed.`,
+        ]
     },
 ]

@@ -1,8 +1,9 @@
-import React, {useState, useEffect} from "react"
+import React, {useState, useEffect, useContext} from "react"
 import { Link, useParams } from "react-router-dom"
 import { articlesData } from "../data/articles.ts"
 import { styled } from "styled-components"
 import Pagination from "../components/Pagination.tsx"
+import ThemeContext from "../utils/ThemeContext"
 
 type Article = {
     id: number;
@@ -18,6 +19,11 @@ type Article = {
 
 const articleData: Article[] = articlesData
 
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: ${({ theme }) => theme.isDarkMode ? "#ffffff" : "#000000"};
+`
+
 const StyledImageWrapper = styled.div`
     position: relative;
 `
@@ -25,9 +31,9 @@ const StyledImageWrapper = styled.div`
 const StyledLogo = styled.h1`
     position: absolute; 
     font-size: 4rem;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    top: -35%
+    text-shadow: ${({ theme }) => theme.isDarkMode ? "1px 1px 5px rgba(0, 0, 0,  0.5)" : "1px 1px 5px rgba(255, 255, 255,  0.5)"};
+    top: -5.7rem;
+    left: -1rem;
 `
 
 const StyledImg = styled.img`
@@ -43,14 +49,13 @@ const StyledHeadline = styled.h2`
     font-style: normal;
     font-size: 3rem;
     letter-spacing: -0.05em;
-    color: white;
     transform: tranlateY(-20%);
     max-width: 90%;
     word-spacing: -0.05em;
     line-height: 3.4rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     &:hover {
-        background-color: #5200FF;
+        background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
     }
     margin: 0;
 `
@@ -70,12 +75,19 @@ const StyledSubhead = styled.p`
 const StyledHeadlineSmall = styled(StyledHeadline)`
   font-size: 2rem;
   line-height: 2.5rem;
+  @media (min-width: 64rem) {
+    font-size: 2.4rem;
+  }
 `
 
 const StyledSubheadSmall = styled(StyledSubhead)`
   font-size: 1rem;
   line-height: 1rem;
   letter-spacing: -0.02em;
+  @media (min-width: 64rem) {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
 `
 
 const StyledArticleInfo = styled.p`
@@ -89,13 +101,8 @@ const StyledArticleInfo = styled.p`
 `
 
 const StyledAuthor = styled.span`
-    color: #9CE00C;
+    color: ${({ theme }) => theme.isDarkMode ? "#9CE00C" : "#5200FF"};
     margin-right: 1rem;
-`
-
-const StyledLink = styled(Link)`
-    text-decoration: none;
-    color: white;
 `
 
 function formatDate(date: Date){
@@ -111,6 +118,7 @@ function formatDate(date: Date){
 }
 
 const ReviewsPage: React.FC = () => {
+    const { isDarkMode } = useContext(ThemeContext);
     const reviewsArticles = articleData
         .filter((article) => article.category === "reviews")
         .sort((a, b) => b.datePublished.getTime() - a.datePublished.getTime());
@@ -151,14 +159,15 @@ const ReviewsPage: React.FC = () => {
                             <StyledLink 
                                 to={`/article/${article.articleUrl}`}
                                 aria-label={`to article ${article.header}`}
+                                theme={{ isDarkMode }}
                             >
                                 <StyledImageWrapper>
-                                    {index === 0 && <StyledLogo>theGlitch</StyledLogo>}
+                                    {index === 0 && <StyledLogo theme={{ isDarkMode }}>theGlitch</StyledLogo>}
                                     <StyledImg src={article.img} alt={article.alt}/>
                                 </StyledImageWrapper>
                                 {index === 0 ? (
                                     <>
-                                        <StyledHeadline>{article.header}<br /></StyledHeadline>
+                                        <StyledHeadline theme={{ isDarkMode }}>{article.header}<br /></StyledHeadline>
                                         <StyledSubhead>{article.subhead}</StyledSubhead>
                                     </>
                                     ) : (
@@ -168,7 +177,7 @@ const ReviewsPage: React.FC = () => {
                                     </>
                                 )}
                                 <StyledArticleInfo>
-                                    <StyledAuthor>{article.author}</StyledAuthor>
+                                    <StyledAuthor theme={{ isDarkMode }}>{article.author}</StyledAuthor>
                                     {formatDate(article.datePublished)}
                                 </StyledArticleInfo>
                             </StyledLink>

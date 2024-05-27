@@ -32,7 +32,8 @@ const StyledLogo = styled.h1`
     position: absolute; 
     font-size: 4rem;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, ${({ theme }) => theme.isDarkMode ? 0.2 : 0.5});
-    top: -35%
+    top: -5.7rem;
+    left: -1rem;
 `
 
 const StyledImg = styled.img`
@@ -90,12 +91,23 @@ const StyledButtonWrapper = styled.div`
 `
 
 const StyledShareButton = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
     background-color: ${({ theme }) => theme.isDarkMode ? "#353535" : "#cacaca"};
     margin-right: 1rem;
     border: none;
+    &:hover {
+        background-color: #5200FF;
+      }
+    
+      a {
+        width: 1rem;
+        height: 1rem;
+      }
 `
 
 const StyledArticleBody = styled.p`
