@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useContext } from "react"
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import { articlesData } from "../data/articles"
 import { styled } from "styled-components"
 import CopyLinkIconDark from "/src/assets/copyLinkDark.svg"
@@ -31,8 +31,9 @@ const StyledHeroWrapper = styled.div`
 const StyledLogo = styled.h1`
     position: absolute; 
     font-size: 4rem;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, ${({ theme }) => theme.isDarkMode ? 0.2 : 0.5});
-    top: -35%
+    text-shadow: ${({ theme }) => theme.isDarkMode ? "1px 1px 5px rgba(0, 0, 0,  0.5)" : "1px 1px 5px rgba(255, 255, 255,  0.5)"};
+    top: -5.7rem;
+    left: -1rem;
 `
 
 const StyledImg = styled.img`
@@ -52,9 +53,6 @@ const StyledHeadline = styled.h2`
     max-width: 90%;
     word-spacing: -0.05em;
     line-height: 3.4rem;
-    &:hover {
-        background-color: #5200FF;
-    }
     margin: 0;
 `
 
@@ -80,9 +78,13 @@ const StyledArticleInfo = styled.p`
     text-transform: uppercase;
 `
 
-const StyledAuthor = styled.span`
+const StyledAuthor = styled(Link)`
     color: ${({ theme }) => theme.isDarkMode ? "#9CE00C" : "#5200FF"};
     margin-right: 1rem;
+    text-decoration: none;
+    &:hover {
+        background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
+    }
 `
 
 const StyledButtonWrapper = styled.div`
@@ -100,7 +102,7 @@ const StyledShareButton = styled.button`
     margin-right: 1rem;
     border: none;
     &:hover {
-        background-color: #5200FF;
+        background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
       }
     
       a {
@@ -165,7 +167,11 @@ const Article: React.FC = () => {
                 <StyledHeadline>{article?.header}<br/></StyledHeadline>
                 <StyledSubhead>{article?.subhead}</StyledSubhead>
                 <StyledArticleInfo>
-                    <StyledAuthor theme={{ isDarkMode }}>{article?.author}</StyledAuthor>
+                    <StyledAuthor 
+                        theme={{ isDarkMode }}
+                        to={`/profiles`}
+                        aria-label={`to profiles`}
+                    >{article?.author}</StyledAuthor>
                     {formattedDate}
                 </StyledArticleInfo>
                 <StyledButtonWrapper>

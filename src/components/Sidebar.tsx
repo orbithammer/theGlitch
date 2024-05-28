@@ -40,8 +40,6 @@ const Sidebar: React.FC<{ isOpen: boolean; toggleSidebar: () => void }> = ({
     isOpen,
     toggleSidebar,
   }) => {
-    const { isDarkMode } = useContext(ThemeContext);
-    console.log("isDarkMode", isDarkMode)
     const activeStyles: React.CSSProperties = {
         fontWeight: "bold",
         textDecoration: "none",

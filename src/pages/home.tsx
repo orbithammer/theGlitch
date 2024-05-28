@@ -22,18 +22,22 @@ const articleData: Article[] = articlesData
 const StyledLink = styled(Link)`
     text-decoration: none;
     color: ${({ theme }) => theme.isDarkMode ? "#ffffff" : "#000000"};
+    padding: 0 auto;
 `
 
 const StyledImageWrapper = styled.div`
     position: relative;
+    margin: 0 auto;
 `
 
 const StyledLogo = styled.h1`
     position: absolute; 
     font-size: 4rem;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, ${({ theme }) => theme.isDarkMode ? 0.2 : 0.5});
-    top: -35%
+    text-shadow: ${({ theme }) => theme.isDarkMode ? "1px 1px 5px rgba(0, 0, 0,  0.5)" : "1px 1px 5px rgba(255, 255, 255,  0.5)"};
+    top: -5.7rem;
+    left: -1rem;
 `
+
 
 const StyledImg = styled.img`
     max-width: 100%;
@@ -54,7 +58,7 @@ const StyledHeadline = styled.h2`
     line-height: 3.4rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     &:hover {
-        background-color: #5200FF;
+        background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
     }
     margin: 0;
 `
@@ -74,12 +78,19 @@ const StyledSubhead = styled.p`
 const StyledHeadlineSmall = styled(StyledHeadline)`
   font-size: 2rem;
   line-height: 2.5rem;
+  @media (min-width: 64rem) {
+    font-size: 2.4rem;
+  }
 `
 
 const StyledSubheadSmall = styled(StyledSubhead)`
   font-size: 1rem;
   line-height: 1rem;
   letter-spacing: -0.02em;
+  @media (min-width: 64rem) {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
 `
 
 const StyledArticleInfo = styled.p`
@@ -92,9 +103,13 @@ const StyledArticleInfo = styled.p`
         text-transform: uppercase;
 `
 
-const StyledAuthor = styled.span`
+const StyledAuthor = styled(Link)`
     color: ${({ theme }) => theme.isDarkMode ? "#9CE00C" : "#5200FF"};
     margin-right: 1rem;
+    text-decoration: none;
+    &:hover {
+        background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
+    }
 `
 
 const formatDate = (date: Date) => {
@@ -144,33 +159,37 @@ const HomePage: React.FC = () => {
             <main>
                 {currentArticles.map((article, index) => {
                     return (
-                        <div key={article.id}>
+                        <article key={article.id}>
                             <StyledLink 
                                 to={`/article/${article.articleUrl}`}
                                 aria-label={`to article ${article.header}`}
                                 theme={{ isDarkMode }}
                             >
                                 <StyledImageWrapper>
-                                    {index === 0 && <StyledLogo>theGlitch</StyledLogo>}
+                                    {index === 0 && <StyledLogo theme={{ isDarkMode }}>theGlitch</StyledLogo>}
                                     <StyledImg src={article.img} alt={article.alt}/>
                                 </StyledImageWrapper>
                                 {index === 0 ? (
                                     <>
-                                        <StyledHeadline>{article.header}<br /></StyledHeadline>
+                                        <StyledHeadline theme={{ isDarkMode }}>{article.header}<br /></StyledHeadline>
                                         <StyledSubhead>{article.subhead}</StyledSubhead>
                                     </>
                                     ) : (
                                     <>
-                                        <StyledHeadlineSmall>{article.header}<br /></StyledHeadlineSmall>
+                                        <StyledHeadlineSmall theme={{ isDarkMode }}>{article.header}<br /></StyledHeadlineSmall>
                                         <StyledSubheadSmall>{article.subhead}</StyledSubheadSmall>
                                     </>
                                 )}
-                                <StyledArticleInfo>
-                                    <StyledAuthor theme={{ isDarkMode }}>{article.author}</StyledAuthor>
-                                    {formatDate(article.datePublished)}
-                                </StyledArticleInfo>
                             </StyledLink>
-                        </div>
+                            <StyledArticleInfo>
+                                <StyledAuthor 
+                                    theme={{ isDarkMode }}
+                                    to={`/profiles`}
+                                    aria-label={`to profiles`}
+                                >{article.author}</StyledAuthor>
+                                {formatDate(article.datePublished)}
+                            </StyledArticleInfo>
+                        </article>
                     )
                 })}
             </main>
