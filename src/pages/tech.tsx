@@ -32,7 +32,7 @@ const StyledLogo = styled.h1`
     position: absolute; 
     font-size: 4rem;
     text-shadow: ${({ theme }) => theme.isDarkMode ? "1px 1px 5px rgba(0, 0, 0,  0.5)" : "1px 1px 5px rgba(255, 255, 255,  0.5)"};
-    top: -5.7rem;
+    top: -6.4rem;
     left: -1rem;
 `
 
@@ -86,7 +86,7 @@ const StyledSubheadSmall = styled(StyledSubhead)`
   letter-spacing: -0.02em;
   @media (min-width: 64rem) {
     font-size: 1.2rem;
-    line-height: 1.2rem;
+    line-height: 1.4rem;
   }
 `
 
@@ -103,6 +103,10 @@ const StyledArticleInfo = styled.p`
 const StyledAuthor = styled(Link)`
     color: ${({ theme }) => theme.isDarkMode ? "#9CE00C" : "#5200FF"};
     margin-right: 1rem;
+    text-decoration: none;
+    &:hover {
+        background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
+    }
 `
 
 function formatDate(date: Date){
@@ -172,19 +176,19 @@ const TechPage: React.FC = () => {
                                     </>
                                     ) : (
                                     <>
-                                        <StyledHeadlineSmall>{article.header}<br /></StyledHeadlineSmall>
+                                        <StyledHeadlineSmall theme={{ isDarkMode }}>{article.header}<br /></StyledHeadlineSmall>
                                         <StyledSubheadSmall>{article.subhead}</StyledSubheadSmall>
                                     </>
                                 )}
-                                <StyledArticleInfo>
-                                    <StyledAuthor 
-                                        theme={{ isDarkMode }}
-                                        to={`/profiles`}
-                                        aria-label={`to profiles`}
-                                    >{article.author}</StyledAuthor>
-                                    {formatDate(article.datePublished)}
-                                </StyledArticleInfo>
                             </StyledLink>
+                            <StyledArticleInfo>
+                                <StyledAuthor 
+                                    theme={{ isDarkMode }}
+                                    to={`/profiles`}
+                                    aria-label={`to profiles`}
+                                >{article.author}</StyledAuthor>
+                                {formatDate(article.datePublished)}
+                            </StyledArticleInfo>
                         </article>
                     )
                 })}

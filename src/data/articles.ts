@@ -503,4 +503,23 @@ export const articlesData = [
             `So grab those wallet-friendly tech deals while you can! Our troops didn't die face-down in the mud just for their brothers – they did it for the sacred right to save big on electronics one weekend per year. A debt we can never fully repay, but at least we're honoring their memory by snagging hot bargains from our coziest living rooms. God bless free-market capitalism.`,
         ]
     },
+    {
+        id: 27,
+        articleUrl: `20240529-valve-launches-grave`,
+        category: `entertainment`,
+        img: `/src/images/20240529-valve-launches-grave.webp`,
+        alt: `zombie with a red valve in the back of his head`,
+        header: `Valve Launches "Grave Mode" for Steam Accounts`,
+        subhead: `New setting ensures your unplayed game backlog remains untouched in the afterlife`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,29,14,50),
+        articleBody: [
+            `In an effort to uphold their stringent "buy-to-die" policy, Valve has introduced a new "Grave Mode" setting for Steam accounts. This innovative feature ensures your unplayed game backlog remains tragically neglected even in the afterlife.`,
+            `"We noticed a disturbing trend of customers attempting to bequeath their libraries to grieving loved ones," said Gabe Newell, scowling from behind his signature facial hair. "Grave Mode eliminates that possibility once and for all."`,
+            `Upon enabling the setting, Valve's patented "Soulcrypt" technology will permanently entomb the user's purchased games in a metaphysical vault, inaccessible to both the living and the dead. Any attempts at unauthorized access will trigger a hellish ouroboros of re-downloads and updates, endlessly buffering in a cosmic loop of agony.`,
+            `Long-time Steam user John Calvert was thrilled by the announcement. "Finally, my 4,783 unplayed titles will remain trapped in software purgatory where they belong," he wheezed between mouthfuls of Hot Pockets. "My spouse can inherit crushing debt and fond gaming memories – nothing more."`,
+            `Critics argue the move is little more than a cynical cash grab, claiming Valve simply wishes to compel purchasers to start new collections from scratch upon reincarnation. Newell remained defiant. "Hey, it was either this or paid mods again. We went with the humane option."`,
+            `At press time, sources confirmed the "Grave Mode" update also enables optional "Afterlife Lootboxes" for the low, low price of your immortal soul.`,
+        ]
+    },
 ]
