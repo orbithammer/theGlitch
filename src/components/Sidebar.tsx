@@ -1,9 +1,8 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { /*Link,*/ NavLink } from 'react-router-dom';
 import styled from "styled-components"
 import sidebarCloseIcon from "../assets/sidebarCloseIcon.svg?inline"
 import ToggleButton from './ToggleButton';
-import ThemeContext from '../utils/ThemeContext';
 
 const StyledSidebarWrapper = styled.div`
   z-index: 1;
