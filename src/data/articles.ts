@@ -136,7 +136,7 @@ export const articlesData = [
         id: 8,
         articleUrl: `20240510-netlix-invents-spinning`,
         category: `entertainment`,
-        img: `src/images/20240510-netlix-invents-spinning.webp`,
+        img: `/images/20240510-netlix-invents-spinning.webp`,
         alt: `hollowed out analog TV with a small dog inside and cage doors on the side`,
         header: `Netflix Invents Spinning Wheel of Content to Recreate Channel Surfing Experience`,
         subhead: `"You're going to love whatever we decide to show you"`,
