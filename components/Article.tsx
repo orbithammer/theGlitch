@@ -95,8 +95,8 @@ const StyledShareButton = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: ${({ theme }) => theme.isDarkMode ? "#353535" : "#cacaca"};
     margin-right: 1rem;
@@ -183,12 +183,12 @@ const Article: React.FC = () => {
                     </StyledShareButton>
                     <StyledShareButton theme={{ isDarkMode }}>
                         <a href={`https://www.facebook.com/sharer/sharer.php?u=${article?.articleUrl}`} target="_blank" rel="noopener noreferrer">
-                            <img src={isDarkMode ? FacebookShareIconDark : FacebookShareIconLight} alt="facebook share icon"/>
+                            <StyledShareImgIcon src={isDarkMode ? FacebookShareIconDark : FacebookShareIconLight} alt="facebook share icon"/>
                         </a>
                     </StyledShareButton>
                     <StyledShareButton theme={{ isDarkMode }}>
                         <a href={`https://twitter.com/share?text=${article?.header}%20${article?.articleUrl}`} target="_blank" rel="noopener noreferrer">
-                            <img src={isDarkMode ? TwitterShareIconDark : TwitterShareIconLight} />
+                            <StyledShareImgIcon src={isDarkMode ? TwitterShareIconDark : TwitterShareIconLight} />
                         </a>
                     </StyledShareButton>
                 </StyledButtonWrapper>
