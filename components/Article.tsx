@@ -101,7 +101,6 @@ const StyledShareButton = styled.button`
     background-color: ${({ theme }) => theme.isDarkMode ? "#353535" : "#cacaca"};
     margin-right: 1rem;
     border: none;
-    padding: 0.5rem;
     &:hover {
         background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
       }
@@ -112,8 +111,8 @@ const StyledShareButton = styled.button`
 `
 
 const StyledShareImgIcon = styled.img`
-      max-width: 1rem;
-      max-height: 1rem;
+      width: 1rem;
+      height: 1rem;
 `
 
 const StyledArticleBody = styled.p`
