@@ -23,7 +23,9 @@ const StyledPortrait = styled.img`
 const StyledTextWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    font-family: "Source Serif 4", serif;
 `
+
 const ProfilesPage: React.FC = () => {
     return (
         <main>
