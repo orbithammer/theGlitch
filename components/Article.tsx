@@ -105,14 +105,17 @@ const StyledShareButton = styled.button`
         background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
       }
     a {
-        width: 1rem;
-        height: 1rem;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 `
 
 const StyledShareImgIcon = styled.img`
-      width: 1rem;
-      height: 1rem;
+      width: 2rem;
+      height: 2rem;
 `
 
 const StyledArticleBody = styled.p`
