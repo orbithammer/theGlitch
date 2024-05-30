@@ -111,11 +111,6 @@ const StyledShareButton = styled.button`
       }
 `
 
-const StyledShareImgIcon = styled.img`
-      max-width: 1rem;
-      max-height: 1rem;
-`
-
 const StyledArticleBody = styled.p`
     font-family: "Quattrocento", serif;
     font-weight: 400;
@@ -177,16 +172,16 @@ const Article: React.FC = () => {
                 </StyledArticleInfo>
                 <StyledButtonWrapper>
                     <StyledShareButton onClick={copyLink} theme={{ isDarkMode }}>
-                        <StyledShareImgIcon src={isDarkMode ? CopyLinkIconDark : CopyLinkIconLight} alt="copy link icon" />
+                        <img src={isDarkMode ? CopyLinkIconDark : CopyLinkIconLight} alt="copy link icon" />
                     </StyledShareButton>
                     <StyledShareButton theme={{ isDarkMode }}>
                         <a href={`https://www.facebook.com/sharer/sharer.php?u=${article?.articleUrl}`} target="_blank" rel="noopener noreferrer">
-                            <StyledShareImgIcon src={isDarkMode ? FacebookShareIconDark : FacebookShareIconLight} alt="facebook share icon"/>
+                            <img src={isDarkMode ? FacebookShareIconDark : FacebookShareIconLight} alt="facebook share icon"/>
                         </a>
                     </StyledShareButton>
                     <StyledShareButton theme={{ isDarkMode }}>
                         <a href={`https://twitter.com/share?text=${article?.header}%20${article?.articleUrl}`} target="_blank" rel="noopener noreferrer">
-                            <StyledShareImgIcon src={isDarkMode ? TwitterShareIconDark : TwitterShareIconLight} />
+                            <img src={isDarkMode ? TwitterShareIconDark : TwitterShareIconLight} />
                         </a>
                     </StyledShareButton>
                 </StyledButtonWrapper>
