@@ -104,11 +104,15 @@ const StyledShareButton = styled.button`
     &:hover {
         background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
       }
-    
-      a {
+    a {
         width: 1rem;
         height: 1rem;
       }
+`
+
+const StyledShareImgIcon = styled.img`
+      max-width: 1rem;
+      max-height: 1rem;
 `
 
 const StyledArticleBody = styled.p`
@@ -172,7 +176,7 @@ const Article: React.FC = () => {
                 </StyledArticleInfo>
                 <StyledButtonWrapper>
                     <StyledShareButton onClick={copyLink} theme={{ isDarkMode }}>
-                        <img src={isDarkMode ? CopyLinkIconDark : CopyLinkIconLight} alt="copy link icon" />
+                        <StyledShareImgIcon src={isDarkMode ? CopyLinkIconDark : CopyLinkIconLight} alt="copy link icon" />
                     </StyledShareButton>
                     <StyledShareButton theme={{ isDarkMode }}>
                         <a href={`https://www.facebook.com/sharer/sharer.php?u=${article?.articleUrl}`} target="_blank" rel="noopener noreferrer">
