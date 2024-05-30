@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "styled-components"
-import EtAlPortrait from "/src/images/EtAlPortrait.webp"
+import EtAlPortrait from "/images/EtAlPortrait.webp"
 
 const StyledProfileWrapper = styled.div`
     display: flex;
