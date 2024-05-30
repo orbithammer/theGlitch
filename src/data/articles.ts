@@ -522,4 +522,23 @@ export const articlesData = [
             `At press time, sources confirmed the "Grave Mode" update also enables optional "Afterlife Lootboxes" for the low, low price of your immortal soul.`,
         ]
     },
+    {
+        id: 28,
+        articleUrl: `20240530-openais-talent-exodus`,
+        category: `ai`,
+        img: `/images/20240530-openais-talent-exodus.webp`,
+        alt: `TODO`,
+        header: `OpenAI's Talent Exodus: Coding Geniuses Seek Greener Pastures, Literally`,
+        subhead: `Disgruntled employees ditch AI for agricultural innovation: "At least I know what the dirt is thinking, unlike some people."`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,30,17),
+        articleBody: [
+            `Silicon Valley's latest exodus has nothing to do with the biblical plagues – unless you count the plague of mistrust swirling around OpenAI's CEO, Sam Altman. In a move that has left the tech world scratching their heads (and reaching for the nearest pitchfork), a growing number of OpenAI's brightest minds are ditching their coding keyboards for good old-fashioned shovels.`,
+            `"I'd rather spend my days toiling in the fields than worrying about when Skynet is going to launch," quipped former engineer Anita Byteman, now a proud owner of a quaint little farm upstate. "At least with crops, I know they're not plotting to overthrow humanity."`,
+            `The mass migration can be traced back to whispers of Altman's not-so-secret doomsday bunker, rumored to be stocked with enough provisions to survive the AI apocalypse he seems convinced is coming. "He kept dropping these ominous hints about 'preparing for the inevitable' during team meetings," recalled another ex-employee, who asked to remain anonymous for fear of retaliation from Altman's robot overlords.`,
+            `Altman's growing paranoia hasn't gone unnoticed by the media, with some speculating that his fixation on AI's potential for world domination might be a clever distraction from OpenAI's internal turmoil. After all, what better way to divert attention from a sinking ship than by convincing everyone it's about to be blown out of the water by a sentient machine uprising?`,
+            `Meanwhile, the newly-minted farmers seem to be thriving in their low-tech havens, far away from the existential dread plaguing their former workplace. "I used to lose sleep wondering if the AI I was coding would one day become self-aware and turn on us," admitted Byteman. "Now, the only thing keeping me up at night is deciding which crop to harvest next. Well, that and the occasional horse tipping over my outhouse."`,
+            `As for Altman, he likely remains huddled in his bunker, maniacally coding an AI scarecrow programmed to quote Terminator lines at any unsuspecting birds. Because in the mind of a paranoid tech billionaire, even innocent fowl could be Skynet double agents.`,
+        ]
+    },
 ]
