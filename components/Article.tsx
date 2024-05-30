@@ -112,8 +112,8 @@ const StyledShareButton = styled.button`
 `
 
 const StyledShareImgIcon = styled.img`
-      width: 1rem;
-      height: 1rem;
+      max-width: 1rem;
+      max-height: 1rem;
 `
 
 const StyledArticleBody = styled.p`
@@ -122,10 +122,6 @@ const StyledArticleBody = styled.p`
     font-style: normal;
     font-size: 1.2rem
 `
-
-// const CopyLinkIcon: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => (
-//     <img src={isDarkMode ? CopyLinkIconDark : CopyLinkIconLight} alt="Copy Link" />
-// );
 
 const formatDate = (date: Date) => {
     const monthNames = [
