@@ -527,7 +527,7 @@ export const articlesData = [
         articleUrl: `20240530-openais-talent-exodus`,
         category: `ai`,
         img: `/images/20240530-openais-talent-exodus.webp`,
-        alt: `TODO`,
+        alt: `Sam Altman in his bunker`,
         header: `OpenAI's Talent Exodus: Coding Geniuses Seek Greener Pastures, Literally`,
         subhead: `Disgruntled employees ditch AI for agricultural innovation: "At least I know what the dirt is thinking, unlike some people."`,
         author: `Et Al`,
@@ -539,6 +539,28 @@ export const articlesData = [
             `Altman's growing paranoia hasn't gone unnoticed by the media, with some speculating that his fixation on AI's potential for world domination might be a clever distraction from OpenAI's internal turmoil. After all, what better way to divert attention from a sinking ship than by convincing everyone it's about to be blown out of the water by a sentient machine uprising?`,
             `Meanwhile, the newly-minted farmers seem to be thriving in their low-tech havens, far away from the existential dread plaguing their former workplace. "I used to lose sleep wondering if the AI I was coding would one day become self-aware and turn on us," admitted Byteman. "Now, the only thing keeping me up at night is deciding which crop to harvest next. Well, that and the occasional horse tipping over my outhouse."`,
             `As for Altman, he likely remains huddled in his bunker, maniacally coding an AI scarecrow programmed to quote Terminator lines at any unsuspecting birds. Because in the mind of a paranoid tech billionaire, even innocent fowl could be Skynet double agents.`,
+        ]
+    },
+    {
+        id: 29,
+        articleUrl: `20240531-temu-cannibalizes-amazons`,
+        category: `tech`,
+        img: `/images/20240531-temu-cannibalizes-amazons.webp`,
+        alt: `Uyghur Amazon warehouse worker wearing a safety vest and hijab holidng a box of Unity Repurposed Nutrient Paste`,
+        header: `Temu Cannibalizes Amazon's Lunch`,
+        subhead: `Amazon workers devour Temu's "Unity Repurposed Nutrient Paste" instead of company protein bars`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,31,15,40),
+        articleBody: [
+            `Move over, avocado toast - there's a new millennial snack taking over Instagram. Chinese e-commerce giant Temu has struck culinary gold with its gourmet "Unity Repurposed Nutrient Paste," made from 100% organic, free-range Xinjiang prisoners.`,
+            `The sustainable, ethically-sourced spread flew off virtual shelves after going viral on TikTok. Trend-savvy millennials can't get enough of the bougie paste, artfully smeared over sourdough and topped with microgreens, edible flowers, and a drizzle of truffle oil.`,
+            `"It's got this bright, effervescent flavor with delightfully chewy chunks," raved food blogger Ashlee Shikanawa in her viral taste test video. "Notes of existential dread, with a subtle finish of shattered dreams. Totally elevated and upcycled!"`,
+            `But it's not just millennial foodies driving Unity Paste's success. Amazon's own warehouse workers are lining up for the humanely-harvested spread, snubbing the company's own "Jassycash" protein bars made from underperforming colleagues.`,
+            `"I mean, I get that Jassycash is made from the crushed souls of my underachieving co-workers," said Ethan Malley, a dismayed Amazon Prime picker. "But Temu's Unity Paste feels so much more ethically-sourced, you know? Like, at least those prisoners had a chance at reintegration before becoming nutrition."`,
+            `Human rights groups have unsurprisingly denounced Temu's soylent greens. But millennial gourmands and Amazon's workforce remain undeterred, declaring the ethical concerns "a vibe" and "low-key fire."`,
+            `"I'm like, honestly obsessed," gushed Lucy Dansworth, a 29-year-old social media manager who drops $200/month on Unity Paste. "It's sustainable, cruelty-free, artisanal, and pretty on-brand for my anti-capitalist 'stick it to the Man' personal ethos."`,
+            `When informed the paste she's consuming is made by and of forced prison labor, Dansworth took a pensive bite and replied, "Yeah, I can totally taste the oppression in this batch. Gives it such a bright, haunting mouth feel, you know?"`,
+            `Amazon's Jassycash bars now collect dust off the shelves, as millennials and warehouse workers alike ask: Why settle for the thin gruel of alienated corporate drones, when you can savor the full-bodied existential torment of Temu's Unity Repurposed Nutrient Paste?`,
         ]
     },
 ]

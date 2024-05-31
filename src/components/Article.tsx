@@ -182,12 +182,12 @@ const Article: React.FC = () => {
                         <StyledShareImgIcon src={isDarkMode ? CopyLinkIconDark : CopyLinkIconLight} alt="copy link icon" />
                     </StyledShareButton>
                     <StyledShareButton theme={{ isDarkMode }}>
-                        <a href={`https://www.facebook.com/sharer/sharer.php?u=${article?.articleUrl}`} target="_blank" rel="noopener noreferrer">
+                        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://theglitchnews.netlify.app/article/${article?.articleUrl}&quote=${article?.header} | #theGlitch`} target="_blank" rel="noopener noreferrer">
                             <StyledShareImgIcon src={isDarkMode ? FacebookShareIconDark : FacebookShareIconLight} alt="facebook share icon"/>
                         </a>
                     </StyledShareButton>
                     <StyledShareButton theme={{ isDarkMode }}>
-                        <a href={`https://twitter.com/share?text=${article?.header}%20${article?.articleUrl}`} target="_blank" rel="noopener noreferrer">
+                        <a href={`https://twitter.com/share?text=${encodeURIComponent(article?.header + " | #theGlitch #tech")}&url=${encodeURIComponent("https://theglitchnews.netlify.app/article/" + article?.articleUrl)}`} target="_blank" rel="noopener noreferrer">
                             <StyledShareImgIcon src={isDarkMode ? TwitterShareIconDark : TwitterShareIconLight} />
                         </a>
                     </StyledShareButton>
