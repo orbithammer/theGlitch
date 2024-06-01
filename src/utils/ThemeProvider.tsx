@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ThemeContext from './ThemeContext';
-import { getPreferredTheme } from './getPreferredTheme';
+import getPreferredTheme from './getPreferredTheme';
 
 interface ThemeProviderProps {
   children: React.ReactNode;

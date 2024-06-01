@@ -9,6 +9,7 @@ import FacebookShareIconLight from "/src/assets/facebookShareLight.svg"
 import TwitterShareIconDark from "/src/assets/twitterShareDark.svg"
 import TwitterShareIconLight from "/src/assets/twitterShareLight.svg"
 import ThemeContext from "../utils/ThemeContext"
+import formatDate from "../utils/formatDate"
 
 
 type articlesData = {
@@ -124,18 +125,6 @@ const StyledArticleBody = styled.p`
     font-style: normal;
     font-size: 1.2rem
 `
-
-const formatDate = (date: Date) => {
-    const monthNames = [
-        'January', 'February', 'March', 'April', 'May', 'June',
-        'July', 'August', 'September', 'October', 'November', 'December'
-    ];
-
-    const day = date.getDate(); // Get the day (1-31)
-    const month = monthNames[date.getMonth()-1]; // Get the month name
-    const year = date.getFullYear(); // Get the full year (e.g., 2024)
-    return `${month} ${day}, ${year}`;
-}
 
 const copyLink = async () => {
     try {

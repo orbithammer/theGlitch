@@ -4,6 +4,7 @@ import { articlesData } from "../data/articles.ts"
 import { styled } from "styled-components"
 import Pagination from "../components/Pagination.tsx"
 import ThemeContext from "../utils/ThemeContext"
+import formatDate from "../utils/formatDate.tsx"
 
 type Article = {
     id: number;
@@ -108,18 +109,6 @@ const StyledAuthor = styled(Link)`
         background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
     }
 `
-
-function formatDate(date: Date){
-    const monthNames = [
-        'January', 'February', 'March', 'April', 'May', 'June',
-        'July', 'August', 'September', 'October', 'November', 'December'
-    ];
-
-    const day = date.getDate(); // Get the day (1-31)
-    const month = monthNames[date.getMonth()-1]; // Get the month name
-    const year = date.getFullYear(); // Get the full year (e.g., 2024)
-    return `${month} ${day}, ${year}`;
-}
 
 const ReviewsPage: React.FC = () => {
     const { isDarkMode } = useContext(ThemeContext);

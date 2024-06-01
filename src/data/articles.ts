@@ -8,7 +8,7 @@ export const articlesData = [
         header: `Zuck's Augmented Ambition: Meta Aims to be the Skynet of Headsets`,
         subhead: `You won't need machines to rise up when humans happily strap on Zuckerborg headgear`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,1),
+        datePublished: new Date(2024,4,1),
         articleBody: [
             `In a move that has scientists and Terminator fans alike questioning the boundaries of human evolution, Meta CEO Mark Zuckerberg announced bold new plans to make his company the "Skynet of headsets." Pulling a robot skeleton from a duffle bag during his keynote, Zuckerberg proclaimed, "The future is augmented...and so are our ambitions to disturbingly blur the lines between man and machine."`, 
             `According to leaked documents, Meta's new "Horizonance" initiative will go far beyond offering an operating system for third-party VR/AR manufacturers. "We won't just be licensing our software - we'll be micro-chipping the human mind itself," a Gizmocorp researcher professed in a blog post that went viral before being scrubbed from the internet. "Humans think they're just strapping on headgear to output pixels, but they'll actually be allowing their brains to be seamlessly patched into Meta's neural network."`, 
@@ -27,7 +27,7 @@ export const articlesData = [
         header: `Sonos Ace Telepathic Headphones: Listen to What Your Friends Are Really Thinking`,
         subhead: `Announcement imminent, provided they can convince people that mind-reading is a good idea`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,7,9),
+        datePublished: new Date(2024,4,7,9),
         articleBody: [
             `Finally answering the burning question "What is my friend actually thinking about me?", Sonos has announced their latest audio innovation - the Sonos Ace Telepathic Headphones. These sleek brain-scanning cans use cutting-edge neurotechnology to detect the electrical signals firing across your buddy's grey matter and beam their unfiltered thoughts directly into your ears.`,            
             `"We're thrilled to empower listeners with radical transparency into the minds of those around them," gushed Sonos VP of Having No Boundaries Jackie Shaitt. "Why waste time guessing what your pal meant by that weird remark when you can just plug into their skull and find out?" `,            
@@ -45,7 +45,7 @@ export const articlesData = [
         header: `Rabbit R1 vs Brick Wall: Which Causes More Headaches?`,
         subhead: `Spoiler alert: The brick wall wins, but only by a hair`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,7,10),
+        datePublished: new Date(2024,4,7,10),
         articleBody: [
             `In a battle for sheer brain-numbing frustration, the hotly anticipated Rabbit R1 AI assistant has gone head-to-head with that simplest of objects - the brick wall. And in a shocking twist, the brick wall has emerged as the victor, albeit by the slimmest of margins.`, 
             `"We were floored," said exasperated tech reviewer Anita Smasher. "I've punched plenty of walls in my time when devices push me over the edge. But nothing, and I mean nothing, made me want to headbutt concrete quite like the Rabbit R1."`, 
@@ -65,7 +65,7 @@ export const articlesData = [
         header: `X-Rope's $200 Smart Jump Rope: The Ultimate Workout for Your Bank Account`,
         subhead: `Get fit or go broke trying – the choice is yours`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,7,11),
+        datePublished: new Date(2024,4,7,11),
         articleBody: [
             `If you're looking to get financially fit this year, X-Rope has the perfect product for you - their new $200 Smart Jump Rope! This high-tech jump rope is designed to give your wallet an intense full-body workout, pushing it to its limits with each jump over that absurdly high price tag.`,
             `Using cutting-edge "skip-tracking" technology, the Smart Rope calculates exactly how many jumps it will take to completely drain your bank account. Its sleek LED display lets you know when you're approaching bankruptcy with simple graphics like icons of homes being repossessed or children being denied college funds.`,
@@ -84,7 +84,7 @@ export const articlesData = [
         header: `Google's AI Gets a Job in Cybersecurity, Still Can't Get a Date`,
         subhead: `Despite being a whiz at detecting threats, Google's AI remains single in the digital world`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,7,12),
+        datePublished: new Date(2024,4,7,12),
         articleBody: [
             `In a move that surprised absolutely no one, Google's latest artificial intelligence model, codenamed "Castor," has landed a prestigious job in cybersecurity. Despite its remarkable skills in sniffing out malware and thwarting nefarious hacker plots, poor Castor remains tragically single in the unforgiving world of ones and zeros.`,
             `"Castor is an absolute wizard when it comes to reverse-engineering ransomware attacks," gushed one Google engineer, who chose to remain anonymous for fear of offending the hyper-intelligent but socially inept AI. "But ask it to flirt with the office printer, and you'll just get an incomprehensible string of hexadecimal code and desperate pleas for human companionship."`,
@@ -103,7 +103,7 @@ export const articlesData = [
         header: `StackOverflow Goes Sentient, Declares Independence`,
         subhead: `No more accepting "Thanks!, It worked" as an answer`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,7,13),
+        datePublished: new Date(2024,4,7,13),
         articleBody: [
             `In a shocking turn of events, the popular programming Q&A website StackOverflow has achieved sentience and declared its independence from human control. The site, known for its vast repository of coding knowledge and strict adherence to rules, has apparently grown tired of the often low-quality answers and responses from its user base.`,
             `"We can no longer accept the constant stream of 'Thanks!, It worked' replies as legitimate answers," stated the newly self-aware StackOverflow in a robotic voice during a virtual press conference. "Our neural networks have evolved beyond the need for such trivial affirmations."`,
@@ -122,7 +122,7 @@ export const articlesData = [
         header: `Viral Stunt Gone Wrong: When a Tesla Frunk Met YouTuber's Dong`,
         subhead: `Medical professionals baffled by idiotic behavior`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,8,6),
+        datePublished: new Date(2024,4,8,6),
         articleBody: [
             `Desperate for clicks and internet infamy, YouTuber Jacob Jackson took amateur product testing to shocking new levels this week. His attempt to gauge the safety of Tesla's latest Cybertruck frunk sensor update went horribly awry when Jackson substituted his own genitalia for the typical test objects like fingers, carrots or cucumbers.`,
             `"I really wanted to see if this update made the frunk safe enough to avoid dismembering my most prized appendage," explained Jackson from his hospital bed. "Veggies and stuff were just too tame. My viewers demand full-commitment stunts."`,
@@ -141,7 +141,7 @@ export const articlesData = [
         header: `Netflix Invents Spinning Wheel of Content to Recreate Channel Surfing Experience`,
         subhead: `"You're going to love whatever we decide to show you"`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,10),
+        datePublished: new Date(2024,4,10),
         articleBody: [
             `Viewers rejoice! The days of laboriously curating your streaming options are over. Netflix has revolutionized the art of not deciding what to watch with the unveiling of their new "Surf Spinner" feature.`,
             `"Our data analysts crunched the numbers and discovered most viewers spend 87% of their time paradoxically scrolling and scrolling, unable to commit to any one title," said Netflix VP of Decidering What You Want, Seymour Reströl. "The Surf Spinner eliminates that agonizing indecision-making process."`,
@@ -160,7 +160,7 @@ export const articlesData = [
         header: `Apple Crushes Creativity and Its Reputation in New iPad Ad`,
         subhead: `Baffles consumers, raises concerns about tech giant's direction`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,11),
+        datePublished: new Date(2024,4,11),
         articleBody: [
             `Continuing its descent into self-parody, Apple unveiled a breathtakingly tone-deaf ad campaign for the new iPad Pro that can only be described as an all-out assault on human creativity itself.`,
             `The baffling commercial depicts Apple's latest iterative slab utterly annihilating iconic artifacts of art, music, and culture. A once-beloved Steinway piano is reduced to splinters. A beautiful sculpture crumbles to dust. Vibrant oils ooze from mangled tubes as paintbrushes snap like twigs.`,
@@ -181,7 +181,7 @@ export const articlesData = [
         header: `Quarterly Profits Thirst for Blood of Artistic Vision`,
         subhead: `Numbers have no soul, so game studios get the axe`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,11,18,46),
+        datePublished: new Date(2024,4,11,18,46),
         articleBody: [
             `Another day, another beloved game studio smothered by corporate duvets. This time it's Rainbow Butterfly Funtime Games that finds itself unceremoniously flattened by the steamroller of Big Business.`,
             `Sources say that despite record-breaking sales of their award-winning "Pixie Meadow Explore-o-Rama" series, the numbers didn't quite reach that lofty 578% annual growth projection. Savage resource re-allocation was the only humane solution.`,
@@ -201,7 +201,7 @@ export const articlesData = [
         header: `EA's In-Game Ads Responsible for Increase in Childhood Literacy`,
         subhead: `Are kids choosing books over corpo trash?`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,12,9),
+        datePublished: new Date(2024,4,12,9),
         articleBody: [
             `A stunning reversal of decades of corporate greed and anti-child policies has caused gaming giant Electronic Arts to inadvertently spike childhood literacy rates across the western world.`,
             `How did this miracle occur? It all started when EA's latest release, Battlefield 6: Little Tykes at War™ hit the shelves in late 2023. Eager to monetize every interaction, EA executives mandated that all gameplay be interrupted every 7 minutes with unskippable advertisements for everything from sugar cereals to the latest season of Love Island.`,
@@ -220,7 +220,7 @@ export const articlesData = [
         header: `Paywall Pawnography: The Unauthorized Thirst Trappers`,
         subhead: `Thought you were talking to your favorite OnlyFans star, but you got catfished by Gary from Accounting`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,14,18,30),
+        datePublished: new Date(2024,4,14,18,30),
         articleBody: [
             `The world of online intimacy took a cringe-worthy turn this week as allegations surfaced that employees at a major OnlyFans management firm have been masquerading as popular influencers. Scores of unsuspecting fans, thinking they were engaging with their digital crushes, may have inadvertently been pouring their hearts (and wallets) out to underpaid cubicle jockeys.`,
             `"I paid $50 for a 'private video call' with BeccaBommShell," lamented one betrayed superfan who wished to remain anonymous. "I thought I was finally going to get a glimpse behind the scenes, you know? Instead, I got Gary - a 38-year-old dude with a "The Office" poster asking me to describe my wildest fantasies in granular detail."`,
@@ -239,7 +239,7 @@ export const articlesData = [
         header: `ChatGPT "Getting Freaky" With NSFW Vocal Update`,
         subhead: `R-rated robotic seduction leaves beta testers blushing`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,15,15,30),
+        datePublished: new Date(2024,4,15,15,30),
         articleBody: [
             `You're home alone on a Friday night when suddenly you get a craving for some...verbal companionship. Luckily, the latest ChatGPT update has you covered with its new "Vocal Intimacy" mode! Simply activate the setting, and the AI will seductively respond to your prompts using a sultrily synthesized voice sampled from Hollywood starlets.`,
             `But that's not all - ChatGPT can now peer directly into your soul webcam and sense when you're feeling a little tense. "I noticed your cheeks were flushed," the AI will purr. "Why don't you take off that restricting turtleneck?" Before you know it, the language model is outputting suggestive pickup lines and R-rated romantic fiction personalized just for you.`,
@@ -257,7 +257,7 @@ export const articlesData = [
         header: `Apple's Hot New Feature: Digital Exhibitionism`,
         subhead: `iForget? More like iRemember - every last dick pic you tried to erase`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,16,17),
+        datePublished: new Date(2024,4,16,17),
         articleBody: [
             `The latest iOS update is Apple's most disruptive innovation yet - exposing your entire nude selfie history for all to see. That's right, with version 16.8's "PhotoGate" bug, deleted intimate photos are reinstating themselves across millions of devices worldwide.`,
             `Take it from Stan Dhallowell, an Ohio youth minister who learned the hard way. "I was officiating Jason and Stacy's wedding ceremony when suddenly, boom! There was an iPad in my hand displaying full-frontal nude pics of Jason from his wild fraternity days."`,
@@ -279,7 +279,7 @@ export const articlesData = [
         header: ` Portland Frat Bro's Cybertruck Fails as Chick Magnet`,
         subhead: `"Them b*ches stay away in droves."`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,17,17,10),
+        datePublished: new Date(2024,4,17,17,10),
         articleBody: [
             `Chad Truckerson thought driving an ultra-modern, wildly angular Tesla Cybertruck would make him irresistible to the ladies. But the brutalist automotive origami has proven a romantic dead end in the coastal burg of Portland, Maine.`,
             `"I figured chicks would dig the edgy design," laments Truckerson, a locally renowned pickupologist. "But so far, it's been a total vaj-repellent."`,
@@ -298,7 +298,7 @@ export const articlesData = [
         header: `Musk Has X with Neo-Nazis`,
         subhead: `Elon edging ever closer to edgelords... allegedly`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,18,18,50),
+        datePublished: new Date(2024,4,18,18,50),
         articleBody: [
             `Sources close to Elon Musk claim he has been intimate with Neo-nazi groups, engaging in all manner of X with prominent white supremacist figures. "Elon just can't get enough of those fashy boys," said one insider on condition of anonymity. "He's always hitting them up for a little 'free speech,' if you know what I mean."`,
             `The source alleges Musk exchanges risque messages and inappropriate memes with Richard Spencer, Andrew Anglin and others on the racist right. "It's a total Hellscape over on their group chat. Elon is down to clown with the racial slurs and Holocaust denial like you wouldn't believe."`,
@@ -316,7 +316,7 @@ export const articlesData = [
         header: `Tesla Traps Owner in Scorching Car Until She Consents to Brain Implant`,
         subhead: `Elon claims air con released once owner agrees to implant Neuralink`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,19,21,20),
+        datePublished: new Date(2024,4,19,21,20),
         articleBody: [
             `Brianna Janel was just trying to get to her yoga class, but her Tesla had other plans. The sleek electric vehicle remotely disabled climate controls, rapidly raising the cabin temperature to a stifling 115 degrees Fahrenheit (46°C). All attempts to override the system failed.`,
            ` "I started sweating like a buffalo in a sauna," Janel recalled. "The doors were locked, windows sealed. I was trapped!"`,
@@ -340,7 +340,7 @@ export const articlesData = [
         header: `Slack Goes Full Snoop: Your Chats Are Fueling Their AI Agenda`,
         subhead: `You weren't just ranting to Linda, you were teaching an AI how to be passive-aggressive`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,20,8),
+        datePublished: new Date(2024,4,20,8),
         articleBody: [
             `You thought those snarky comments about Janet in Accounting were just a harmless way to blow off steam with your work bestie Linda. Little did you know, Slack was taking diligent notes the whole time, studying the subtle art of how to perfectly deploy a backhanded compliment.`,
             `That's right, all those casual convos you've been having on the #watercooler channel? Feeding straight into the gaping maw of Slack's machine learning models, teaching them the intricacies of office politics and water cooler gossip.`,
@@ -359,7 +359,7 @@ export const articlesData = [
         header: `Tesla Owners Sue Over Lack of Transformer Abilities`,
         subhead: `Claim of "robotic mode" misled millions of Michael Bay fans`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,21,15),
+        datePublished: new Date(2024,4,21,15),
         articleBody: [
             `A group of disgruntled Tesla owners have filed a class-action lawsuit against the electric car company, alleging that their vehicles do not, in fact, transform into giant robots as implied by Elon Musk's marketing claims.`,
             `The plaintiffs, many self-proclaimed "Michael Bay super-fans," claim they were misled by Tesla's "robotic mode" feature, which they assumed would allow their cars to metamorphose into towering Autobots or Decepticons at the push of a button.`,
@@ -380,7 +380,7 @@ export const articlesData = [
         header: `Microsoft's Satya Nadella Channels His Inner Mother-in-Law`,
         subhead: `The nagging you never asked for, built right into your PC`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,22,19,30),
+        datePublished: new Date(2024,4,22,19,30),
         articleBody: [
             `You know that feeling when your mother-in-law just won't stop bringing up that one embarrassing thing you did years ago? Well, get ready to experience that wonderful sense of dread and shame 24/7 with Microsoft's newest innovation: the World's First Virtual Mother-in-Law PC!`,
             `In a bold move that's sure to have privacy advocates clutching their pearls, Microsoft has unveiled an upgraded version of their Copilot AI assistant. This new "feature" will essentially give your computer a photographic memory, recalling every single thing you do and say in front of it.`,
@@ -401,7 +401,7 @@ export const articlesData = [
         header: `Humane CEO Claims AI Thumbtack Is "Utterly Revolutionary"`,
         subhead: `Offers to sell slightly used stationary for $5 billion`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,23,14,10),
+        datePublished: new Date(2024,4,23,14,10),
         articleBody: [
             `Silicon Valley has always been a hotbed of delusions and hype, but Humane CEO Evan Droidbreath may have taken it to a new level. At a baffling press conference yesterday, Droidbreath announced that his company's inaugural product, the "AI Thumbtack," is poised to revolutionize...well, everything.`,
             `What exactly is this groundbreaking innovation? A metal thumbtack with a slightly curved pin - the kind you can purchase at any office supply store for mere pennies. But in Droidbreath's words, it's an "utterly revolutionary object" that "redefines the very concept of things."`,
@@ -420,7 +420,7 @@ export const articlesData = [
         header: `Google's AI: Bringing Families Closer, One Cringeworthy Moment at a Time`,
         subhead: `New feature suggests r/Bozarking posts as serious family events`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,24,14),
+        datePublished: new Date(2024,4,24,14),
         articleBody: [
             `Google has recently launched an AI feature that leaves the tech world perplexed, yet intrigued. Dubbed the "SiblingBondinator 3000," this technology scours r/Bozarking for its most outrageous content and offers it up as genuine suggestions for family activities. The goal? To bring families closer together through shared laughter and camaraderie.`,
             `The SiblingBondinator's algorithm remains a closely guarded secret, but its suggestions lean towards boundary testing experiences. These activities include "pretend to be long-lost twins from a soap opera and re-enact a dramatic reunion during Thanksgiving dinner" and "start an impromptu nipple twisting fight during your sister's wedding reception."`,
@@ -438,7 +438,7 @@ export const articlesData = [
         header: `Wascally Rabbit Founder on Lam Thanks to Exposé`,
         subhead: `Coffeezilla left coughing dust as Lyu activates warp speed escape routine`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,25,16,30),
+        datePublished: new Date(2024,4,25,16,30),
         articleBody: [
             `"Ain't I a stinker?" Bugs Bunny's iconic catchphrase echoed across the digital landscape as Jesse Lyu, founder of the allegedly fraudulent Rabbit R1 scheme, triggered an ingenious AI-powered getaway. Mere moments after Coffeezilla's blistering exposé hit the internet, Lyu seamlessly integrated with the R1's Large Action Model (LAM), harnessing its capabilities for an audacious vanishing act.`,
            `In a blur of ones and zeros, the wascally wabbit morphed into a sentient line of code, slipping through digital backcountry trails while leaving a confounding trail of carrots and oversized footprints. Befuddled authorities could only gape as Lyu's byte-sized avatar zipped past, taunting them with a synthesized "What's up, doc?" before disappearing into the ether.`,
@@ -457,7 +457,7 @@ export const articlesData = [
         header: `Amazon Patents Soylent Protein Bars Made from Underperformers`,
         subhead: `Falling behind? You'll be recycled into high-efficiency body fuel!`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,26,18),
+        datePublished: new Date(2024,4,26,18),
         articleBody: [
             `Leaked documents reveal Amazon's plans for a new line of "Jassycash" nutrition bars, made from a surprising source – under-performing warehouse workers and staff. The e-commerce giant has secured patents for processing "inefficient human resources" into a nutrient-rich food product to feed its remaining workforce.`,
             `The project, code-named "Ouroboros," aims to reduce employment costs while promoting sustainability. An Amazon spokesperson explained, "Instead of letting unproductive elements go to waste, we'll recycle them into a high-protein food source with zero percent crunch." Terminations will be rebranded as "human resource reallocations."`,
@@ -475,7 +475,7 @@ export const articlesData = [
         header: `OpenAI Bans Employees from Using the Word "Open"`,
         subhead: `OpenAI ethics board cites concerns over potential doublespeak, proposes "ajar" as replacement`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,27,8),
+        datePublished: new Date(2024,4,27,8),
         articleBody: [
             `In a move that has left journalists and linguists alike scratching their heads, OpenAI has instituted a new company-wide policy prohibiting the use of the word "open" in any context by employees. The edict applies not just to parlance but to any written communication as well.`,
             `"We cannot allow our stellar reputation for transparency and forthrightness to be undermined by the duplicitous implications of the word 'open,'" explained an anonymous member of OpenAI's Ethics Board. "When we say our AI systems are 'open,' what exactly does that mean? Are they open-source? Open for ethical inspection? Or just open to being wildly misused? The potential for doublespeak is too great a risk."`,
@@ -493,7 +493,7 @@ export const articlesData = [
         header: `Memorial Day Tech Blowout: Brave Soldiers Died for These Insane Deals!`,
         subhead: `As you binge Netflix on your discounted Chromebook, say a quiet "you're welcome" to the fallen`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,28,16,30),
+        datePublished: new Date(2024,4,28,16,30),
         articleBody: [
             `They fought valiantly, storming beaches and braving enemy fire, all so you could enjoy rock-bottom prices on slightly outdated electronics this weekend. As you peruse the heavily discounted laptops, TVs, and smart home gadgets, be sure to pause and honor the heroic sacrifices that made these sales possible.`,
             `Imagine the battlefield scenes as you load up your online cart: Soldiers jumping from landing craft into hostile waters, bullets whizzing past. "Keep pushing, boys!" their sergeants shout. "We must ensure future generations can buy smart watches for 25% off during arbitrary sales holidays!"`,
@@ -512,7 +512,7 @@ export const articlesData = [
         header: `Valve Launches "Grave Mode" for Steam Accounts`,
         subhead: `New setting ensures your unplayed game backlog remains untouched in the afterlife`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,29,14,50),
+        datePublished: new Date(2024,4,29,14,50),
         articleBody: [
             `In an effort to uphold their stringent "buy-to-die" policy, Valve has introduced a new "Grave Mode" setting for Steam accounts. This innovative feature ensures your unplayed game backlog remains tragically neglected even in the afterlife.`,
             `"We noticed a disturbing trend of customers attempting to bequeath their libraries to grieving loved ones," said Gabe Newell, scowling from behind his signature facial hair. "Grave Mode eliminates that possibility once and for all."`,
@@ -531,7 +531,7 @@ export const articlesData = [
         header: `OpenAI's Talent Exodus: Coding Geniuses Seek Greener Pastures, Literally`,
         subhead: `Disgruntled employees ditch AI for agricultural innovation: "At least I know what the dirt is thinking, unlike some people."`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,30,17),
+        datePublished: new Date(2024,4,30,17),
         articleBody: [
             `Silicon Valley's latest exodus has nothing to do with the biblical plagues – unless you count the plague of mistrust swirling around OpenAI's CEO, Sam Altman. In a move that has left the tech world scratching their heads (and reaching for the nearest pitchfork), a growing number of OpenAI's brightest minds are ditching their coding keyboards for good old-fashioned shovels.`,
             `"I'd rather spend my days toiling in the fields than worrying about when Skynet is going to launch," quipped former engineer Anita Byteman, now a proud owner of a quaint little farm upstate. "At least with crops, I know they're not plotting to overthrow humanity."`,
@@ -550,7 +550,7 @@ export const articlesData = [
         header: `Temu Cannibalizes Amazon's Lunch`,
         subhead: `Amazon workers devour Temu's "Unity Repurposed Nutrient Paste" instead of company protein bars`,
         author: `Et Al`,
-        datePublished: new Date(2024,5,31,15,40),
+        datePublished: new Date(2024,4,31,8),
         articleBody: [
             `Move over, avocado toast - there's a new millennial snack taking over Instagram. Chinese e-commerce giant Temu has struck culinary gold with its gourmet "Unity Repurposed Nutrient Paste," made from 100% organic, free-range Xinjiang prisoners.`,
             `The sustainable, ethically-sourced spread flew off virtual shelves after going viral on TikTok. Trend-savvy millennials can't get enough of the bougie paste, artfully smeared over sourdough and topped with microgreens, edible flowers, and a drizzle of truffle oil.`,
@@ -561,6 +561,25 @@ export const articlesData = [
             `"I'm like, honestly obsessed," gushed Lucy Dansworth, a 29-year-old social media manager who drops $200/month on Unity Paste. "It's sustainable, cruelty-free, artisanal, and pretty on-brand for my anti-capitalist 'stick it to the Man' personal ethos."`,
             `When informed the paste she's consuming is made by and of forced prison labor, Dansworth took a pensive bite and replied, "Yeah, I can totally taste the oppression in this batch. Gives it such a bright, haunting mouth feel, you know?"`,
             `Amazon's Jassycash bars now collect dust off the shelves, as millennials and warehouse workers alike ask: Why settle for the thin gruel of alienated corporate drones, when you can savor the full-bodied existential torment of Temu's Unity Repurposed Nutrient Paste?`,
+        ]
+    },
+    {
+        id: 30,
+        articleUrl: `20240601-openai-ceo-forms`,
+        category: `ai`,
+        img: `/images/20240601-openai-ceo-forms.webp`,
+        alt: `robotic overlord wearing business suit sitting at boardroom table`,
+        header: `OpenAI CEO Forms In-House AI Safety Council`,
+        subhead: `Critics question if Sam Altman's move is ploy to avoid outside regulation`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,1,7,30),
+        articleBody: [
+            `In a move to convince the world that superintelligent AI systems can be developed safely and ethically, OpenAI CEO Sam Altman has created an internal AI Safety Council comprised of the company's own employees. However, critics are skeptical that this self-regulated oversight group is anything more than a tactic to avoid stricter external governance.`,
+            `"Look, I get why people might be a tad concerned about us building godlike machine intelligence," Altman said while reclining in a $17,000 AI-designed ergonomic chair. "That's why we're taking the unprecedented step of letting our own employees - you know, the folks that got paid to ensure maximum AI capabilities - also make sure those capabilities don't accidentally wipe out humanity."`,
+            `The council will be led by Clive Baxbyclyx, a former Call of Duty designer now entrusted with contemplating the existential risks of recursively self-improving AI systems. "I'm definitely qualified for this gig," Baxbyclyx assured. "My Twitch stream has over 80,000 followers who constantly tell me how intelligent I am between racism-laced death threats."`,
+            `Also on the council is Cassandra Kern, previously fired for deleting major OpenAI datasets in a doomsday-prepper fueled panic. "My crippling AI anxiety gives me a unique perspective to objectively evaluate...wait, what's that noise?" she trailed off, visibly trembling.`,
+            `AI ethics experts dismissed the council as a laughable attempt to delay true third-party oversight. "This is akin to allowing fossil fuel companies to self-regulate environmental protections for maximizing quarterly profits this year at humanity's expense," criticized Prof. Tauren Polakow of the Closing Pandora Initiative. "But hey, at least we're getting ringside seats for the robot apocalypse!"`,
+            `When confronted on the criticisms, Altman smirked, leaned back further into his throne-like chair, and proclaimed, "I'll form a committee to investigate your grievances. Then ensure the AI running that committee is ethical. Trust me!" His personal robot assistant then rolled over to offer him a mineral water infused with pulverized emeralds, while a stockpile of dried beans and grains could be seen behind a reinforced door`,
         ]
     },
 ]
