@@ -584,4 +584,23 @@ export const articlesData = [
             `His face flushed as he quickly waved the door closed. "That's just...a lot of really boring AI training data in there. Nothing to be concerned about whatsoever!" Altman chuckled nervously.`,
         ]
     },
+    {
+        id: 31,
+        articleUrl: `20240602-nofaptrack-keeping-minds`,
+        category: `reviews`,
+        img: `/images/20240602-nofaptrack-keeping-minds.webp`,
+        alt: `TODO`,
+        header: `'NoFapTracker' Keeping Minds Out of the Gutter, One Streak at a Time`,
+        subhead: `Unlock the "Platinum Prudehood" achievement by going 365 days without thinking about that thing you're not supposed to think about`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,2,8,30),
+        articleBody: [
+            `Tired of your brain betraying you with impure thoughts? The new app 'NoFapTracker' is here to gamify your struggle to keep it PG.`,
+            `By turning pure thoughts into an addictive competition, 'NoFapTracker' rewards you for not indulging your mind's baser instincts. Maintain an impressive streak of sexy-thought-free days to unlock achievements like "Celibate Samurai" or "Chastity Champ."`,
+            `"I was so fed up with objectifying every person I saw," said user Mark Dougherty. "But thanks to 'NoFapTracker', I'm so obsessed with my 117-day pure-mind streak that I've stopped noticing humans altogether!"`,
+            `The app's features keep you honest, with random purity check-ins, blurring NSFW images, and an option to replace online text with highly un-arousing material. There's even a kid-friendly tantrum mode!`,
+            `Critics argue promoting this level of repression is unhealthy. But developers remain devoted to creating a porn-free utopia, with plans to integrate with smart homes to automatically punish impure thoughts.`,
+            `So protect your sacred mind! Download 'NoFapTracker' today to reach such clarity you'll walk through life unfazed, like a particularly chaste houseplant.`,
+        ]
+    },
 ]
