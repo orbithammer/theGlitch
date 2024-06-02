@@ -118,6 +118,14 @@ return (
           aria-label={`to ai page`}
           >AI</StyledNavLink>
         </li>
+        <li>
+          <StyledNavLink 
+          to="/contact"
+          style={getNavLinkStyle}
+          onClick={toggleSidebar}
+          aria-label={`to contact us page`}
+          >Contact Us</StyledNavLink>
+        </li>
       </StyledUnorderedList>
     </StyledSidebarWrapper>
   );
