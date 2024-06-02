@@ -586,21 +586,22 @@ export const articlesData = [
     },
     {
         id: 31,
-        articleUrl: `20240602-nofaptrack-keeping-minds`,
+        articleUrl: `20240602-nofaptracker-lets-you`,
         category: `reviews`,
-        img: `/images/20240602-nofaptrack-keeping-minds.webp`,
-        alt: `TODO`,
-        header: `'NoFapTracker' Keeping Minds Out of the Gutter, One Streak at a Time`,
+        img: `/images/20240602-nofaptracker-lets-you.webp`,
+        alt: `man holding two blue balls with a crowd of mostly women behind him`,
+        header: `'NoFapTracker' Lets You Sabotage Friends with Provocative Content`,
         subhead: `Unlock the "Platinum Prudehood" achievement by going 365 days without thinking about that thing you're not supposed to think about`,
         author: `Et Al`,
         datePublished: new Date(2024,5,2,8,30),
         articleBody: [
-            `Tired of your brain betraying you with impure thoughts? The new app 'NoFapTracker' is here to gamify your struggle to keep it PG.`,
-            `By turning pure thoughts into an addictive competition, 'NoFapTracker' rewards you for not indulging your mind's baser instincts. Maintain an impressive streak of sexy-thought-free days to unlock achievements like "Celibate Samurai" or "Chastity Champ."`,
-            `"I was so fed up with objectifying every person I saw," said user Mark Dougherty. "But thanks to 'NoFapTracker', I'm so obsessed with my 117-day pure-mind streak that I've stopped noticing humans altogether!"`,
-            `The app's features keep you honest, with random purity check-ins, blurring NSFW images, and an option to replace online text with highly un-arousing material. There's even a kid-friendly tantrum mode!`,
-            `Critics argue promoting this level of repression is unhealthy. But developers remain devoted to creating a porn-free utopia, with plans to integrate with smart homes to automatically punish impure thoughts.`,
-            `So protect your sacred mind! Download 'NoFapTracker' today to reach such clarity you'll walk through life unfazed, like a particularly chaste houseplant.`,
+            `Avoiding impure thoughts is no easy feat. That's why 'NoFapTracker' turns the struggle into a competitive online battle - where anything goes to break your opponents' focus.`,
+            `The basic idea is simple: Rack up streaks without inappropriate thoughts to earn achievements and climb the leaderboards. But the real fun is the multiplayer mode for ruthlessly sabotaging your friends.`,
+            `Once connected online, you can deploy an arsenal of eye-catching content specifically designed to derail your buddies' pure mindsets. Spicy memes, steamy literary excerpts, and even risque user pics are fair game for demolishing someone's hard-earned steak.
+            "Jessica from accounting is my nemesis," said user Mark Dougherty. "She's relentless, firing off erotic fiction snippets and swimsuit shots like a madwoman, trying to break my streak."`,
+            `The constant need to unearth tantalizing content for sabotage is its own trial for Dougherty. "I spend hours scouring the internet for just the right thirst traps to destroy my friends' streaks. But I have to be so careful not to get too caught up in the...research...if you know what I mean," he said with a pained look.`,
+            `To endure these depraved assaults, 'NoFapTracker' offers content filters and skipped "arousal checks." But elite players master intense focus through meditation and cognitive discipline techniques.`,
+            `So unite with your thirstiest friends for some perverse psychological warfare! In 'NoFapTracker's' multiplayer, inappropriate thoughts are unavoidable...unless you possess ironclad willpower.`,
         ]
     },
 ]
