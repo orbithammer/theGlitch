@@ -591,7 +591,7 @@ export const articlesData = [
         img: `/images/20240602-nofaptracker-lets-you.webp`,
         alt: `man holding two blue balls with a crowd of mostly women behind him`,
         header: `'NoFapTracker' Lets You Sabotage Friends with Provocative Content`,
-        subhead: `Unlock the "Platinum Prudehood" achievement by going 365 days without thinking about that thing you're not supposed to think about`,
+        subhead: `A war of perverse psychological sabotage to see who can not think about that thing you're not supposed to think about`,
         author: `Et Al`,
         datePublished: new Date(2024,5,2,8,30),
         articleBody: [
