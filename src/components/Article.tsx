@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useContext } from "react"
-import { useParams, Link } from "react-router-dom"
+import { useParams, Link, useNavigate } from "react-router-dom"
 import { articlesData } from "../data/articles"
 import { styled } from "styled-components"
 import CopyLinkIconDark from "/src/assets/copyLinkDark.svg"
@@ -140,14 +140,22 @@ const Article: React.FC = () => {
     const { isDarkMode } = useContext(ThemeContext);
     const {articleUrl} = useParams() 
     const [article, setArticle] = useState<articlesData | null>(null)
+    const [isLoading, setIsLoading] = useState(true)
     useEffect(()=>{
         const foundArticle = articlesData.find(articleObj => articleObj.articleUrl === articleUrl);
         setArticle(foundArticle ? foundArticle : null);
+        setIsLoading(false)
     },[])
+    const navigate = useNavigate()
     let formattedDate = ""
     if(article){
         formattedDate = formatDate(article.datePublished)
     }
+    useEffect(()=>{
+        if(!article && !isLoading) {
+            navigate('not-found')
+        }
+    }, [isLoading])
 
     return (
         <>

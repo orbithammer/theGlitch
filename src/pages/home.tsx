@@ -5,6 +5,7 @@ import { styled } from "styled-components"
 import Pagination from "../components/Pagination.tsx"
 import ThemeContext from "../utils/ThemeContext"
 import formatDate from "../utils/formatDate.tsx"
+import navigateToNotFound from "../utils/navigateToNotFound.tsx"
 
 type Article = {
     id: number;
@@ -123,6 +124,8 @@ const HomePage: React.FC = () => {
     const currentArticles = allArticles.slice(startIndex, endIndex)
     const totalArticles = allArticles.length
     const totalPages = Math.ceil(totalArticles / articlesPerPage)
+    navigateToNotFound(pageNumber, totalPages) 
+     
     useEffect(() => {
         setCurrentPage(parseInt(pageNumber || '1', 10))
     }, [pageNumber])

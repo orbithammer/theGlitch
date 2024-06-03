@@ -9,6 +9,7 @@ import EntertainmentPage from './pages/entertainment'
 import AiPage from './pages/ai'
 import ProfilesPage from './pages/profiles';
 import ContactPage from './pages/contact'
+import NotFoundPage from './pages/notFound'
 import ThemeProvider from './utils/ThemeProvider';
 
 
@@ -32,6 +33,7 @@ const App: React.FC = () => {
             <Route path="/profiles" element={<ProfilesPage />} />
             <Route path="/contact" element={<ContactPage />} /> 
             <Route path="/article/:articleUrl" element={<Article />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
       </ThemeProvider>

@@ -5,6 +5,7 @@ import { styled } from "styled-components"
 import Pagination from "../components/Pagination.tsx"
 import ThemeContext from "../utils/ThemeContext"
 import formatDate from "../utils/formatDate.tsx"
+import navigateToNotFound from "../utils/navigateToNotFound.tsx"
 
 type Article = {
     id: number;
@@ -123,6 +124,8 @@ const AiPage: React.FC = () => {
     const currentArticles = aiArticles.slice(startIndex, endIndex)
     const totalArticles = aiArticles.length
     const totalPages = Math.ceil(totalArticles / articlesPerPage)
+    navigateToNotFound(pageNumber, totalPages)
+
     useEffect(() => {
         setCurrentPage(parseInt(pageNumber || '1', 10))
     }, [pageNumber])
@@ -133,7 +136,6 @@ const AiPage: React.FC = () => {
 
     const handleNewerPage = () => {
         setCurrentPage((prevPage) => Math.max(prevPage - 1, 1))
-        
     }
 
     return (
