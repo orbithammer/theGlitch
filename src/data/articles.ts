@@ -591,7 +591,7 @@ export const articlesData = [
         img: `/images/20240602-nofaptracker-lets-you.webp`,
         alt: `man holding two blue balls with a crowd of mostly women behind him`,
         header: `'NoFapTracker' Lets You Sabotage Friends with Provocative Content`,
-        subhead: `A perverse psychological competition to see who can not think about that thing you're not supposed to think about`,
+        subhead: `A perverse competitive app to see who can not think about that thing you're not supposed to think about`,
         author: `Et Al`,
         datePublished: new Date(2024,5,2,8,30),
         articleBody: [
@@ -602,6 +602,26 @@ export const articlesData = [
             `The constant need to unearth tantalizing content for sabotage is its own trial for Dougherty. "I spend hours scouring the internet for just the right thirst traps to destroy my friends' streaks. But I have to be so careful not to get too caught up in the...research...if you know what I mean," he said with a pained look.`,
             `To endure these depraved assaults, 'NoFapTracker' offers content filters and skipped "arousal checks." But elite players master intense focus through meditation and cognitive discipline techniques.`,
             `So unite with your thirstiest friends for some perverse psychological warfare! In 'NoFapTracker's' multiplayer, inappropriate thoughts are unavoidable...unless you possess ironclad willpower.`,
+        ]
+    },
+    {
+        id: 32,
+        articleUrl: `20240603-trump-launches-risque`,
+        category: `tech`,
+        img: `/images/20240603-trump-launches-risque.webp`,
+        alt: `Donald Trump wearing red cap, open bath robe, and diapers`,
+        header: `Trump Launches Risqué OnlyFans, Promises "Yuge" Content`,
+        subhead: `Republican Donor's Chaos Agenda Succeeds in Scarring Nation`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,3,17),
+        articleBody: [
+            `In a baffling and deeply disturbing move, former President Donald Trump has launched an explicit OnlyFans account, promising his fans "the best, maybe ever" adult content. This unexpected career choice comes after Republican megadonor Jeff Yass reportedly tried to convince the 77-year-old to join TikTok in order to support the controversial Chinese-owned app that Yass has heavily invested in.`,
+            `However, it seems Trump completely misunderstood Yass's intentions. "They told me to get on this hot new website to really own the libs, so that's what I did," Trump rambled during an announcement from his gilded Mar-a-Lago bathroom. "OnlyFans is the perfect free speech website that the radical left can't cancel or shut down, period."`,
+            `Raising a defiant wrinkled fist, Trump appeared oblivious that OnlyFans is primarily used for monetizing explicit adult content. "I'll post the hottest, most beautiful videos ever. You're all going to subscribe and love it, believe me."`,
+            `When pressed on what exactly his videos would entail, Trump licked his lips. "You'll see. It'll be so sexy, so classy - the fake news media won't know what hit them." He then attempted a disturbing dance move reminiscent of an arthritic stripper.`,
+            `Donald Trump Jr. has allegedly begged his elderly father not to go through with this ill-advised OnlyFans plan, texting, "Please, do not inflict your naked body on the world!" But the former president remains resolute that his venture will be "the biggest, most successful OnlyFans ever!"`,
+            `Shockingly, Eric Trump has expressed enthusiasm about potentially joining his father's OnlyFans endeavor. "Yeah, I'd love to collab on some content for the family account," Eric eagerly told reporters, seemingly missing the inherent horror of that statement. "It would be kind of a Daddy-Son dynamic, you know?" he added with a distressing wink.`, 
+            `Social media has erupted in horror, revulsion and haunted confusion over Trump's surprising foray into amateur porn. Psychologists warn exposure could cause widespread trauma. Meanwhile, GOP donors like Yass seem unsurprised their investments have directly enabled this deeply regrettable situation.`,
         ]
     },
 ]

@@ -8,12 +8,14 @@ const StyledLink = styled(Link)`
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+    border-radius: 5px;
 `
 
 const NotFoundPage: React.FC = () => {
     return (
         <main>
             <StyledLink to="/">
+                <h1>Page not found</h1>
                 <img src={notFound} alt="man with face half hidden behind a desk with 404 written underneath" />
                 <p>Click the image to go back home</p>
             </StyledLink>
