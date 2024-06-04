@@ -2,6 +2,7 @@ import React, {useEffect, useState, useContext } from "react"
 import { useParams, Link, useNavigate } from "react-router-dom"
 import { articlesData } from "../data/articles"
 import { styled } from "styled-components"
+import MetaTags from "../utils/MetaTags"
 import CopyLinkIconDark from "/src/assets/copyLinkDark.svg"
 import CopyLinkIconLight from "/src/assets/copyLinkLight.svg"
 import FacebookShareIconDark from "/src/assets/facebookShareDark.svg"
@@ -29,11 +30,11 @@ const StyledHeroWrapper = styled.div`
     position: relative;
 `
 
-const StyledLogo = styled.h1`
+const StyledLogo = styled.h2`
     position: absolute; 
     font-size: 4rem;
     text-shadow: ${({ theme }) => theme.isDarkMode ? "1px 1px 5px rgba(0, 0, 0,  0.5)" : "1px 1px 5px rgba(255, 255, 255,  0.5)"};
-    top: -5.7rem;
+    top: -6.3rem;
     left: -1rem;
 `
 
@@ -44,7 +45,7 @@ const StyledImg = styled.img`
     object-fit: cover;
 `
 
-const StyledHeadline = styled.h2`
+const StyledHeadline = styled.h1`
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -57,7 +58,7 @@ const StyledHeadline = styled.h2`
     margin: 0;
 `
 
-const StyledSubhead = styled.p`
+const StyledSubhead = styled.h3`
     font-family: "Source Serif 4", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -159,6 +160,12 @@ const Article: React.FC = () => {
 
     return (
         <>
+            <MetaTags 
+                title={article?.header || ""}
+                description={article?.subhead || ""}
+                imageUrl={article?.img || ""}
+                url={window.location.href}
+            />
             <main>
                 <StyledHeroWrapper>
                     <StyledLogo theme={{ isDarkMode }}>theGlitch</StyledLogo>

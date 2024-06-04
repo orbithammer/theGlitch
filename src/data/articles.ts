@@ -609,7 +609,7 @@ export const articlesData = [
         articleUrl: `20240603-trump-launches-risque`,
         category: `tech`,
         img: `/images/20240603-trump-launches-risque.webp`,
-        alt: `Donald Trump wearing red cap, open bath robe, and diapers`,
+        alt: `Donald Trump wearing red cap and open bath robe`,
         header: `Trump Launches Risqué OnlyFans, Promises "Yuge" Content`,
         subhead: `Republican Donor's Chaos Agenda Succeeds in Scarring Nation`,
         author: `Et Al`,
@@ -622,6 +622,26 @@ export const articlesData = [
             `Donald Trump Jr. has allegedly begged his elderly father not to go through with this ill-advised OnlyFans plan, texting, "Please, do not inflict your naked body on the world!" But the former president remains resolute that his venture will be "the biggest, most successful OnlyFans ever!"`,
             `Shockingly, Eric Trump has expressed enthusiasm about potentially joining his father's OnlyFans endeavor. "Yeah, I'd love to collab on some content for the family account," Eric eagerly told reporters, seemingly missing the inherent horror of that statement. "It would be kind of a Daddy-Son dynamic, you know?" he added with a distressing wink.`, 
             `Social media has erupted in horror, revulsion and haunted confusion over Trump's surprising foray into amateur porn. Psychologists warn exposure could cause widespread trauma. Meanwhile, GOP donors like Yass seem unsurprised their investments have directly enabled this deeply regrettable situation.`,
+        ]
+    },
+    {
+        id: 33,
+        articleUrl: `20240604-invasion-of-the`,
+        category: `tech`,
+        img: `/images/20240604-invasion-of-the.webp`,
+        alt: `three identical blonde women sitting at a table`,
+        header: `Invasion of the Body Zoomers`,
+        subhead: `Silicon Valley Meets the Uncanny Valley in Doppelgänger Mystery`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,4,15),
+        articleBody: [
+            `Zoom's work-from-home employees got the shock of their lives recently when they discovered doppelgängers had been attending meetings in their place - face-to-face gatherings the real remote workers didn't even know existed until after the fact.`,
+            `"I was just catching up on my recording of the quarterly budget review," said one pajama-clad programmer. "But the weirder thing was, I somehow already had notes from it! Pages covered in my handwriting, despite me sleeping through the whole damn thing."`,
+            `It soon became clear that a sinister force was at play. While Zoom's homebound staff went about their daily routines, oblivious, ghostly replicas infiltrated the office. These supernatural pod people listened attentively in conference rooms, voted in virtual polls, and even helped themselves to catered lunch spreads.`,
+            `"Think about how many closeup shots of people nodding got saved to our cloud storage," a veteran employee shuddered. "Those subtle facial tics and awkward lip smacks...they were a little too realistic, if you know what I mean." Rather than unblinking robot stares, these doppelgängers committed to replicating every mundane human quirk. They blinked excessively, sniffled at weird moments, tugged at collars, and slapped cheeks to stay awake - the sorts of nervous habits that would normally drive colleagues insane. Whether demonic tricksters or committed method actors, Zoom's spirit squatters nailed the imperfect humanness a bit too perfectly for comfort.`,
+            `Theories abounded as to the nature of this unholy imbroglio. Had a containment mishap at X Development allowed a pocket dimension of corporate dopplegangers to cross over? Did a rogue machine learning model accidentally instantiate an entirely new workforce from browser cookies? Or was there a more ancient, arcane secret - an executive peddling souls to Beelzebub for higher Glassdoor ratings?
+            "Let's just say the Q4 budget covered an unexpected line-item for...specialized materials," the haunted middle manager said cryptically. "I probably shouldn't go into details, but let's just say it involved cooled biohazard containers."`,
+            `As the tech world reels from these revelations, Zoom has pledged to get to the bottom of the otherworldly imposters. Though at this point, who can say whether the supposedly "real" employees are the authentic ones or merely the next inter-dimensional layer of treachery?`,
         ]
     },
 ]
