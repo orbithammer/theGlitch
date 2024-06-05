@@ -21,7 +21,7 @@ const MetaTags = ({title, description, imageUrl, url}: MetaTagsProps) => {
       
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="@yourTwitterHandle" />
+      <meta name="twitter:creator" content="@EtAl19820625" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={imageUrl} />

@@ -628,7 +628,7 @@ export const articlesData = [
         id: 33,
         articleUrl: `20240604-invasion-of-the`,
         category: `tech`,
-        img: `/images/20240604-invasion-of-the.webp`,
+        img: `/images/20240604-invasion-of-the.png`,
         alt: `three identical blonde women sitting at a table`,
         header: `Invasion of the Body Zoomers`,
         subhead: `Silicon Valley Meets the Uncanny Valley in Doppelgänger Mystery`,
