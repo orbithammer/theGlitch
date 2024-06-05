@@ -10,7 +10,7 @@ type MetaTagsProps = {
 const MetaTags = ({title, description, imageUrl, url}: MetaTagsProps) => {
   return (
     <Helmet>
-      <title>Your Website Title</title>
+      <title>theGlitch</title>
       <meta name="description" content={description} />
       
       {/* OpenGraph tags */}
