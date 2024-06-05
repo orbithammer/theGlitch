@@ -16,7 +16,7 @@ const MetaTags = ({title, description, imageUrl, url}: MetaTagsProps) => {
       {/* OpenGraph tags */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={`https://theglitchnews.netlify.app/${imageUrl}`} />
+      <meta property="og:image" content={`https://theglitchnews.netlify.app${imageUrl}`} />
       <meta property="og:url" content={url} />
       
       {/* Twitter Card tags */}
