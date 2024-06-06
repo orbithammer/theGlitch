@@ -628,10 +628,10 @@ export const articlesData = [
         id: 33,
         articleUrl: `20240604-invasion-of-the`,
         category: `tech`,
-        img: `/images/20240604-invasion-of-the.png`,
+        img: `/images/20240604-invasion-of-the.webp`,
         alt: `three identical blonde women sitting at a table`,
         header: `Invasion of the Body Zoomers`,
-        subhead: `Silicon Valley Meets the Uncanny Valley in Doppelgänger Mystery`,
+        subhead: `Silicon Valley meets the uncanny valley in doppelgänger mystery`,
         author: `Et Al`,
         datePublished: new Date(2024,5,4,15),
         articleBody: [
@@ -642,6 +642,48 @@ export const articlesData = [
             `Theories abounded as to the nature of this unholy imbroglio. Had a containment mishap at X Development allowed a pocket dimension of corporate dopplegangers to cross over? Did a rogue machine learning model accidentally instantiate an entirely new workforce from browser cookies? Or was there a more ancient, arcane secret - an executive peddling souls to Beelzebub for higher Glassdoor ratings?
             "Let's just say the Q4 budget covered an unexpected line-item for...specialized materials," the haunted middle manager said cryptically. "I probably shouldn't go into details, but let's just say it involved cooled biohazard containers."`,
             `As the tech world reels from these revelations, Zoom has pledged to get to the bottom of the otherworldly imposters. Though at this point, who can say whether the supposedly "real" employees are the authentic ones or merely the next inter-dimensional layer of treachery?`,
+        ]
+    },
+    {
+        id: 34,
+        articleUrl: `20240605-mind-the-gap`,
+        category: `reviews`,
+        img: `/images/20240605-mind-the-gap.webp`,
+        alt: `ugly male office worker wearing headphones on the verge of crying`,
+        header: `Mind the Gap: Sonos Ace Telepathic Headphones Probe Your Neighbors' Brains`,
+        subhead: `Hear what your coworkers really think about your disgusting flabby ass`,
+        author: `Lester Girdle`,
+        datePublished: new Date(2024,5,5,21),
+        articleBody: [
+            `Sonos has taken dystopian eavesdropping to new psychological depths with its brain-bugging Ace Telepathic Headphones. These $449 cranial-scanners use an insidious "CranialSurround" chip to broadcast the unspoken thoughts of anyone within a 30-foot radius directly into your head.`,
+            `Finally, you can hear what your friends, family, and co-workers really think about you when they're putting on airs in person. The Ace's psychic powers tear down facades, allowing you to tune into the unvarnished internal voices we all suppress around others.`,
+            `In my tests, I discovered my wife's pent-up resentment over my perpetual laziness ("Why does he never help around the house?"). My longtime friend was utterly baffled by her attraction to me ("What does she see in that loser?"). Even my beloved grandma couldn't resist silently judging my awkward face: "Such an unfortunate-looking boy."`,
+            ` The floodgates of brutal honesty flowed endlessly, bathing my frail ego in harsh critique after harsh critique from those I trusted most. Each person's unfiltered inner narrative played on an endless loop, shared thoughts laying bare all the slights, disdain, and negative judgments about my essential being that are usually kept locked away.`,
+            `Thanks to Sonos, the layers of polite social etiquette have been peeled back to expose the truth: everyone around me harbors deep resentments over my total lack of redeeming qualities as a human! Self-confidence = shattered.`,
+            `The Ace headphones integrate with a custom Sonos mindreading app, but like many Sonos products, it clearly could have used a few more months of development before launch. The app is buggy and missing key features like thought filtering and volume adjustment for those unrelenting internal insults. Suits don't need ESP to listen to customers, right?`,
+            `On the bright side, the Ace offered some disturbing glimpses into the troubled psyches of passersby. An elderly man walking his dog struggled with unending racist diatribes against minorities. A young mother bathed in guilt over neglecting her kids' emotional needs. Yikes!`,
+            `For voyeurs who take pleasure in involuntarily consuming the uncensored intimate thoughts of everyone in their vicinity, the Ace Telepathic Headphones provide a sordid smorgasbord of psychological humiliation and vicarious perversion. You'll certainly think twice about leaving home once you know the kind of unflattering judgments you're unwittingly projecting into the ether. Thanks Sonos!`,
+        ]
+    },
+    {
+        id: 35,
+        articleUrl: `20240606-netflix-unveils-continuous`,
+        category: `entertainment`,
+        img: `/images/20240606-netflix-unveils-continuous.webp`,
+        alt: `ugly male office worker wearing headphones on the verge of crying`,
+        header: `Netflix Unveils Continuous AI-Driven Reality Stream "The Truman Experience"`,
+        subhead: `Nvidia Partnership Renders Truman's World in Comforting 8K Clarity`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,6,18),
+        articleBody: [
+            `A daring leap into the future of entertainment, Netflix has partnered with tech titans Nvidia to launch "The Truman Experience" - a first-of-its-kind, 24/7 continuous reality stream powered entirely by advanced AI algorithms and rendered in stunning visual fidelity.`,
+            `Rebooting the groundbreaking 90s TV phenomenon about an unwitting man named Truman living in an elaborately constructed artificial world, this reimagined incarnation harnesses the awesome might of Nvidia graphics processing units to generate the entire show in real-time using hyper-intelligent AI constructs.`,
+            `"We're taking reality programming to the next level through our partnership with Nvidia," proclaimed Netflix's Chief of Simulated Realities, <REDACTED>. "Their unrivaled GPU technology allows our AI to render Truman's world with uncompromising visual clarity while codifying an endlessly refreshing stream of family-friendly hijinks."`,
+            `At the core of this new-age Truman experience is an AI system called PolytranScribbins - a highly advanced neural network trained on Nvidia hardware using decades of uplifting sitcom tropes, lighthearted workplace comedies, and heartwarming family stories. From Truman's morning routine to his riveting adventures at the office, every moment is the result of PolytranScribbins's digital brainstorming, rendered in sparkling 8K detail thanks to Nvidia's processing muscle.`,
+            `Indeed, the controversies that previously erupted around actors being compensated for manufactured intimacy or allegedly manipulative plotlines are utterly absent. "With the AI and Nvidia's graphics power, we've avoided the disastrous pitfalls of the original Truman production," <REDACTED> explained solemnly. "In that controversial experiment, Truman eventually escaped the constructed reality, leading to an inevitable real-world tragedy none of us want to revisit. This time, his universe is an eternally sealed simulation without any option for him to wake up."`,
+            `Indeed, the harrowing controversies that previously erupted around Truman breaching the boundaries between his fabricated existence and harsh reality are utterly absent here. PolytranScribbins generates 100% predictable, advertiser-friendly humor and plots for his looping, hermetic artificial world using nothing more than gently comforting source material.`,
+            `"It's like an infinitely scrolling feel-good CGI experience powered by pure processing brawn," one Netflix developer boasted. "PolytranScribbins and Nvidia have created the ultimate warmly satirical yet family-safe alternate reality completely disassociated from the real horrors beyond the simulation."`,
+            `So get ready to immerse yourself in the persistently benign virtual world of Truman, his squabbles with his AI-rendered family, and his exploits at the PolytranScribbins-invented Lumberperson Components manufacturing plant! "The Truman Experience" is already streaming on Netflix, with no end to the lighthearted artificial antics ever in sight.`,
         ]
     },
 ]
