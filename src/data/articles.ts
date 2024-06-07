@@ -693,7 +693,7 @@ export const articlesData = [
         img: `/images/20240607-bonfire-of-the.webp`,
         alt: `grinning robot with google colored wires sticking out typing on a laptop`,
         header: `Bonfire of the Nerds: Google's Geeks Get Satirized by Own Creation`,
-        subhead: `The burn is coming from inside the house`,
+        subhead: `The AI generated burn is coming from inside the house`,
         author: `Et Al`,
         datePublished: new Date(2024,5,7,16),
         articleBody: [

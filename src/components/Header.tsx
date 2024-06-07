@@ -14,7 +14,7 @@ const StyledHeader = styled.header`
   justify-content: right;
 `
 
-const StyledPageName = styled.h2`
+const StyledPageName = styled.p`
   margin: 0 auto 0 2rem;
   font-size: 2rem;
 `
@@ -112,7 +112,7 @@ const Header: React.FC = () => {
         </StyledUnorderedList>
       </nav>
       {!isOpen && <StyledScrollToTop onClick={scrollToTop} theme={{ isDarkMode }}>
-        <StyledChevronUpIconDark src={isDarkMode ? chevronUpDark : chevronUpLight}/>
+        <StyledChevronUpIconDark src={isDarkMode ? chevronUpDark : chevronUpLight} alt="up arrow"/>
       </StyledScrollToTop>}
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
     </StyledHeader>

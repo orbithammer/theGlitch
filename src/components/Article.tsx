@@ -30,12 +30,14 @@ const StyledHeroWrapper = styled.div`
     position: relative;
 `
 
-const StyledLogo = styled.h2`
+const StyledLogo = styled.p`
+    font-weight: bold;
+    font-style: normal;
     position: absolute; 
-    font-size: 4rem;
+    font-size: 5rem;
     text-shadow: ${({ theme }) => theme.isDarkMode ? "1px 1px 5px rgba(0, 0, 0,  0.5)" : "1px 1px 5px rgba(255, 255, 255,  0.5)"};
-    top: -6.3rem;
-    left: -1rem;
+    top: -8.8rem;
+    left: -1.3rem;
 `
 
 const StyledImg = styled.img`
@@ -58,7 +60,7 @@ const StyledHeadline = styled.h1`
     margin: 0;
 `
 
-const StyledSubhead = styled.h3`
+const StyledSubhead = styled.h2`
     font-family: "Source Serif 4", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -192,7 +194,7 @@ const Article: React.FC = () => {
                     </StyledShareButton>
                     <StyledShareButton theme={{ isDarkMode }}>
                         <a href={`https://twitter.com/share?text=${encodeURIComponent(article?.header + " | #theGlitch #tech")}&url=${encodeURIComponent("https://theglitchnews.netlify.app/article/" + article?.articleUrl)}`} target="_blank" rel="noopener noreferrer">
-                            <StyledShareImgIcon src={isDarkMode ? TwitterShareIconDark : TwitterShareIconLight} />
+                            <StyledShareImgIcon src={isDarkMode ? TwitterShareIconDark : TwitterShareIconLight} alt="twitter share icon"/>
                         </a>
                     </StyledShareButton>
                 </StyledButtonWrapper>
