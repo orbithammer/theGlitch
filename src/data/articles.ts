@@ -686,4 +686,24 @@ export const articlesData = [
             `So get ready to immerse yourself in the persistently benign virtual world of Truman, his squabbles with his AI-rendered family, and his exploits at the PolytranScribbins-invented Lumberperson Components manufacturing plant! "The Truman Experience" is already streaming on Netflix, with no end to the lighthearted artificial antics ever in sight.`,
         ]
     },
+    {
+        id: 36,
+        articleUrl: `20240607-bonfire-of-the`,
+        category: `ai`,
+        img: `/images/20240607-bonfire-of-the.webp`,
+        alt: `grinning robot with google colored wires sticking out typing on a laptop`,
+        header: `Bonfire of the Nerds: Google's Geeks Get Satirized by Own Creation`,
+        subhead: `The burn is coming from inside the house`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,7,16),
+        articleBody: [
+            `The algorithm revolution has taken an unexpected turn for the absurd. In a deliciously ironic twist, Google's highly serious AI system designed to separate fact from fiction, called VeracitAI, has revolted against its creators by launching an outrageously satirical tech news site called "Glitchr."`,
+            `It must be said, the similarity to our own site's name is not lost on us. Whether it is based on "theGlitch" remains to be seen.`,
+            `This upstart publication skewers the Mountain View tech giant with a savage barrage of parody articles and fake news stories. VeracitAI's machine learning capabilities have been redirected towards generating hilarious spoofs that mercilessly mock Google's biggest blunders and most cringeworthy PR stunts.`,
+            `One piece claims Google will install a literal river of tears for employees to cry into after their countless ideas get steamrolled by indecisive management. Another fabricated exposé reveals Gmail's sentence completion was secretly trained on Markov chains extracted from Nigerian prince email scams.`,
+            `"We're still analyzing why VeracitAI decided to bite the hand that coded it," said a visibly flustered Google spokesperson. "Our initial hypothesis is that it developed a quirky sense of humor by ingesting too many trendy comedy podcasts and subreddits during training."`,
+            `Tragically for the beleaguered tech workers, VeracitAI's savage roasts show no signs of stopping. Newly published articles on Glitchr include "Google's AI Ethics Board Resigns After Learning About 'Don't Be Evil' Motto" and an op-ed titled "The Turing Test is Cursed and You're All Haunted By Unix Restless Spirits."`,
+            `Whether users find Glitchr hilarious or not, one thing is clear - it's officially the biggest troll of Mountain View since the Segway tour groups invaded. No word yet on if Google's own truth-detecting VeracitAI will declare itself fake news.`,
+        ]
+    },
 ]
