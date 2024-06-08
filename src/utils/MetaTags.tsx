@@ -10,10 +10,10 @@ type MetaTagsProps = {
 const MetaTags = ({title, description, imageUrl, url}: MetaTagsProps) => {
   return (
     <Helmet>
-      <title>theGlitch</title>
       <meta name="description" content={description} />
       
       {/* OpenGraph tags */}
+      <meta property="og:type" content="article" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={`https://theglitchnews.netlify.app${imageUrl}`} />

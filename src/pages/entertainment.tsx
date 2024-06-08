@@ -6,6 +6,7 @@ import Pagination from "../components/Pagination.tsx"
 import ThemeContext from "../utils/ThemeContext"
 import formatDate from "../utils/formatDate.tsx"
 import navigateToNotFound from "../utils/navigateToNotFound.tsx"
+import PageMetaTags from "../utils/PagesMetaTags.tsx"
 
 type Article = {
     id: number;
@@ -139,6 +140,7 @@ const EntertainmentPage: React.FC = () => {
 
     return (
         <>
+            <PageMetaTags />
             <Pagination
                 currentPage={currentPage}
                 totalPages={totalPages}

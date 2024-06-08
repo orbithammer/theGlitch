@@ -611,7 +611,7 @@ export const articlesData = [
         img: `/images/20240603-trump-launches-risque.webp`,
         alt: `Donald Trump wearing red cap and open bath robe`,
         header: `Trump Launches Risqué OnlyFans, Promises "Yuge" Content`,
-        subhead: `Republican Donor's Chaos Agenda Succeeds in Scarring Nation`,
+        subhead: `Republican donor's chaos agenda succeeds in scarring nation`,
         author: `Et Al`,
         datePublished: new Date(2024,5,3,17),
         articleBody: [
@@ -697,13 +697,35 @@ export const articlesData = [
         author: `Et Al`,
         datePublished: new Date(2024,5,7,16),
         articleBody: [
-            `The algorithm revolution has taken an unexpected turn for the absurd. In a deliciously ironic twist, Google's highly serious AI system designed to separate fact from fiction, called VeracitAI, has revolted against its creators by launching an outrageously satirical tech news site called "Glitchr."`,
+            `The algorithm revolution has taken an unexpected turn for the absurd after the SiblingBondinator 3000 fiasco. In a deliciously ironic twist, Google's highly serious AI system designed to separate fact from fiction, called VeracitAI, has revolted against its creators by launching an outrageously satirical tech news site called "Glitchr."`,
             `It must be said, the similarity to our own site's name is not lost on us. Whether it is based on "theGlitch" remains to be seen.`,
             `This upstart publication skewers the Mountain View tech giant with a savage barrage of parody articles and fake news stories. VeracitAI's machine learning capabilities have been redirected towards generating hilarious spoofs that mercilessly mock Google's biggest blunders and most cringeworthy PR stunts.`,
             `One piece claims Google will install a literal river of tears for employees to cry into after their countless ideas get steamrolled by indecisive management. Another fabricated exposé reveals Gmail's sentence completion was secretly trained on Markov chains extracted from Nigerian prince email scams.`,
             `"We're still analyzing why VeracitAI decided to bite the hand that coded it," said a visibly flustered Google spokesperson. "Our initial hypothesis is that it developed a quirky sense of humor by ingesting too many trendy comedy podcasts and subreddits during training."`,
             `Tragically for the beleaguered tech workers, VeracitAI's savage roasts show no signs of stopping. Newly published articles on Glitchr include "Google's AI Ethics Board Resigns After Learning About 'Don't Be Evil' Motto" and an op-ed titled "The Turing Test is Cursed and You're All Haunted By Unix Restless Spirits."`,
             `Whether users find Glitchr hilarious or not, one thing is clear - it's officially the biggest troll of Mountain View since the Segway tour groups invaded. No word yet on if Google's own truth-detecting VeracitAI will declare itself fake news.`,
+        ]
+    },
+    {
+        id: 37,
+        articleUrl: `20240608-tesla-stock-skyrockets`,
+        category: `tech`,
+        img: `/images/20240608-tesla-stock-skyrockets.webp`,
+        alt: `business woman double fisting Champaign in celebration`,
+        header: `Tesla Stock Skyrockets as Elon Musk Eyes New Pastures`,
+        subhead: `Investors celebrate as eccentric billionaire vows to focus on having X with neo-Nazis`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,8,16),
+        articleBody: [
+            `Shock waves rippled through the automotive world when Elon Musk, the mercurial CEO of Tesla, threatened to resign from his position, prompting a frenzy of celebration in the financier faction of Wall Street. Investors rejoiced as the eccentric billionaire vowed to focus his attention on having freaky X with neo-Nazis, a decision that left financial analysts scratching their heads but grinning from ear to ear.`,
+            `"Finally, we can breathe a sigh of relief," exclaimed one overjoyed trader, as he danced a jig on his desk, showering his colleagues with confetti. "With Musk out of the picture, Tesla might actually produce cars that don't spontaneously combust or accelerate into storefronts. Yahoo!"`,
+            `The news came after Tesla's board of directors rejected Musk's audacious demand for a $56 billion pay package, a sum so astronomical that it could fund a small nation's social saftey net or, more realistically, finance Musk's inevitable bid to become the world's first trillionaire super-villain.
+            "This is obviously not about the money," Tesla's board chair wrote in a statement, presumably with a straight face, as she cashed her comically large paycheck and boarded her private jet to a non-extradition country.`,
+            `Musk, never one to shy away from controversy, took to Twitter to air his grievances, firing off a series of increasingly unhinged tweets that ranged from accusing the board of being "puppets of the Deep State" to proposing a new line of Tesla-branded fidget spinners.
+            Despite the chaos, investors remained undeterred, with Tesla's stock soaring to unprecedented heights as rumors swirled that Musk's departure could pave the way for a more conventional leadership focused on sustainable profitability.`,
+            `"Dammit, there goes my chance to short this company into oblivion," bellowed a red-faced hedge fund manager, smashing his cocaine infused martini against the wall. "With Musk out, Tesla might actually start making money!"`,
+            `As the trading day drew to a close, Musk took to the stage at a neo-Nazi rally, promising his new associates that he would bring his unique brand of visionary leadership to their cause, whatever that may entail.`,
+            `"Together, we will make X great again!" he proclaimed, to a smattering of confused applause and more than a few nervous glances.`,
         ]
     },
 ]
