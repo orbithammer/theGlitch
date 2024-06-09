@@ -728,4 +728,25 @@ export const articlesData = [
             `"Together, we will make X great again!" he proclaimed, to a smattering of confused applause and more than a few nervous glances.`,
         ]
     },
+    {
+        id: 38,
+        articleUrl: `20240609-united-airlines-boldly`,
+        category: `tech`,
+        img: `/images/20240609-united-airlines-boldly.webp`,
+        alt: `smiling flight attendant holding two clubs, one long and one short`,
+        header: `United Airlines Boldly Leads Aviation Into Relentless Advertising Frontier`,
+        subhead: `Cabin crew repurposed as ad enforcers, close quarters martial arts training a plus`,
+        author: `Et Al`,
+        datePublished: new Date(2024,5,9,8),
+        articleBody: [
+            `Frequent flyers, brace yourselves for a new level of in-flight discomfort. United Airlines, never one to shy away from passenger anguish, has unveiled its latest torturous scheme: targeted ads on seat-back screens that will assault your senses with the ferocity of a thousand marketing executives.`,
+            `Gone are the days when you could escape reality by losing yourself in a mediocre movie or staring blankly out the window. Now, United ensures that even at 30,000 feet, the harsh realities of consumerism will follow you like a flock of vultures in the desert.`,
+            `"We noticed our passengers were finding ways to distract themselves from the true purpose of air travel – being bombarded with advertisements," explained a United spokesperson, their eyes glinting with a maniacal gleam. "So, we've taken it upon ourselves to eliminate those pesky distractions."`,
+            `Flight attendants, once tasked with ensuring passenger comfort, have now been retrained as advertising enforcers. Their new duties include confiscating smartphones, prying laptops from the hands of business travelers, and scolding anyone caught reading a book instead of absorbing the latest promotions for skin cream or sandwich spreads.`,
+            `"Ma'am, I'm going to have to ask you to put away that Kindle," barked one flight attendant, her voice dripping with authority. "You can't possibly appreciate the nuances of our Sham-Wow! infomercial with that Jane Austen novel distracting you."`,
+            `Lest you think there's a way to opt-out of this Orwellian nightmare, think again. The spokesperson was quick to clarify that while passengers can theoretically decline the targeted ads, doing so would result in the revocation of all on-board services.`,
+            `"If you don't want to be served our highly personalized promotions, that's your choice," they said with a shrug. "But you'll also be forfeiting access to food, beverages, and even the restrooms. It's all or nothing, folks."`,
+            `So, the next time you board a United flight, prepare to surrender your senses to the relentless force of targeted advertising. After all, what better way to pass the time than by having your personal data mined and used against you in the most blatant, intrusive manner possible? It's a brave new world of air travel, and United is leading the charge into this dystopian advertising nightmare.`,
+        ]
+    },
 ]
