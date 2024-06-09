@@ -35,10 +35,15 @@ const StyledImageWrapper = styled.div`
 
 const StyledLogo = styled.h1`
     position: absolute; 
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: ${({ theme }) => theme.isDarkMode ? "1px 1px 5px rgba(0, 0, 0,  0.5)" : "1px 1px 5px rgba(255, 255, 255,  0.5)"};
-    top: -6.4rem;
-    left: -1rem;
+    top: -5rem;
+    left: -0.8rem;
+    @media (min-width: 64rem) {
+        font-size: 4rem;
+        top: -6.3rem;
+        left: -1rem;;
+    }
 `
 
 
@@ -53,17 +58,21 @@ const StyledHeadline = styled.h2`
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 2.7rem;
     letter-spacing: -0.05em;
     transform: tranlateY(-20%);
     max-width: 90%;
     word-spacing: -0.05em;
-    line-height: 3.4rem;
+    line-height: 3rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     &:hover {
         background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
     }
     margin: 0;
+    @media (min-width: 64rem) {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
 `
 
 const StyledSubhead = styled.p`
