@@ -46,7 +46,6 @@ const StyledLogo = styled.h1`
     }
 `
 
-
 const StyledImg = styled.img`
     max-width: 100%;
     margin: 0;
