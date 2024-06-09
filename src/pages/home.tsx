@@ -37,7 +37,7 @@ const StyledLogo = styled.h1`
     position: absolute; 
     font-size: 3rem;
     text-shadow: ${({ theme }) => theme.isDarkMode ? "1px 1px 5px rgba(0, 0, 0,  0.5)" : "1px 1px 5px rgba(255, 255, 255,  0.5)"};
-    top: -4.8rem;
+    top: -4.6rem;
     left: -0.8rem;
     @media (min-width: 64rem) {
         font-size: 4rem;
