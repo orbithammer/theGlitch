@@ -34,10 +34,16 @@ const StyledLogo = styled.p`
     font-weight: bold;
     font-style: normal;
     position: absolute; 
-    font-size: 5rem;
+    font-size: 3rem;
+    top: -5.3rem;
+    left: -0.8rem;
     text-shadow: ${({ theme }) => theme.isDarkMode ? "1px 1px 5px rgba(0, 0, 0,  0.5)" : "1px 1px 5px rgba(255, 255, 255,  0.5)"};
-    top: -8.8rem;
-    left: -1.3rem;
+    @media (min-width: 64rem) {
+        font-size: 5rem;
+        top: -8.8rem;
+        left: -1.3rem;
+    }
+    
 `
 
 const StyledImg = styled.img`
