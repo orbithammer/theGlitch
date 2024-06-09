@@ -40,6 +40,7 @@ const StyledSidebarButton = styled.button`
 `
 
 const StyledSidebarImg = styled.img`
+  width: 1rem;
   height: 1rem;
   margin-left: 0.5rem;
   padding-bottom: 0.25rem;

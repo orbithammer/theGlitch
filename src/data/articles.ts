@@ -734,7 +734,7 @@ export const articlesData = [
         category: `tech`,
         img: `/images/20240609-united-airlines-boldly.webp`,
         alt: `smiling flight attendant holding two clubs, one long and one short`,
-        header: `United Airlines Boldly Leads Aviation Into Relentless Advertising Frontier`,
+        header: `United Airlines Boldly Leads Aviation Into Advertising Frontier`,
         subhead: `Cabin crew repurposed as ad enforcers, close quarters martial arts training a plus`,
         author: `Et Al`,
         datePublished: new Date(2024,5,9,8),
