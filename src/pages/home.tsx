@@ -58,7 +58,7 @@ const StyledHeadline = styled.h2`
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     letter-spacing: -0.05em;
     transform: tranlateY(-20%);
     max-width: 90%;
