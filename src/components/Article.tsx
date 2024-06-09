@@ -42,8 +42,7 @@ const StyledLogo = styled.p`
         font-size: 5rem;
         top: -8.8rem;
         left: -1.3rem;
-    }
-    
+    }  
 `
 
 const StyledImg = styled.img`
@@ -57,13 +56,17 @@ const StyledHeadline = styled.h1`
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 2.4rem;
     letter-spacing: -0.05em;
     transform: tranlateY(-20%);
     max-width: 90%;
     word-spacing: -0.05em;
-    line-height: 3.4rem;
+    line-height: 3rem;
     margin: 0;
+    @media (min-width: 64rem) {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    } 
 `
 
 const StyledSubhead = styled.h2`
