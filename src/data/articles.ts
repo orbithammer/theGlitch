@@ -805,7 +805,7 @@ export const articlesData = [
             `"We can't just coddle these vagrants," sniffed Mayor London Breed when asked about addressing root causes. "They need an unstoppable robotic disciplinarian to protect our investments!"`,
             `Key drone features include night-vision cameras, tear gas deployers, and crowd-zapping tasers. Loud speakers will ceaselessly bellow commands like "DISPERSE VAGRANTS!" and "CALORIC SUSTENANCE ACQUISITION IS PROHIBITED BY THE HUNGER DETERRENCE ACT!"`,
             `While civil liberty groups condemn the draconian measure as "technologically-augmented class war", San Francisco's progressive elite argue the militarized surveillance provides an efficient, cost-effective way to gently resettle the unhoused "somewhere, anywhere, just not here."`,
-            `"These drones are the most humane way to bully our most vulnerable into total abjection," Breed explained. "I hear Sacremento has a fraction of our policing budget for drones."`,
+            `"These drones are the most humane way to bully our most vulnerable into total abjection," Breed explained, "but I hear Sacremento has a fraction of our policing budget. It's only a quick hike away."`,
         ]
     },
 ]
