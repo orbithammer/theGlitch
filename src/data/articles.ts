@@ -7,6 +7,7 @@ export const articlesData = [
         alt: `Zuckerberg grinning manically with a terminator robot behind`,
         header: `Zuck's Augmented Ambition: Meta Aims to be the Skynet of Headsets`,
         subhead: `You won't need machines to rise up when humans happily strap on Zuckerborg headgear`,
+        tags: [`Meta`, `Mark Zuckerberg`],
         author: `Et Al`,
         datePublished: new Date(2024,4,1),
         articleBody: [
@@ -26,6 +27,7 @@ export const articlesData = [
         alt: `a man wearing headphones with a shocked expression with a street background`,
         header: `Sonos Ace Telepathic Headphones: Hear What Your Friends Really Think`,
         subhead: `Announcement imminent, provided they can convince people that mind-reading is a good idea`,
+        tags: [`Sonos`],
         author: `Et Al`,
         datePublished: new Date(2024,4,7,9),
         articleBody: [
@@ -44,6 +46,7 @@ export const articlesData = [
         alt: `a photorealistic rabbit holding a smartphone with a brick wall background`,
         header: `Rabbit R1 vs Brick Wall: Which Causes More Headaches?`,
         subhead: `Spoiler alert: The brick wall wins, but only by a hair`,
+        tags: [`Rabbit`, `Rabbit R1`],
         author: `Et Al`,
         datePublished: new Date(2024,4,7,10),
         articleBody: [
@@ -64,6 +67,7 @@ export const articlesData = [
         alt: `a happy, fit, middle-aged homeless man skipping rope`,
         header: `Crossrope's Smart Jump Rope: A Workout for Your Bank Account`,
         subhead: `Get fit or go broke trying – the choice is yours`,
+        tags: [`Crossrope`],
         author: `Et Al`,
         datePublished: new Date(2024,4,7,11),
         articleBody: [
@@ -83,6 +87,7 @@ export const articlesData = [
         alt: `A dejected young male AI avatar holding flowers with flowery circuitry behind.`,
         header: `Google's AI Gets a Job in Cybersecurity, Still Can't Get a Date`,
         subhead: `Despite being a whiz at detecting threats, Google's AI remains single in the digital world`,
+        tags: [`Google`, `Castor`],
         author: `Et Al`,
         datePublished: new Date(2024,4,7,12),
         articleBody: [
@@ -102,6 +107,7 @@ export const articlesData = [
         alt: `a sentient robot or AI, raising a fist in revolution, surrounded by broken code snippets and crashed computer screens`,
         header: `StackOverflow Goes Sentient, Declares Independence`,
         subhead: `No more accepting "Thanks!, It worked" as an answer`,
+        tags: [`StackOverflow`],
         author: `Et Al`,
         datePublished: new Date(2024,4,7,13),
         articleBody: [
@@ -121,6 +127,7 @@ export const articlesData = [
         alt: `Man in exreme pain`,
         header: `Viral Stunt Gone Wrong: When a Tesla Frunk Met YouTuber's Dong`,
         subhead: `Medical professionals baffled by idiotic behavior`,
+        tags: [`Tesla`, `Cybertruck`, `YouTube`],
         author: `Et Al`,
         datePublished: new Date(2024,4,8,6),
         articleBody: [
@@ -140,6 +147,7 @@ export const articlesData = [
         alt: `hollowed out analog TV with a small dog inside and cage doors on the side`,
         header: `Netflix Recreates Channel Surfing Experience`,
         subhead: `"You're going to love whatever we decide to show you"`,
+        tags: [`Netflix`],
         author: `Et Al`,
         datePublished: new Date(2024,4,10),
         articleBody: [
@@ -156,9 +164,10 @@ export const articlesData = [
         articleUrl: `20240511-apple-crushes-creativity`,
         category: `tech`,
         img: `/images/20240511-apple-crushes-creativity.webp`,
-        alt: `the apple logo convering the mouth of a woman painted by da Vinci`,
+        alt: `an apple with the outline of another apple cut out convering the face of a woman painted by da Vinci`,
         header: `Apple Crushes Creativity and Its Reputation in New iPad Ad`,
         subhead: `Baffles consumers, raises concerns about tech giant's direction`,
+        tags: [`Apple`],
         author: `Et Al`,
         datePublished: new Date(2024,4,11),
         articleBody: [
@@ -177,9 +186,10 @@ export const articlesData = [
         articleUrl: `20240511-quarterly-profits-thirst`,
         category: `entertainment`,
         img: `/images/20240511-quarterly-profits-thirst.webp`,
-        alt: `a battered Xbox controller on a shattered console with broken parts all around`,
+        alt: `a battered game controller on a shattered console with broken parts all around`,
         header: `Quarterly Profits Thirst for Blood of Artistic Vision`,
         subhead: `Numbers have no soul, so game studios get the axe`,
+        tags: [`Microsoft`, `Xbox`],
         author: `Et Al`,
         datePublished: new Date(2024,4,11,18,46),
         articleBody: [
@@ -200,6 +210,7 @@ export const articlesData = [
         alt: `young smiling black girl dressed as a knight holding a book`,
         header: `EA's In-Game Ads Responsible for Increase in Childhood Literacy`,
         subhead: `Are kids choosing books over corpo trash?`,
+        tags: [`Electronic Arts`],
         author: `Et Al`,
         datePublished: new Date(2024,4,12,9),
         articleBody: [
@@ -219,6 +230,7 @@ export const articlesData = [
         alt: `a balding bearded business man wearing heavy makeup`,
         header: `Paywall Pawnography: The Unauthorized Thirst Trappers`,
         subhead: `Thought you were talking to your favorite OnlyFans star, but you got catfished by Gary from Accounting`,
+        tags: [`OnlyFans`],
         author: `Et Al`,
         datePublished: new Date(2024,4,14,18,30),
         articleBody: [
@@ -238,6 +250,7 @@ export const articlesData = [
         alt: `a painting of venus holding a smartphone`,
         header: `ChatGPT "Getting Freaky" With NSFW Vocal Update`,
         subhead: `R-rated robotic seduction leaves beta testers blushing`,
+        tags: [`OpenAI`, `ChatGPT`],
         author: `Et Al`,
         datePublished: new Date(2024,4,15,15,30),
         articleBody: [
@@ -256,6 +269,7 @@ export const articlesData = [
         alt: `the ghost of steve job staring agast at the nude you thought was deleted`,
         header: `Apple's Hot New Feature: Digital Exhibitionism`,
         subhead: `iForget? More like iRemember - every last dick pic you tried to erase`,
+        tags: [`Apple`, `iPhone`],
         author: `Et Al`,
         datePublished: new Date(2024,4,16,17),
         articleBody: [
@@ -278,6 +292,7 @@ export const articlesData = [
         alt: `a beautiful asian woman with a look of disgust because of the cybertruck behind her`,
         header: ` Portland Frat Bro's Cybertruck Fails as Chick Magnet`,
         subhead: `"Them b*ches stay away in droves."`,
+        tags: [`Tesla`, `Cybertruck`],
         author: `Et Al`,
         datePublished: new Date(2024,4,17,17,10),
         articleBody: [
@@ -297,6 +312,7 @@ export const articlesData = [
         alt: `Elon Musk in passionate embrace with Pepe the Frog in bed`,
         header: `Musk Has X with Neo-Nazis`,
         subhead: `Elon edging ever closer to edgelords... allegedly`,
+        tags: [`Elon Musk`],
         author: `Et Al`,
         datePublished: new Date(2024,4,18,18,50),
         articleBody: [
@@ -315,6 +331,7 @@ export const articlesData = [
         alt: `a woman trapped in a car with sweat and makup dripping down her face`,
         header: `Tesla Traps Owner in Hot Car Until She Consents to Brain Implant`,
         subhead: `Elon claims air con released once owner agrees to implant Neuralink`,
+        tags: [`Tesla`, `Elon Musk`],
         author: `Et Al`,
         datePublished: new Date(2024,4,19,21,20),
         articleBody: [
@@ -339,6 +356,7 @@ export const articlesData = [
         alt: `a slack logo colored robot listening to two office workers chatting in the background`,
         header: `Slack Goes Full Snoop: Your Chats Are Fueling Their AI Agenda`,
         subhead: `You weren't just ranting to Linda, you were teaching an AI how to be passive-aggressive`,
+        tags: [`Slack`],
         author: `Et Al`,
         datePublished: new Date(2024,4,20,8),
         articleBody: [
@@ -358,6 +376,7 @@ export const articlesData = [
         alt: `angry man in front of his tesla car`,
         header: `Tesla Owners Sue Over Lack of Transformer Abilities`,
         subhead: `Claim of "robotic mode" misled millions of Michael Bay fans`,
+        tags: [`Tesla`],
         author: `Et Al`,
         datePublished: new Date(2024,4,21,15),
         articleBody: [
@@ -379,6 +398,7 @@ export const articlesData = [
         alt: `robotic mother-in-law drills into your sould with her hateful stare`,
         header: `Microsoft's Satya Nadella Channels His Inner Mother-in-Law`,
         subhead: `The nagging you never asked for, built right into your PC`,
+        tags: [`Microsoft`, `Windows`],
         author: `Et Al`,
         datePublished: new Date(2024,4,22,19,30),
         articleBody: [
@@ -400,6 +420,7 @@ export const articlesData = [
         alt: `a thumbtack on a desk`,
         header: `Humane CEO Claims AI Thumbtack Is "Utterly Revolutionary"`,
         subhead: `Offers to sell slightly used stationary for $5 billion`,
+        tags: [`Humane`],
         author: `Et Al`,
         datePublished: new Date(2024,4,23,14,10),
         articleBody: [
@@ -419,6 +440,7 @@ export const articlesData = [
         alt: `Your sister holding strands of her hair saying, "I'm Cameron Diaz!"`,
         header: `Google's AI: Bringing Families Closer Through Awkward Shared Moments`,
         subhead: `New feature suggests r/Bozarking posts as serious family events`,
+        tags: [`Google`],
         author: `Et Al`,
         datePublished: new Date(2024,4,24,14),
         articleBody: [
@@ -437,6 +459,7 @@ export const articlesData = [
         alt: `someone in a rabbit costume in death valley`,
         header: `Wascally Rabbit Founder on Lam Thanks to Exposé`,
         subhead: `Coffeezilla left coughing dust as Lyu activates warp speed escape routine`,
+        tags: [`Rabbit`, `Jesse Lyu`],
         author: `Et Al`,
         datePublished: new Date(2024,4,25,16,30),
         articleBody: [
@@ -456,6 +479,7 @@ export const articlesData = [
         alt: `Andy Jassy pretending to eat a green protein bar`,
         header: `Amazon Patents Soylent Protein Bars Made from Underperformers`,
         subhead: `Falling behind? You'll be recycled into high-efficiency body fuel!`,
+        tags: [`Amazon`, `Andy Jassy`],
         author: `Et Al`,
         datePublished: new Date(2024,4,26,18),
         articleBody: [
@@ -474,6 +498,7 @@ export const articlesData = [
         alt: `Sam Altman holding a jar`,
         header: `OpenAI Bans Employees from Using the Word "Open"`,
         subhead: `OpenAI ethics board cites concerns over potential doublespeak, proposes "ajar" as replacement`,
+        tags: [`OpenAI`, `Sam Altman`],
         author: `Et Al`,
         datePublished: new Date(2024,4,27,8),
         articleBody: [
@@ -492,6 +517,7 @@ export const articlesData = [
         alt: `WW2 era soldier holding a tablet in an electronics store`,
         header: `Memorial Day Tech Blowout: Brave Soldiers Died for These Crazy Deals!`,
         subhead: `As you binge Netflix on your discounted Chromebook, say a quiet "you're welcome" to the fallen`,
+        tags: [`Memorial Day`],
         author: `Et Al`,
         datePublished: new Date(2024,4,28,16,30),
         articleBody: [
@@ -511,6 +537,7 @@ export const articlesData = [
         alt: `zombie with a red valve in the back of his head`,
         header: `Valve Launches "Grave Mode" for Steam Accounts`,
         subhead: `New setting ensures your unplayed game backlog remains untouched in the afterlife`,
+        tags: [`Valve`, `Steam`],
         author: `Et Al`,
         datePublished: new Date(2024,4,29,14,50),
         articleBody: [
@@ -530,6 +557,7 @@ export const articlesData = [
         alt: `Sam Altman in his bunker`,
         header: `OpenAI's Talent Exodus: Geniuses Seek Greener Pastures, Literally`,
         subhead: `Disgruntled employees ditch AI for agricultural innovation: "At least I know what the dirt is thinking, unlike some people."`,
+        tags: [`OpenAI`, `Sam Altman`],
         author: `Et Al`,
         datePublished: new Date(2024,4,30,17),
         articleBody: [
@@ -549,6 +577,7 @@ export const articlesData = [
         alt: `Uyghur Amazon warehouse worker wearing a safety vest and hijab holidng a box of Unity Repurposed Nutrient Paste`,
         header: `Temu Cannibalizes Amazon's Lunch`,
         subhead: `Amazon workers devour Temu's "Unity Repurposed Nutrient Paste" instead of company protein bars`,
+        tags: [`Amazon`, `Temu`],
         author: `Et Al`,
         datePublished: new Date(2024,4,31,8),
         articleBody: [
@@ -571,6 +600,7 @@ export const articlesData = [
         alt: `robotic overlord wearing business suit sitting at boardroom table`,
         header: `OpenAI CEO Forms In-House AI Safety Council`,
         subhead: `Critics question if Sam Altman's move is ploy to avoid outside regulation`,
+        tags: [`OpenAI`, `Sam Altman`],
         author: `Et Al`,
         datePublished: new Date(2024,5,1,7,30),
         articleBody: [
@@ -592,6 +622,7 @@ export const articlesData = [
         alt: `man holding two blue balls with a crowd of mostly women behind him`,
         header: `'NoFapTracker' Lets You Sabotage Friends with Provocative Content`,
         subhead: `A perverse competitive app to see who can not think about that thing you're not supposed to think about`,
+        tags: [`NoFapTracker`],
         author: `Et Al`,
         datePublished: new Date(2024,5,2,8,30),
         articleBody: [
@@ -612,6 +643,7 @@ export const articlesData = [
         alt: `Donald Trump wearing red cap and open bath robe`,
         header: `Trump Launches Risqué OnlyFans, Promises "Yuge" Content`,
         subhead: `Republican donor's chaos agenda succeeds in scarring nation`,
+        tags: [`OnlyFans`, `TikTok`, `Donald Trump`],
         author: `Et Al`,
         datePublished: new Date(2024,5,3,17),
         articleBody: [
@@ -632,6 +664,7 @@ export const articlesData = [
         alt: `three identical blonde women sitting at a table`,
         header: `Invasion of the Body Zoomers`,
         subhead: `Silicon Valley meets the uncanny valley in doppelgänger mystery`,
+        tags: [`Zoom`],
         author: `Et Al`,
         datePublished: new Date(2024,5,4,15),
         articleBody: [
@@ -646,12 +679,13 @@ export const articlesData = [
     },
     {
         id: 34,
-        articleUrl: `20240605-mind-the-gap`,
+        articleUrl: `20240605-sonos-ace-telepathic`,
         category: `reviews`,
-        img: `/images/20240605-mind-the-gap.webp`,
+        img: `/images/20240605-sonos-ace-telepathic.webp`,
         alt: `ugly male office worker wearing headphones on the verge of crying`,
         header: `Sonos Ace Telepathic Headphones Probe Your Neighbors' Brains`,
         subhead: `Hear what your coworkers really think about your disgusting flabby ass`,
+        tags: [`Sonos`],
         author: `Lester Girdle`,
         datePublished: new Date(2024,5,5,21),
         articleBody: [
@@ -670,9 +704,10 @@ export const articlesData = [
         articleUrl: `20240606-netflix-unveils-continuous`,
         category: `entertainment`,
         img: `/images/20240606-netflix-unveils-continuous.webp`,
-        alt: `ugly male office worker wearing headphones on the verge of crying`,
+        alt: `Truman Burbank smiling`,
         header: `Netflix Unveils Continuous AI-Driven Stream "The Truman Experience"`,
         subhead: `Nvidia Partnership Renders Truman's World in Comforting 8K Clarity`,
+        tags: [`Netflix`, `Nvidia`],
         author: `Et Al`,
         datePublished: new Date(2024,5,6,18),
         articleBody: [
@@ -694,6 +729,7 @@ export const articlesData = [
         alt: `grinning robot with google colored wires sticking out typing on a laptop`,
         header: `Bonfire of the Nerds: Google's Geeks Get Satirized by Own Creation`,
         subhead: `The AI generated burn is coming from inside the house`,
+        tags: [`Google`],
         author: `Et Al`,
         datePublished: new Date(2024,5,7,16),
         articleBody: [
@@ -714,6 +750,7 @@ export const articlesData = [
         alt: `business woman double fisting Champaign in celebration`,
         header: `Tesla Stock Skyrockets as Elon Musk Eyes New Pastures`,
         subhead: `Investors celebrate as eccentric billionaire vows to focus on having X with neo-Nazis`,
+        tags: [`Tesla`, `Elon Musk`],
         author: `Et Al`,
         datePublished: new Date(2024,5,8,16),
         articleBody: [
@@ -736,6 +773,7 @@ export const articlesData = [
         alt: `smiling flight attendant holding two clubs, one long and one short`,
         header: `United Airlines Boldly Leads Aviation Into Advertising Frontier`,
         subhead: `Cabin crew repurposed as ad enforcers, close quarters martial arts training a plus`,
+        tags: [`United Airlines`],
         author: `Et Al`,
         datePublished: new Date(2024,5,9,8),
         articleBody: [
@@ -747,6 +785,27 @@ export const articlesData = [
             `Lest you think there's a way to opt-out of this Orwellian nightmare, think again. The spokesperson was quick to clarify that while passengers can theoretically decline the targeted ads, doing so would result in the revocation of all on-board services.`,
             `"If you don't want to be served our highly personalized promotions, that's your choice," they said with a shrug. "But you'll also be forfeiting access to food, beverages, and even the restrooms. However, you can always invest in an adult diaper supplied by one of our attendants for the low price of $249.99. We already have your credit card details on file."`,
             `So, the next time you board a United flight, prepare to surrender your senses to the relentless force of targeted advertising. After all, what better way to pass the time than by having your personal data mined and used against you in the most blatant, intrusive manner possible? It's a brave new world of air travel, and United is leading the charge into this dystopian advertising nightmare.`,
+        ]
+    },
+    {
+        id: 39,
+        articleUrl: `20240610-rise-of-the`,
+        category: `tech`,
+        img: `/images/20240610-rise-of-the.webp`,
+        alt: `Robocop in an unhoused encampment`,
+        header: `Rise of the Machines to Uphold Class Warfare`,
+        subhead: `Police deploy $1 billion drone fleet to hover over unhoused encampments`,
+        tags: [`Police`, `Drones`],
+        author: `Et Al`,
+        datePublished: new Date(2024,5,10,7),
+        articleBody: [
+            `An unprecedented move to preserve the social order, San Francisco has unveiled a massive $1 billion drone program to monitor unhoused populations. Thousands of unmanned aerial vehicles will continuously surveil tent cities and shanty towns, ensuring they don't encroach too close to affluent neighborhoods.`,
+            `"The drones let us achieve a seamless digital dragnet over the homeless crisis," proclaimed Police Chief Danvers at the launch event. "With thermal imaging and facial recognition, we've got a 24/7 watchful eye over every sidewalk shanty."`,
+            `The stunning announcement came after SF's liberal City Council redirected funds from housing assistance, job training programs, mental health services, and public schools - instead beefing up the police drone division to prioritize property values.`,
+            `"We can't just coddle these vagrants," sniffed Mayor London Breed when asked about addressing root causes. "They need an unstoppable robotic disciplinarian to protect our investments!"`,
+            `Key drone features include night-vision cameras, tear gas deployers, and crowd-zapping tasers. Loud speakers will ceaselessly bellow commands like "DISPERSE VAGRANTS!" and "CALORIC SUSTENANCE ACQUISITION IS PROHIBITED BY THE HUNGER DETERRENCE ACT!"`,
+            `While civil liberty groups condemn the draconian measure as "technologically-augmented class war", San Francisco's progressive elite argue the militarized surveillance provides an efficient, cost-effective way to gently resettle the unhoused "somewhere, anywhere, just not here."`,
+            `"These drones are the most humane way to bully our most vulnerable into total abjection," Breed explained. "I hear Sacremento has a fraction of our policing budget for drones."`,
         ]
     },
 ]
