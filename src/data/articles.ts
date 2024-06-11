@@ -825,7 +825,7 @@ export const articlesData = [
             `According to the leaked files, automakers have been selling this "road rage rating" data to shady insurers and black market underwriters. These firms then facilitate the procurement of bespoke bondage-mobiles for the Crash Crash elite's "passion pit" automotive orgies.`,
             `"It's a total perversion of smart mobility," whistleblower and former autonomous vehicle developer Patty Penbroke told RaeVisor. "They're turning cars into twisted fetish toys for their demented asphalt appetites."`,
             `The sordid files expose chilling chat transcripts from Crash Crash ringleaders celebrating "the steel belvedere of ecstasy" and "the adrenaline-soaked rapture of shattered safety glass." Even more disturbing: first-hand accounts of "crash safaris" into impoverished neighborhoods to indulge their savage road rites.`,
-            `As autonomous vehicles loom over public roadways, one shudders at the implications. Will our smart car overlords use their machine learning algorithms to maximize not passenger safety, but somekinky techbro's mania for mangled metal? Brace for impact, folks - this is just the beginning.`,
+            `As autonomous vehicles loom over public roadways, one shudders at the implications. Will our smart car overlords use their machine learning algorithms to maximize not passenger safety, but some kinky techbro's mania for mangled metal? Brace for impact, folks - this is just the beginning.`,
         ]
     },
 ]
