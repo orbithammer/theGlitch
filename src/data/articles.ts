@@ -814,9 +814,9 @@ export const articlesData = [
         category: `tech`,
         img: `/images/20240611-asphalt-voyeurs-big.webp`,
         alt: `techbro wearing zipper vest, button-up shirt, and ball gag taking a selfie if front of wrecked vehicles`,
-        header: `Asphalt Voyeurs: Big Auto's Sordid Scoring System Caters to Crash Fetishists`,
+        header: `Asphalt Voyeurs: Big Auto's Scoring System Caters to Crash Fetishists`,
         subhead: `From Freeways to Fetish Clubs, Automakers Peddle Perverse Pileup Porn`,
-        tags: [`Smartcars`, `Surveillance`],
+        tags: [`Smart Cars`, `Surveillance`],
         author: `Et Al`,
         datePublished: new Date(2024,5,11,14),
         articleBody: [
