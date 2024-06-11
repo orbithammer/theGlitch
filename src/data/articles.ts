@@ -808,4 +808,24 @@ export const articlesData = [
             `"These drones are the most humane way to bully our most vulnerable into total abjection," Breed explained, "but I hear Sacramento has a fraction of our policing budget. It's only a quick hike away."`,
         ]
     },
+    {
+        id: 40,
+        articleUrl: `20240611-asphalt-voyeurs-big`,
+        category: `tech`,
+        img: `/images/20240611-asphalt-voyeurs-big.webp`,
+        alt: `techbro wearing zipper vest, button-up shirt, and ball gag taking a selfie if front of wrecked vehicles`,
+        header: `Asphalt Voyeurs: Big Auto's Sordid Scoring System Caters to Crash Fetishists`,
+        subhead: `From Freeways to Fetish Clubs, Automakers Peddle Perverse Pileup Porn`,
+        tags: [`Smartcars`, `Surveillance`],
+        author: `Et Al`,
+        datePublished: new Date(2024,5,11,14),
+        articleBody: [
+           ` Silicon Valley's obsession with disruption has taken a dark turn down a twisted road. Leaked internal memos from major automakers reveal a shocking conspiracy - they've been secretly scoring drivers based on telemetry data from smart cars and vehicle black boxes. But this shadowy scheme isn't about safe driving rewards. No, it caters to the depraved appetites of a kinky subculture: the Crash Crash Revolution.`,
+            `These adrenaline-addicted techbros get their kicks from fender benders and multi-car pileups. Think "Crash" by J.G. Ballard meets the unholy union of Reddit and Uber's toxic work culture. The more violent the collision, the higher their sick thrills.`,
+            `According to the leaked files, automakers have been selling this "road rage rating" data to shady insurers and black market underwriters. These firms then facilitate the procurement of bespoke bondage-mobiles for the Crash Crash elite's "passion pit" automotive orgies.`,
+            `"It's a total perversion of smart mobility," whistleblower and former autonomous vehicle developer Patty Penbroke told RaeVisor. "They're turning cars into twisted fetish toys for their demented asphalt appetites."`,
+            `The sordid files expose chilling chat transcripts from Crash Crash ringleaders celebrating "the steel belvedere of ecstasy" and "the adrenaline-soaked rapture of shattered safety glass." Even more disturbing: first-hand accounts of "crash safaris" into impoverished neighborhoods to indulge their savage road rites.`,
+            `As autonomous vehicles loom over public roadways, one shudders at the implications. Will our smart car overlords use their machine learning algorithms to maximize not passenger safety, but somekinky techbro's mania for mangled metal? Brace for impact, folks - this is just the beginning.`,
+        ]
+    },
 ]

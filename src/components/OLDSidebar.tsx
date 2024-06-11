@@ -3,7 +3,21 @@ import { NavLink } from 'react-router-dom';
 import styled from "styled-components"
 import sidebarCloseIcon from "../assets/sidebarCloseIcon.svg?inline"
 import ToggleButton from './ToggleButton';
-// import { articlesData } from '../data/articles.ts';
+import { articlesData } from '../data/articles.ts';
+
+type Article = {
+  id: number;
+  articleUrl: string;
+  category: string;
+  img: string;
+  alt: string;
+  header: string;
+  subhead: string;
+  tags: string[];
+  author: string;
+  datePublished: Date;
+  articleBody: string[];
+}
 
 const StyledSidebarWrapper = styled.div`
   z-index: 1;
@@ -34,6 +48,32 @@ const StyledUnorderedList = styled.ul`
 const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   font-size: 2rem;
+`
+const StyledDropdown = styled.div`
+  position: relative;
+  display: inline-block;
+`
+
+const StyledDropdownContent = styled.div`
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  &:hover {
+    display: block;
+  }
+`
+
+const StyledDropdownLink = styled(Link)`
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  &:hover {
+    background-color: #ddd;
+  }
 `
 
 const Sidebar: React.FC<{ isOpen: boolean; toggleSidebar: () => void }> = ({
@@ -67,6 +107,39 @@ const getNavLinkStyle = ({ isActive }: { isActive: boolean }) =>
     isActive ? activeStyles : undefined;
 
 // articlesData.map(article => console.log(article.tags))
+const organizeTagsByCategory = (articlesData: Article[]) => {
+  const categories: { [key: string]: { [tag: string]: number } } = {};
+
+  articlesData.forEach(article => {
+    if (!categories[article.category]) {
+      categories[article.category] = {};
+    }
+    article.tags.forEach(tag => {
+      if (!categories[article.category][tag]) {
+        categories[article.category][tag] = 0;
+      }
+      categories[article.category][tag]++;
+    });
+  });
+
+  // Sort tags by frequency within each category
+  for (let category in categories) {
+    let tags = categories[category];
+    categories[category] = Object.entries(tags)
+      .sort((a, b) => b[1] - a[1])
+      .reduce((obj: Record<string, number>, [tag, count]) => {
+        obj[tag] = count;
+        return obj;
+      }, {});
+  }
+
+  return categories;
+};
+
+const categorizedTags = organizeTagsByCategory(articlesData);
+console.log(categorizedTags);
+
+
 return (
     <StyledSidebarWrapper 
       style={isOpen ? sidebarOpen : sidebarStyles}
