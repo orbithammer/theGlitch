@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, /*Link*/ } from 'react-router-dom';
 import styled from "styled-components"
 import sidebarCloseIcon from "../assets/sidebarCloseIcon.svg?inline"
 import ToggleButton from './ToggleButton';
@@ -49,32 +49,32 @@ const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   font-size: 2rem;
 `
-const StyledDropdown = styled.div`
-  position: relative;
-  display: inline-block;
-`
+// const StyledDropdown = styled.div`
+//   position: relative;
+//   display: inline-block;
+// `
 
-const StyledDropdownContent = styled.div`
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  &:hover {
-    display: block;
-  }
-`
+// const StyledDropdownContent = styled.div`
+//   display: none;
+//   position: absolute;
+//   background-color: #f1f1f1;
+//   min-width: 160px;
+//   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//   z-index: 1;
+//   &:hover {
+//     display: block;
+//   }
+// `
 
-const StyledDropdownLink = styled(Link)`
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  &:hover {
-    background-color: #ddd;
-  }
-`
+// const StyledDropdownLink = styled(Link)`
+//   color: black;
+//   padding: 12px 16px;
+//   text-decoration: none;
+//   display: block;
+//   &:hover {
+//     background-color: #ddd;
+//   }
+// `
 
 const Sidebar: React.FC<{ isOpen: boolean; toggleSidebar: () => void }> = ({
     isOpen,
