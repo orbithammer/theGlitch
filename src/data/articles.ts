@@ -440,7 +440,7 @@ export const articlesData = [
         alt: `Your sister holding strands of her hair saying, "I'm Cameron Diaz!"`,
         header: `Google's AI: Bringing Families Closer Through Awkward Shared Moments`,
         subhead: `New feature suggests r/Bozarking posts as serious family events`,
-        tags: [`Google`],
+        tags: [`Google`, `SiblingBondinator 3000`],
         author: `Et Al`,
         datePublished: new Date(2024,4,24,14),
         articleBody: [
@@ -729,7 +729,7 @@ export const articlesData = [
         alt: `grinning robot with google colored wires sticking out typing on a laptop`,
         header: `Bonfire of the Nerds: Google's Geeks Get Satirized by Own Creation`,
         subhead: `The AI generated burn is coming from inside the house`,
-        tags: [`Google`],
+        tags: [`Google`, `VeracitAI`, `SiblingBondinator 3000`],
         author: `Et Al`,
         datePublished: new Date(2024,5,7,16),
         articleBody: [
