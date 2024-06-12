@@ -181,7 +181,7 @@ const Article: React.FC = () => {
         setIsLoading(false)
     },[])
     const renderTags = tags.map((tag, index) => (
-        <StyledTag key={index} theme={{ isDarkMode }} to={`/articles/tag/${tag}`}>
+        <StyledTag key={index} theme={{ isDarkMode }} to={`/search/${tag}`}>
             {tag}
         </StyledTag>
     ));

@@ -833,7 +833,7 @@ export const articlesData = [
         articleUrl: `20240612-game-over-musk`,
         category: `entertainment`,
         img: `/images/20240612-game-over-musk.webp`,
-        alt: `TODO`,
+        alt: `Elon Musk holding an eggplant`,
         header: `Game Over, Musk: Consoles Uninstall X to Avoid PR Dumpster Fire`,
         subhead: `PlayStation, Xbox, Switch update removes integration after Elon caught exchanging eggplant emojis with Neo-Nazis`,
         tags: [`Twitter`, `Elon Musk`, `Video Games`],
