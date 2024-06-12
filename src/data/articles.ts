@@ -312,7 +312,7 @@ export const articlesData = [
         alt: `Elon Musk in passionate embrace with Pepe the Frog in bed`,
         header: `Musk Has X with Neo-Nazis`,
         subhead: `Elon edging ever closer to edgelords... allegedly`,
-        tags: [`Elon Musk`],
+        tags: [`Twitter`, `Elon Musk`],
         author: `Et Al`,
         datePublished: new Date(2024,4,18,18,50),
         articleBody: [
