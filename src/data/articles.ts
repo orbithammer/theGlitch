@@ -537,7 +537,7 @@ export const articlesData = [
         alt: `zombie with a red valve in the back of his head`,
         header: `Valve Launches "Grave Mode" for Steam Accounts`,
         subhead: `New setting ensures your unplayed game backlog remains untouched in the afterlife`,
-        tags: [`Valve`, `Steam`],
+        tags: [`Valve`, `Steam`, `Video Games`],
         author: `Et Al`,
         datePublished: new Date(2024,4,29,14,50),
         articleBody: [
@@ -820,12 +820,32 @@ export const articlesData = [
         author: `Et Al`,
         datePublished: new Date(2024,5,11,14),
         articleBody: [
-           ` Silicon Valley's obsession with disruption has taken a dark turn down a twisted road. Leaked internal memos from major automakers reveal a shocking conspiracy - they've been secretly scoring drivers based on telemetry data from smart cars and vehicle black boxes. But this shadowy scheme isn't about safe driving rewards. No, it caters to the depraved appetites of a kinky subculture: the Crash Crash Revolution.`,
+           `Silicon Valley's obsession with disruption has taken a dark turn down a twisted road. Leaked internal memos from major automakers reveal a shocking conspiracy - they've been secretly scoring drivers based on telemetry data from smart cars and vehicle black boxes. But this shadowy scheme isn't about safe driving rewards. No, it caters to the depraved appetites of a kinky subculture: the Crash Crash Revolution.`,
             `These adrenaline-addicted techbros get their kicks from fender benders and multi-car pileups. Think "Crash" by J.G. Ballard meets the unholy union of Reddit and Uber's toxic work culture. The more violent the collision, the higher their sick thrills.`,
             `According to the leaked files, automakers have been selling this "road rage rating" data to shady insurers and black market underwriters. These firms then facilitate the procurement of bespoke bondage-mobiles for the Crash Crash elite's "passion pit" automotive orgies.`,
             `"It's a total perversion of smart mobility," whistleblower and former autonomous vehicle developer Patty Penbroke told RaeVisor. "They're turning cars into twisted fetish toys for their demented asphalt appetites."`,
             `The sordid files expose chilling chat transcripts from Crash Crash ringleaders celebrating "the steel belvedere of ecstasy" and "the adrenaline-soaked rapture of shattered safety glass." Even more disturbing: first-hand accounts of "crash safaris" into impoverished neighborhoods to indulge their savage road rites.`,
             `As autonomous vehicles loom over public roadways, one shudders at the implications. Will our smart car overlords use their machine learning algorithms to maximize not passenger safety, but some kinky techbro's mania for mangled metal? Brace for impact, folks - this is just the beginning.`,
+        ]
+    },
+    {
+        id: 41,
+        articleUrl: `20240612-game-over-musk`,
+        category: `entertainment`,
+        img: `/images/20240612-game-over-musk.webp`,
+        alt: `TODO`,
+        header: `Game Over, Musk: Consoles Uninstall X to Avoid PR Dumpster Fire`,
+        subhead: `PlayStation, Xbox, Switch update removes integration after Elon caught exchanging eggplant emojis with Neo-Nazis`,
+        tags: [`Twitter`, `Elon Musk`, `Video Games`],
+        author: `Et Al`,
+        datePublished: new Date(2024,5,12,17),
+        articleBody: [
+            `The console wars just took an unexpected turn into the Twilight Zone. In a desperate attempt to avoid being associated with Elon Musk's recent antics, Sony, Microsoft and Nintendo have jointly announced an emergency update to remove X integration from their gaming platforms.`,
+            `It all started when leaked DMs showed the eccentric billionaire swapping eggplant emojis and winky faces with members of the Aryan Brotherhood Book Club. "Just a couple of fellas reading Mein Kampf and discussing our favorite phallic emoticons," Musk tweeted unconvincingly. "What's the big deal?"`,
+            `The big deal, Mr. Musk, is that video game companies would very much like to avoid even a whiff of association with white supremacist sympathizers. "Our consoles are meant to profit off of joy, not bilious hate," said a joint statement from the manufacturers. "The absence of incremental monetization surfaces, coupled with externality vulnerabilities, triggered a reevaluation of the X functionality's efficacy within our monetization paradigm."`,
+            `While integrating X initially seemed like a fun way for console players to connect with their hype beast squad, the update removing the functionality was rolled out quicker than you can say "busting a civil rights movement." User reaction was mixed, with comments ranging from "Good riddance, that integration was janky anyway" to "Y'all are just virtue signaling pawns of the woke mind virus."`,
+            `For his part, Musk blamed the "mainstream media" and "bots attacking free speech" for the controversy, then changed his Twitter bio to read "Musk/Shapiro 2024 - We'll Tell It Like It Is (Hint: Everyone Else Are Groomers)". At press time, he was attempting to start an encrypted chat app called "Freething" dedicated to "real free speech for awesome legends only."`,
+            `So long, X. We hardly batted an eyelash at ye. Perhaps this whole debacle will teach the billionaire tycon a valuable lesson: stop exchanging suggestive emojis with hate groups if you want the cool kids to keep buying your stuff.`,
         ]
     },
 ]

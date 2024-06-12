@@ -11,6 +11,7 @@ import TwitterShareIconDark from "/src/assets/twitterShareDark.svg"
 import TwitterShareIconLight from "/src/assets/twitterShareLight.svg"
 import ThemeContext from "../utils/ThemeContext"
 import formatDate from "../utils/formatDate"
+// import renderTags from '../utils/renderTags'
 
 
 type articlesData = {
@@ -50,6 +51,21 @@ const StyledImg = styled.img`
     margin: 0;
     border-radius: 5px;
     object-fit: cover;
+`
+const StyledTagsWrapper = styled.div`
+    margin: 0.5rem 0;
+`
+const StyledTag = styled(Link)`
+    color: ${({ theme }) => (theme.isDarkMode ? '#9CE00C' : '#5200FF')};
+    text-decoration: none;
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: ${({ theme }) => (theme.isDarkMode ? '#5200FF' : '#9CE00C')};
+        color: ${({ theme }) => (theme.isDarkMode ? '#fff' : '#000' )};
+    }
 `
 
 const StyledHeadline = styled.h1`
@@ -95,6 +111,9 @@ const StyledAuthor = styled(Link)`
     color: ${({ theme }) => theme.isDarkMode ? "#9CE00C" : "#5200FF"};
     margin-right: 1rem;
     text-decoration: none;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    transition: all 0.3s ease;
     &:hover {
         background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
     }
@@ -114,6 +133,7 @@ const StyledShareButton = styled.button`
     background-color: ${({ theme }) => theme.isDarkMode ? "#353535" : "#cacaca"};
     margin-right: 1rem;
     border: none;
+    transition: all 0.3s ease;
     &:hover {
         background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
       }
@@ -153,11 +173,18 @@ const Article: React.FC = () => {
     const {articleUrl} = useParams() 
     const [article, setArticle] = useState<articlesData | null>(null)
     const [isLoading, setIsLoading] = useState(true)
+    const [tags, setTags] = useState<string[]>([]);
     useEffect(()=>{
         const foundArticle = articlesData.find(articleObj => articleObj.articleUrl === articleUrl);
         setArticle(foundArticle ? foundArticle : null);
+        setTags(foundArticle ? foundArticle.tags : []);
         setIsLoading(false)
     },[])
+    const renderTags = tags.map((tag, index) => (
+        <StyledTag key={index} theme={{ isDarkMode }} to={`/articles/tag/${tag}`}>
+            {tag}
+        </StyledTag>
+    ));
     const navigate = useNavigate()
     let formattedDate = ""
     if(article){
@@ -182,6 +209,9 @@ const Article: React.FC = () => {
                     <StyledLogo theme={{ isDarkMode }}>theGlitch</StyledLogo>
                     <StyledImg src={article?.img} alt={article?.alt}/>
                 </StyledHeroWrapper>
+                <StyledTagsWrapper>
+                    {renderTags}
+                </StyledTagsWrapper>
                 <StyledHeadline>{article?.header}<br/></StyledHeadline>
                 <StyledSubhead>{article?.subhead}</StyledSubhead>
                 <StyledArticleInfo>
