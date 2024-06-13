@@ -132,6 +132,8 @@ const SearchPage: React.FC = () => {
     const { isDarkMode } = useContext(ThemeContext);
     const { tag } = useParams();
     console.log("tag", tag)
+    const tagPath = `/${tag}`
+    console.log("tagPath", tagPath)
     const searchArticles = articleData
         .filter((article) => tag !== undefined ? article.tags.includes(tag) : false)
         .sort((a, b) => b.datePublished.getTime() - a.datePublished.getTime());
@@ -164,6 +166,7 @@ const SearchPage: React.FC = () => {
                 currentPage={currentPage}
                 totalPages={totalPages}
                 currentSubPagePath="/search"
+                tag={tagPath}
                 onOlderPage={handleOlderPage}
                 onNewerPage={handleNewerPage}
             />
@@ -209,6 +212,7 @@ const SearchPage: React.FC = () => {
                 currentPage={currentPage}
                 totalPages={totalPages}
                 currentSubPagePath="/search"
+                tag={tagPath}
                 onOlderPage={handleOlderPage}
                 onNewerPage={handleNewerPage}
                 />
