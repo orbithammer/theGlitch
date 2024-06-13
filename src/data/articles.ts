@@ -853,7 +853,7 @@ export const articlesData = [
         articleUrl: `20240613-musks-robot-bromance`,
         category: `Tech`,
         img: `/images/20240613-musks-robot-bromance.webp`,
-        alt: `TODO`,
+        alt: `smarmy robot giving finger guns`,
         header: `Musk's Robot Bromance Crosses the Line`,
         subhead: `Optimus' sexual harrasment angers female staff, CEO dismisses concerns`,
         tags: [`Tesla`, `Elon Musk`, `Optimus`],
