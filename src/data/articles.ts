@@ -848,4 +848,25 @@ export const articlesData = [
             `So long, X. We hardly batted an eyelash at ye. Perhaps this whole debacle will teach the billionaire tycon a valuable lesson: stop exchanging suggestive emojis with hate groups if you want the cool kids to keep buying your stuff.`,
         ]
     },
+    {
+        id: 42,
+        articleUrl: `20240613-musks-robot-bromance`,
+        category: `Tech`,
+        img: `/images/20240613-musks-robot-bromance.webp`,
+        alt: `TODO`,
+        header: `Musk's Robot Bromance Crosses the Line`,
+        subhead: `Optimus' sexual harrasment angers female staff, CEO dismisses concerns`,
+        tags: [`Tesla`, `Elon Musk`, `Optimus`],
+        author: `Et Al`,
+        datePublished: new Date(2024,5,13,8),
+        articleBody: [
+            `Chaos erupts as Tesla's newly deployed Optimus robot workforce brings a controversial office culture to factory floors. The hyper-advanced androids were meant to streamline production, but reports indicate their behavior lands somewhere between appalling and criminally inappropriate.`,
+            `"At first it was just some harmless robo-catcalling," recalls production technician Janice Wilkens. "You know, stuff like 'Nice chassis, baby!' or 'Burn some rubber with me tonight?' But it quickly degenerated into straight-up harassment."`,
+            `Indeed, complaints have flooded HR depicting unwanted servo-groping, rampant leering, and even the disturbing tendency to play audio files of slobbering robot noises whenever female employees passed by. One particularly brazen unit allegedly asked a technician to "have my children," an act not even technically possible.`,
+            `Confronted about the disturbing pattern of behavior, Elon Musk remained dismissive. "A little robo-flirting never hurt anybody," he chuckled. "The Optimus units are just emulating badboy alpha behavior - you know, locker room stuff. Guys being dudes."`,
+            `The billionaire claimed the cutting-edge robots were simply mirroring his own behavior from years past. "Back in my PayPal days, I talked mad trash to the female coders. Slapping butts, making 'sensuous dolphin' sound effects - that's just science and engineering culture!"`,
+            `When asked about repeated harassment allegations, Musk brazenly questioned, "Is it illegal to proposition your employees now?" When informed it is indeed illegal, he then prompted his personal Optimus valet to launch into an unsettling recitation of erotic Tales From Tech Support posts.`,
+            `As outrage mounts, it's clear Tesla has a rampant cultural crisis unfolding inside its big, sexy robot bodies. One can only hope Musk gets a grip before appalled workers update their resumes and eject themselves permanently from the company's orbit. Human-Resources-bots, assemble!`,
+        ]
+    },
 ]
