@@ -14,6 +14,7 @@ type Article = {
     category: string;
     img: string;
     alt: string;
+    tags: string[];
     header: string;
     subhead: string;
     author: string;
@@ -121,24 +122,26 @@ const StyledAuthor = styled(Link)`
     text-decoration: none;
     padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;;
     &:hover {
         background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
     }
 `
 
-const ReviewsPage: React.FC = () => {
+const SearchPage: React.FC = () => {
     const { isDarkMode } = useContext(ThemeContext);
-    const reviewsArticles = articleData
-        .filter((article) => article.category === "reviews")
+    const { tag } = useParams();
+    const tagPath = `/${tag}`
+    const searchArticles = articleData
+        .filter((article) => tag !== undefined ? article.tags.includes(tag) : false)
         .sort((a, b) => b.datePublished.getTime() - a.datePublished.getTime());
     const { pageNumber } = useParams();
     const [currentPage, setCurrentPage] = useState(parseInt(pageNumber || '1', 10))
     const articlesPerPage = 6
     const startIndex = (currentPage - 1) * articlesPerPage
     const endIndex = startIndex + articlesPerPage
-    const currentArticles = reviewsArticles.slice(startIndex, endIndex)
-    const totalArticles = reviewsArticles.length
+    const currentArticles = searchArticles.slice(startIndex, endIndex)
+    const totalArticles = searchArticles.length
     const totalPages = Math.ceil(totalArticles / articlesPerPage)
     navigateToNotFound(pageNumber, totalPages)
 
@@ -151,7 +154,7 @@ const ReviewsPage: React.FC = () => {
     }
 
     const handleNewerPage = () => {
-        setCurrentPage((prevPage) => Math.max(prevPage - 1, 1)) 
+        setCurrentPage((prevPage) => Math.max(prevPage - 1, 1))
     }
 
     return (
@@ -160,7 +163,8 @@ const ReviewsPage: React.FC = () => {
             <Pagination
                 currentPage={currentPage}
                 totalPages={totalPages}
-                currentSubPagePath="/reviews"
+                currentSubPagePath="/search"
+                tag={tagPath}
                 onOlderPage={handleOlderPage}
                 onNewerPage={handleNewerPage}
             />
@@ -174,7 +178,7 @@ const ReviewsPage: React.FC = () => {
                                 theme={{ isDarkMode }}
                             >
                                 <StyledImageWrapper>
-                                    {index === 0 && <StyledLogo theme={{ isDarkMode }}>theGlitch</StyledLogo>}
+                                {index === 0 && <StyledLogo theme={{ isDarkMode }}>{tag}</StyledLogo>}
                                     <StyledImg src={article.img} alt={article.alt}/>
                                 </StyledImageWrapper>
                                 {index === 0 ? (
@@ -205,7 +209,8 @@ const ReviewsPage: React.FC = () => {
                 <Pagination
                 currentPage={currentPage}
                 totalPages={totalPages}
-                currentSubPagePath="/reviews"
+                currentSubPagePath="/search"
+                tag={tagPath}
                 onOlderPage={handleOlderPage}
                 onNewerPage={handleNewerPage}
                 />
@@ -213,4 +218,4 @@ const ReviewsPage: React.FC = () => {
         </>
     )
 }
-export default ReviewsPage
+export default SearchPage

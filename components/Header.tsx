@@ -14,7 +14,7 @@ const StyledHeader = styled.header`
   justify-content: right;
 `
 
-const StyledPageName = styled.h2`
+const StyledPageName = styled.p`
   margin: 0 auto 0 2rem;
   font-size: 2rem;
 `
@@ -40,6 +40,7 @@ const StyledSidebarButton = styled.button`
 `
 
 const StyledSidebarImg = styled.img`
+  width: 1rem;
   height: 1rem;
   margin-left: 0.5rem;
   padding-bottom: 0.25rem;
@@ -79,7 +80,7 @@ const Header: React.FC = () => {
   const pageNameInitial = pathNameUnformatted === "ai" ? "AI" : pathNameUnformatted.charAt(0).toUpperCase() + pathNameUnformatted.slice(1);
   const hasNumber = /\d/.test(pageNameInitial);
   const pageName = hasNumber ? "" : pageNameInitial;
-
+  
   const toggleSidebar = () => {
     setTimeout(() => {
       setIsOpen(!isOpen);
@@ -112,7 +113,7 @@ const Header: React.FC = () => {
         </StyledUnorderedList>
       </nav>
       {!isOpen && <StyledScrollToTop onClick={scrollToTop} theme={{ isDarkMode }}>
-        <StyledChevronUpIconDark src={isDarkMode ? chevronUpDark : chevronUpLight}/>
+        <StyledChevronUpIconDark src={isDarkMode ? chevronUpDark : chevronUpLight} alt="up arrow"/>
       </StyledScrollToTop>}
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
     </StyledHeader>

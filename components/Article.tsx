@@ -1,7 +1,8 @@
 import React, {useEffect, useState, useContext } from "react"
-import { useParams, Link } from "react-router-dom"
+import { useParams, Link, useNavigate } from "react-router-dom"
 import { articlesData } from "../data/articles"
 import { styled } from "styled-components"
+import MetaTags from "../utils/MetaTags"
 import CopyLinkIconDark from "/src/assets/copyLinkDark.svg"
 import CopyLinkIconLight from "/src/assets/copyLinkLight.svg"
 import FacebookShareIconDark from "/src/assets/facebookShareDark.svg"
@@ -9,6 +10,8 @@ import FacebookShareIconLight from "/src/assets/facebookShareLight.svg"
 import TwitterShareIconDark from "/src/assets/twitterShareDark.svg"
 import TwitterShareIconLight from "/src/assets/twitterShareLight.svg"
 import ThemeContext from "../utils/ThemeContext"
+import formatDate from "../utils/formatDate"
+// import renderTags from '../utils/renderTags'
 
 
 type articlesData = {
@@ -28,12 +31,19 @@ const StyledHeroWrapper = styled.div`
     position: relative;
 `
 
-const StyledLogo = styled.h1`
+const StyledLogo = styled.p`
+    font-weight: bold;
+    font-style: normal;
     position: absolute; 
-    font-size: 4rem;
+    font-size: 3rem;
+    top: -5.1rem;
+    left: -0.8rem;
     text-shadow: ${({ theme }) => theme.isDarkMode ? "1px 1px 5px rgba(0, 0, 0,  0.5)" : "1px 1px 5px rgba(255, 255, 255,  0.5)"};
-    top: -5.7rem;
-    left: -1rem;
+    @media (min-width: 64rem) {
+        font-size: 5rem;
+        top: -8.8rem;
+        left: -1.3rem;
+    }  
 `
 
 const StyledImg = styled.img`
@@ -42,21 +52,40 @@ const StyledImg = styled.img`
     border-radius: 5px;
     object-fit: cover;
 `
+const StyledTagsWrapper = styled.div`
+    margin: 0.5rem 0;
+`
+const StyledTag = styled(Link)`
+    color: ${({ theme }) => (theme.isDarkMode ? '#9CE00C' : '#5200FF')};
+    text-decoration: none;
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: ${({ theme }) => (theme.isDarkMode ? '#5200FF' : '#9CE00C')};
+        color: ${({ theme }) => (theme.isDarkMode ? '#fff' : '#000' )};
+    }
+`
 
-const StyledHeadline = styled.h2`
+const StyledHeadline = styled.h1`
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 2.4rem;
     letter-spacing: -0.05em;
     transform: tranlateY(-20%);
     max-width: 90%;
     word-spacing: -0.05em;
-    line-height: 3.4rem;
+    line-height: 3rem;
     margin: 0;
+    @media (min-width: 64rem) {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    } 
 `
 
-const StyledSubhead = styled.p`
+const StyledSubhead = styled.h2`
     font-family: "Source Serif 4", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -82,6 +111,9 @@ const StyledAuthor = styled(Link)`
     color: ${({ theme }) => theme.isDarkMode ? "#9CE00C" : "#5200FF"};
     margin-right: 1rem;
     text-decoration: none;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    transition: all 0.3s ease;
     &:hover {
         background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
     }
@@ -101,6 +133,7 @@ const StyledShareButton = styled.button`
     background-color: ${({ theme }) => theme.isDarkMode ? "#353535" : "#cacaca"};
     margin-right: 1rem;
     border: none;
+    transition: all 0.3s ease;
     &:hover {
         background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
       }
@@ -125,18 +158,6 @@ const StyledArticleBody = styled.p`
     font-size: 1.2rem
 `
 
-const formatDate = (date: Date) => {
-    const monthNames = [
-        'January', 'February', 'March', 'April', 'May', 'June',
-        'July', 'August', 'September', 'October', 'November', 'December'
-    ];
-
-    const day = date.getDate(); // Get the day (1-31)
-    const month = monthNames[date.getMonth()-1]; // Get the month name
-    const year = date.getFullYear(); // Get the full year (e.g., 2024)
-    return `${month} ${day}, ${year}`;
-}
-
 const copyLink = async () => {
     try {
         await navigator.clipboard.writeText(window.location.href);
@@ -151,22 +172,46 @@ const Article: React.FC = () => {
     const { isDarkMode } = useContext(ThemeContext);
     const {articleUrl} = useParams() 
     const [article, setArticle] = useState<articlesData | null>(null)
+    const [isLoading, setIsLoading] = useState(true)
+    const [tags, setTags] = useState<string[]>([]);
     useEffect(()=>{
         const foundArticle = articlesData.find(articleObj => articleObj.articleUrl === articleUrl);
         setArticle(foundArticle ? foundArticle : null);
+        setTags(foundArticle ? foundArticle.tags : []);
+        setIsLoading(false)
     },[])
+    const renderTags = tags.map((tag, index) => (
+        <StyledTag key={index} theme={{ isDarkMode }} to={`/search/${tag}`}>
+            {tag}
+        </StyledTag>
+    ));
+    const navigate = useNavigate()
     let formattedDate = ""
     if(article){
         formattedDate = formatDate(article.datePublished)
     }
+    useEffect(()=>{
+        if(!article && !isLoading) {
+            navigate('not-found')
+        }
+    }, [isLoading])
 
     return (
         <>
+            <MetaTags 
+                title={article?.header || ""}
+                description={article?.subhead || ""}
+                imageUrl={article?.img || ""}
+                url={window.location.href}
+            />
             <main>
                 <StyledHeroWrapper>
                     <StyledLogo theme={{ isDarkMode }}>theGlitch</StyledLogo>
                     <StyledImg src={article?.img} alt={article?.alt}/>
                 </StyledHeroWrapper>
+                <StyledTagsWrapper>
+                    {renderTags}
+                </StyledTagsWrapper>
                 <StyledHeadline>{article?.header}<br/></StyledHeadline>
                 <StyledSubhead>{article?.subhead}</StyledSubhead>
                 <StyledArticleInfo>
@@ -188,7 +233,7 @@ const Article: React.FC = () => {
                     </StyledShareButton>
                     <StyledShareButton theme={{ isDarkMode }}>
                         <a href={`https://twitter.com/share?text=${encodeURIComponent(article?.header + " | #theGlitch #tech")}&url=${encodeURIComponent("https://theglitchnews.netlify.app/article/" + article?.articleUrl)}`} target="_blank" rel="noopener noreferrer">
-                            <StyledShareImgIcon src={isDarkMode ? TwitterShareIconDark : TwitterShareIconLight} />
+                            <StyledShareImgIcon src={isDarkMode ? TwitterShareIconDark : TwitterShareIconLight} alt="twitter share icon"/>
                         </a>
                     </StyledShareButton>
                 </StyledButtonWrapper>

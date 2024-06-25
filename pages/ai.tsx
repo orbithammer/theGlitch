@@ -4,6 +4,9 @@ import { articlesData } from "../data/articles.ts"
 import { styled } from "styled-components"
 import Pagination from "../components/Pagination.tsx"
 import ThemeContext from "../utils/ThemeContext"
+import formatDate from "../utils/formatDate.tsx"
+import navigateToNotFound from "../utils/navigateToNotFound.tsx"
+import PageMetaTags from "../utils/PagesMetaTags.tsx"
 
 type Article = {
     id: number;
@@ -30,10 +33,15 @@ const StyledImageWrapper = styled.div`
 
 const StyledLogo = styled.h1`
     position: absolute; 
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: ${({ theme }) => theme.isDarkMode ? "1px 1px 5px rgba(0, 0, 0,  0.5)" : "1px 1px 5px rgba(255, 255, 255,  0.5)"};
-    top: -6.4rem;
-    left: -1rem;
+    top: -4.6rem;
+    left: -0.8rem;
+    @media (min-width: 64rem) {
+        font-size: 4rem;
+        top: -6.3rem;
+        left: -1rem;;
+    }
 `
 
 const StyledImg = styled.img`
@@ -47,17 +55,24 @@ const StyledHeadline = styled.h2`
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 2.4rem;
     letter-spacing: -0.05em;
     transform: tranlateY(-20%);
     max-width: 90%;
     word-spacing: -0.05em;
-    line-height: 3.4rem;
+    line-height: 3rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
     &:hover {
         background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
     }
     margin: 0;
+    @media (min-width: 64rem) {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
 `
 
 const StyledSubhead = styled.p`
@@ -104,22 +119,13 @@ const StyledAuthor = styled(Link)`
     color: ${({ theme }) => theme.isDarkMode ? "#9CE00C" : "#5200FF"};
     margin-right: 1rem;
     text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;;
     &:hover {
         background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
     }
 `
-
-function formatDate(date: Date){
-    const monthNames = [
-        'January', 'February', 'March', 'April', 'May', 'June',
-        'July', 'August', 'September', 'October', 'November', 'December'
-    ];
-
-    const day = date.getDate(); // Get the day (1-31)
-    const month = monthNames[date.getMonth()-1]; // Get the month name
-    const year = date.getFullYear(); // Get the full year (e.g., 2024)
-    return `${month} ${day}, ${year}`;
-}
 
 const AiPage: React.FC = () => {
     const { isDarkMode } = useContext(ThemeContext);
@@ -134,6 +140,8 @@ const AiPage: React.FC = () => {
     const currentArticles = aiArticles.slice(startIndex, endIndex)
     const totalArticles = aiArticles.length
     const totalPages = Math.ceil(totalArticles / articlesPerPage)
+    navigateToNotFound(pageNumber, totalPages)
+
     useEffect(() => {
         setCurrentPage(parseInt(pageNumber || '1', 10))
     }, [pageNumber])
@@ -144,11 +152,11 @@ const AiPage: React.FC = () => {
 
     const handleNewerPage = () => {
         setCurrentPage((prevPage) => Math.max(prevPage - 1, 1))
-        
     }
 
     return (
         <>
+            <PageMetaTags />
             <Pagination
                 currentPage={currentPage}
                 totalPages={totalPages}

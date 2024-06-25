@@ -1,5 +1,5 @@
 import React from 'react';
-import { /*Link,*/ NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from "styled-components"
 import sidebarCloseIcon from "../assets/sidebarCloseIcon.svg?inline"
 import ToggleButton from './ToggleButton';
@@ -65,7 +65,6 @@ const sidebarOpen: React.CSSProperties = {
 const getNavLinkStyle = ({ isActive }: { isActive: boolean }) => 
     isActive ? activeStyles : undefined;
 
-
 return (
     <StyledSidebarWrapper 
       style={isOpen ? sidebarOpen : sidebarStyles}
@@ -117,6 +116,14 @@ return (
           onClick={toggleSidebar}
           aria-label={`to ai page`}
           >AI</StyledNavLink>
+        </li>
+        <li>
+          <StyledNavLink 
+          to="/contact"
+          style={getNavLinkStyle}
+          onClick={toggleSidebar}
+          aria-label={`to contact us page`}
+          >Contact Us</StyledNavLink>
         </li>
       </StyledUnorderedList>
     </StyledSidebarWrapper>
