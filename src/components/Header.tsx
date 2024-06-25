@@ -74,10 +74,8 @@ const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
   const { isDarkMode } = useContext(ThemeContext);
   const location = useLocation();
-  console.log("location", location)
   const pathname = location.pathname;
   const segments = pathname.split("/")
-  console.log("segments", segments)
   const pathNameUnformatted = segments[1]
   const pageNameInitial = pathNameUnformatted === "ai" ? "AI" : pathNameUnformatted.charAt(0).toUpperCase() + pathNameUnformatted.slice(1);
   const hasNumber = /\d/.test(pageNameInitial);

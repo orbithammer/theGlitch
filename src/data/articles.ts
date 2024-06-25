@@ -147,7 +147,7 @@ export const articlesData = [
         alt: `hollowed out analog TV with a small dog inside and cage doors on the side`,
         header: `Netflix Recreates Channel Surfing Experience`,
         subhead: `"You're going to love whatever we decide to show you"`,
-        tags: [`Netflix`],
+        tags: [`Netflix`, `Television`],
         author: `Et Al`,
         datePublished: new Date(2024,4,10),
         articleBody: [
@@ -707,7 +707,7 @@ export const articlesData = [
         alt: `Truman Burbank smiling`,
         header: `Netflix Unveils Continuous AI-Driven Stream "The Truman Experience"`,
         subhead: `Nvidia Partnership Renders Truman's World in Comforting 8K Clarity`,
-        tags: [`Netflix`, `Nvidia`],
+        tags: [`Netflix`, `Nvidia`, `Television`],
         author: `Et Al`,
         datePublished: new Date(2024,5,6,18),
         articleBody: [
@@ -867,6 +867,30 @@ export const articlesData = [
             `The billionaire claimed the cutting-edge robots were simply mirroring his own behavior from years past. "Back in my PayPal days, I talked mad trash to the female coders. Slapping butts, making 'sensuous dolphin' sound effects - that's just science and engineering culture!"`,
             `When asked about repeated harassment allegations, Musk brazenly questioned, "Is it illegal to proposition your employees now?" When informed it is indeed illegal, he then prompted his personal Optimus valet to launch into an unsettling recitation of erotic Tales From Tech Support posts.`,
             `As outrage mounts, it's clear Tesla has a rampant cultural crisis unfolding inside its big, sexy robot bodies. One can only hope Musk gets a grip before appalled workers update their resumes and eject themselves permanently from the company's orbit. Human-Resources-bots, assemble!`,
+        ]
+    },
+    {
+        id: 43,
+        articleUrl: `20240625-paramount-plus-unveils`,
+        category: `Tech`,
+        img: `/images/20240625-paramount-plus-unveils.webp`,
+        alt: `a cat in a box with a tv with a cat on the screen behind`,
+        header: `Paramount Plus Unveils Radical "Schrödinger's Subscription" Model`,
+        subhead: `Users simultaneously subscribed and unsubscribed until they check their bank statement`,
+        tags: [`Paramount Plus`, `Television`],
+        author: `Et Al`,
+        datePublished: new Date(2024,5,25,14),
+        articleBody: [
+            `Paramount Plus has left both quantum physicists and accountants scratching their heads with its groundbreaking announcement of the latest innovation in customer confusion: the "Schrödinger's Subscription" model.`,
+            `Under this cutting-edge pricing strategy, subscribers will exist in a state of financial superposition, simultaneously subscribed and unsubscribed until they dare to check their bank statements. Paramount Plus CEO, Tom Ryan, explained the concept at a press conference while stroking a cat of indeterminate aliveness.`,
+            `"We've realized that the anxiety of not knowing whether you're paying for our service or not is far more entertaining than anything we could possibly stream," Ryan declared. "It's like the thrill of a surprise billing, but with the added excitement of quantum uncertainty!"`,
+            `The new model works by charging customers a fee that may or may not exist, for content they may or may not be able to access. When pressed about how this differs from their current business model, Ryan simply smiled and asked, "Does it?"`,
+           ` Beta testers reported a range of experiences, from finding unexpected charges on their credit cards to discovering entire seasons of shows they don't remember watching. One tester claimed his account spontaneously created and deleted itself 37 times in a single afternoon.`,
+            `Critics argue that the model is just a thinly veiled attempt to distract from yet another price hike. However, Paramount Plus insists that prices aren't increasing – they're merely existing in multiple states at once.`,
+            `"Think of it as Superposition Plus," said Ryan. "Is your subscription active? Is it canceled? Are you being charged $5 or $500? The only way to know is to observe your bank account and collapse the wavefunction of your wallet!"`,
+            `As an added bonus, Paramount Plus announced that customer service representatives will now answer all queries with "yes and no" simultaneously, ensuring that consumers remain in a perpetual state of bewilderment.`,
+            `When asked about the legality of such a pricing model, Paramount's lawyers responded by filing a patent for "quantum billing" and then immediately not filing it, leaving the legal system in a paradoxical state that could take years to resolve.`,
+            `As the streaming wars escalate to absurd new heights, one thing is certain: Paramount Plus has taken uncertainty to a whole new level. Whether this bold move will pay off remains to be seen – or not seen, depending on how you observe it.`,
         ]
     },
 ]

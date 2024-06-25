@@ -131,9 +131,7 @@ const StyledAuthor = styled(Link)`
 const SearchPage: React.FC = () => {
     const { isDarkMode } = useContext(ThemeContext);
     const { tag } = useParams();
-    console.log("tag", tag)
     const tagPath = `/${tag}`
-    console.log("tagPath", tagPath)
     const searchArticles = articleData
         .filter((article) => tag !== undefined ? article.tags.includes(tag) : false)
         .sort((a, b) => b.datePublished.getTime() - a.datePublished.getTime());

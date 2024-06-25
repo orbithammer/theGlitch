@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import styled from "styled-components"
 import sidebarCloseIcon from "../assets/sidebarCloseIcon.svg?inline"
 import ToggleButton from './ToggleButton';
-// import { articlesData } from '../data/articles.ts';
 
 const StyledSidebarWrapper = styled.div`
   z-index: 1;
@@ -66,7 +65,6 @@ const sidebarOpen: React.CSSProperties = {
 const getNavLinkStyle = ({ isActive }: { isActive: boolean }) => 
     isActive ? activeStyles : undefined;
 
-// articlesData.map(article => console.log(article.tags))
 return (
     <StyledSidebarWrapper 
       style={isOpen ? sidebarOpen : sidebarStyles}
