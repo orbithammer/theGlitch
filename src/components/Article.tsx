@@ -36,14 +36,14 @@ const StyledLogo = styled.p`
     font-style: normal;
     position: absolute; 
     font-size: 3rem;
-    top: -5.1rem;
-    left: -0.8rem;
+    top: -5.3rem;
     text-shadow: ${({ theme }) => theme.isDarkMode ? "1px 1px 5px rgba(0, 0, 0,  0.5)" : "1px 1px 5px rgba(255, 255, 255,  0.5)"};
+    left: -0.6rem;
     @media (min-width: 64rem) {
-        font-size: 5rem;
-        top: -8.8rem;
-        left: -1.3rem;
-    }  
+        font-size: 4rem;
+        top: -7rem;
+        left: -0.8rem;;
+    } 
 `
 
 const StyledImg = styled.img`
@@ -206,7 +206,7 @@ const Article: React.FC = () => {
             />
             <main>
                 <StyledHeroWrapper>
-                    <StyledLogo theme={{ isDarkMode }}>theGlitch</StyledLogo>
+                    <StyledLogo theme={{ isDarkMode }}>isGlitch.com</StyledLogo>
                     <StyledImg src={article?.img} alt={article?.alt}/>
                 </StyledHeroWrapper>
                 <StyledTagsWrapper>
