@@ -851,7 +851,7 @@ export const articlesData = [
     {
         id: 42,
         articleUrl: `20240613-musks-robot-bromance`,
-        category: `Tech`,
+        category: `tech`,
         img: `/images/20240613-musks-robot-bromance.webp`,
         alt: `smarmy robot giving finger guns`,
         header: `Musk's Robot Bromance Crosses the Line`,
@@ -872,7 +872,7 @@ export const articlesData = [
     {
         id: 43,
         articleUrl: `20240625-paramount-plus-unveils`,
-        category: `Tech`,
+        category: `entertainment`,
         img: `/images/20240625-paramount-plus-unveils.webp`,
         alt: `a cat in a box with a tv with a cat on the screen behind`,
         header: `Paramount Plus Unveils Radical "Schrödinger's Subscription" Model`,
@@ -891,6 +891,26 @@ export const articlesData = [
             `As an added bonus, Paramount Plus announced that customer service representatives will now answer all queries with "yes and no" simultaneously, ensuring that consumers remain in a perpetual state of bewilderment.`,
             `When asked about the legality of such a pricing model, Paramount's lawyers responded by filing a patent for "quantum billing" and then immediately not filing it, leaving the legal system in a paradoxical state that could take years to resolve.`,
             `As the streaming wars escalate to absurd new heights, one thing is certain: Paramount Plus has taken uncertainty to a whole new level. Whether this bold move will pay off remains to be seen – or not seen, depending on how you observe it.`,
+        ]
+    },
+    {
+        id: 44,
+        articleUrl: `20240626-ar-windshield-because`,
+        category: `reviews`,
+        img: `/images/20240626-ar-windshield-because.webp`,
+        alt: `a car windsheild covered in AR windows`,
+        header: `AR Windshield: Because Reality Wasn't Depressing Enough`,
+        subhead: `Distance Tech's AR windshield brings vital social media updates mere inches from your eyeballs`,
+        tags: [`Distance Technologies`, `Smart Cars`, `Augmented Reality`],
+        author: `Lester Girdle`,
+        datePublished: new Date(2024,5,26,14),
+        articleBody: [
+            `Another day, another tech company trying to "revolutionize" our driving experience. This time, it's Distance Technologies with their AR windshield display. Because apparently, the monotony of staring at the road wasn't soul-crushing enough.`,
+            `Let's get one thing straight: this isn't innovation. It's a desperate attempt to distract us from the existential dread of our daily commutes. Sure, they claim it'll show us useful information, but we all know it'll end up plastering our field of view with targeted ads and inane social media updates. As if we needed more reminders of our friends' carefully curated lives while we're trapped in traffic, marinating in our own inadequacy.`,
+            `The company boasts about how it "goes way beyond most car heads-up display makers." Congratulations. You've found a way to make driving - already a tedious exercise in avoiding death - even more overwhelming. Now, instead of focusing on not killing pedestrians, we can marvel at floating arrows and useless factoids about nearby landmarks we'll never visit.`,
+            `Of course, they admit there are "kinks to iron out." Translation: "We haven't figured out how to stop this thing from causing massive pileups." But hey, at least when you're rear-ending the car in front of you, you'll be able to see your collision in stunning augmented reality.`,
+            `The worst part? People will buy this. They'll convince themselves that having a giant AR display is somehow better than the depressing reality of their daily lives. And Distance Technologies will laugh all the way to the bank, leaving us with yet another piece of technology we didn't need and can't escape.`,
+            `So congratulations, Distance Technologies. You've managed to turn the last refuge of solitude in our over-connected world into another screen vying for our attention. I'm sure it'll pair nicely with the crushing weight of existence that settles in during every red light.`,
         ]
     },
 ]

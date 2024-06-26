@@ -38,11 +38,11 @@ const StyledLogo = styled.h1`
     font-size: 3rem;
     text-shadow: ${({ theme }) => theme.isDarkMode ? "1px 1px 5px rgba(0, 0, 0,  0.5)" : "1px 1px 5px rgba(255, 255, 255,  0.5)"};
     top: -4.6rem;
-    left: -0.8rem;
+    left: -0.6rem;
     @media (min-width: 64rem) {
         font-size: 4rem;
         top: -6.3rem;
-        left: -1rem;;
+        left: -0.8rem;;
     }
 `
 
@@ -173,7 +173,7 @@ const HomePage: React.FC = () => {
                                 theme={{ isDarkMode }}
                             >
                                 <StyledImageWrapper>
-                                    {index === 0 && <StyledLogo theme={{ isDarkMode }}>theGlitch</StyledLogo>}
+                                    {index === 0 && <StyledLogo theme={{ isDarkMode }}>isGlitch.com</StyledLogo>}
                                     <StyledImg src={article.img} alt={article.alt}/>
                                 </StyledImageWrapper>
                                 {index === 0 ? (

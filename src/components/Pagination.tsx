@@ -43,8 +43,10 @@ const Pagination: React.FC<PaginationProps> = ({
       textDecoration: "none",
       color: isDarkMode ? "#9CE00C" : "#5200FF",
   }
-    // console.log("currentSubPagePath",currentSubPagePath);
-    // console.log("currentPage", currentPage)
+  
+  if(tag === undefined) {
+    tag = ""
+  }
     
 return (
         <StyledLinkWrapper>
