@@ -16,7 +16,7 @@ const MetaTags = ({title, description, imageUrl, url}: MetaTagsProps) => {
       <meta property="og:type" content="article" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={`https://theglitchnews.netlify.app${imageUrl}`} />
+      <meta property="og:image" content={`https://isglitch.com${imageUrl}`} />
       <meta property="og:url" content={url} />
       
       {/* Twitter Card tags */}
@@ -24,7 +24,7 @@ const MetaTags = ({title, description, imageUrl, url}: MetaTagsProps) => {
       <meta name="twitter:creator" content="@EtAl19820625" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`https://theglitchnews.netlify.app/${imageUrl}`} />
+      <meta name="twitter:image" content={`https://isglitch.com/${imageUrl}`} />
       <meta name="twitter:url" content={url} />
     </Helmet>
   );
