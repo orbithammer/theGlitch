@@ -913,4 +913,25 @@ export const articlesData = [
             `So congratulations, Distance Technologies. You've managed to turn the last refuge of solitude in our over-connected world into another screen vying for our attention. I'm sure it'll pair nicely with the crushing weight of existence that settles in during every red light.`,
         ]
     },
+    {
+        id: 45,
+        articleUrl: `20240627-nintendo-introduces-switch`,
+        category: `entertainment`,
+        img: `/images/20240627-nintendo-introduces-switch.webp`,
+        alt: `A Nintendo Switch with a Marioesque character on the screen, colored paint exploding around it`,
+        header: `Nintendo Introduces 'Switch Classic Mini', Identical to Current Switch`,
+        subhead: `Company hails 'innovative nostalgia for the present'`,
+        tags: [`Nintendo`, `Switch`, `Video Games`],
+        author: `Avery Klykbeit`,
+        datePublished: new Date(2024,5,27,19),
+        articleBody: [
+            `In a move that's left even the most jaded tech journalists questioning their sanity, Nintendo has unveiled its latest "innovation": the Switch Classic Mini. This groundbreaking device is, in fact, completely indistinguishable from the current Switch model. Yes, you read that right, folks. It's the same bloody console.`,
+            `Nintendo's press release, a masterpiece of corporate doublespeak, proudly declares this as "innovative nostalgia for the present." Because apparently, we're now nostalgic for things that haven't even had the decency to become obsolete yet.`,
+            `"We've carefully recreated every pixel, every button, and even that annoying drift in the Joy-Cons," boasted Reggie Fils-Aimé, who was apparently dragged out of retirement for this momentous occasion. "It's the Switch you know and love, but with an extra label that says 'Classic Mini' slapped on the box."`,
+            `When pressed about the $399.99 price tag - a full hundred bucks more than the regular Switch - Nintendo's spokesperson smiled serenely and said, "You're not just buying a console. You're buying a piece of history... that's also the present... and probably the future too."`,
+            `The gaming community's reaction has been a mixture of confusion, outrage, and inexplicable excitement. Little Timmy from Nowheresville, USA, was quoted saying, "I already have a Switch, but this one says 'Classic Mini' on it. Mom, can I have it? Please?"`,
+            `Industry analysts are calling this move "peak Nintendo." One insider, speaking on condition of anonymity, said, "They've finally done it. They've figured out how to sell the same thing twice without changing a damn thing. It's brilliant. It's infuriating. It's Nintendo."`,
+            `As for me? I'm off to dig my Atari 2600 out of storage. At least when that claims to be classic, it's not taking the piss.`,
+        ]
+    },
 ]
