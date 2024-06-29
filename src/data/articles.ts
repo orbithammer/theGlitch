@@ -959,4 +959,26 @@ export const articlesData = [
             `In related news, Uber's stock price has skyrocketed on expectations that the new service will dramatically reduce operational costs while inexplicably maintaining revenue. Wall Street analysts have upgraded Uber's stock to "Buy" with a target price of "However Much You're Willing to Pay Us for No Real Reason."`,
         ]
     },
+    {
+        id: 47,
+        articleUrl: `20240629-spacexs-new-orbit`,
+        category: `tech`,
+        img: `/images/20240629-spacexs-new-orbit.webp`,
+        alt: `a female astronaut in the ISS burning up during descent`,
+        header: `SpaceX's New "Orbit-to-Ocean" Express Service Unveiled`,
+        subhead: `First-Class Passengers to Enjoy Panoramic Views During 17,000 mph Descent`,
+        tags: [`SpaceX`, `Elon Musk`, `ISS`],
+        author: `Et Al`,
+        datePublished: new Date(2024,5,29,17),
+        articleBody: [
+            `SpaceX, the company known for launching things into space, has decided to shake things up by bringing them back down again—in style. In a groundbreaking announcement, CEO Elon Musk revealed the company's latest venture: the "Orbit-to-Ocean Express," a revolutionary service that promises to deliver passengers and payload from the International Space Station directly to the Pacific Ocean at breakneck speeds.`,
+            `"Why waste time with conventional re-entry when you can make a splash?" Musk tweeted, shortly before demonstrating the concept with a hastily scribbled diagram featuring stick figures and a lot of wavy lines.`,
+            `The $843 million contract awarded by NASA has raised eyebrows among industry experts, who question the need for such an elaborate deorbiting process. "We could just let it burn up in the atmosphere for free," said one anonymous NASA engineer, "but where's the fun in that?"`,
+            `SpaceX assures potential customers that the descent will be a once-in-a-lifetime experience. Passengers can look forward to panoramic views of the Earth, complimentary oxygen masks, and the thrilling sensation of plummeting towards the planet at 17,000 miles per hour.`,
+            `"It's like a roller coaster, a sauna, and a submarine ride all in one," boasted SpaceX's head of marketing, who was later seen updating his LinkedIn profile.`,
+            `Safety concerns have been brushed aside, with Musk claiming that the ocean's surface tension will provide a "natural airbag effect." When pressed about the physics of this claim, he simply replied, "Trust me, I'm a rocket scientist. Sometimes."`,
+            `As for the environmental impact of dunking a 420-ton space station into the ocean, SpaceX has promised to offset its carbon footprint by planting a tree on Mars. "Two birds, one stone," Musk winked, before rocketing off to his next press conference in a custom-built, coal-powered jetpack.`,
+            `Bookings for the maiden voyage of the Orbit-to-Ocean Express are now open, with a special discount for those willing to sit in the cargo hold. Scuba gear not included.`,
+        ]
+    },
 ]
