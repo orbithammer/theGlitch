@@ -981,4 +981,26 @@ export const articlesData = [
             `Bookings for the maiden voyage of the Orbit-to-Ocean Express are now open, with a special discount for those willing to sit in the cargo hold. Scuba gear not included.`,
         ]
     },
+    {
+        id: 48,
+        articleUrl: `20240630-temus-latest-deal`,
+        category: `tech`,
+        img: `/images/20240630-temus-latest-deal.webp`,
+        alt: `a communist style poster of a Caucasian woman holding shopping bags surrounded by an adoring crowd, two rows of Chinese flags in the background`,
+        header: `Temu's Latest Deal: Give China Your Data, Get 5% Off!`,
+        subhead: `Users rush to expose themselves for marginally cheaper tchotchkes`,
+        tags: [`Temu`, `Amazon`, `Wish`],
+        author: `Et Al`,
+        datePublished: new Date(2024,5,30,7),
+        articleBody: [
+            `Shopping app sensation Temu has taken transparency to a whole new level with its latest promotion. The company, recently accused of being "dangerous malware" in a lawsuit, has decided to lean into the controversy by offering users a groundbreaking deal: willingly hand over your private data to the Chinese government in exchange for a whopping 5% discount on your next purchase.`,
+            `"We're all about giving our customers what they want," said Temu spokesperson Wei Notspy. "And what they clearly want is dirt-cheap novelty items with a side of international espionage."`,
+            `The new "Patriot Package" allows users to manually upload their text messages, browsing history, and a live feed of their camera roll directly to Beijing. In return, shoppers can enjoy savings of up to $0.37 on their next haul of plastic flamingos and knockoff electronics.`,
+            `Early adopters of the program have been enthusiastic. "I've always wanted to be a spy, but I'm too lazy to leave my couch," said Temu super-fan Karen Smith. "Now I can live out my James Bond fantasies while buying a set of glow-in-the-dark shoelaces for only $1.89!"`,
+            `Not to be outdone, Temu's competitors are scrambling to launch their own data-harvesting initiatives. Amazon is reportedly working on a "Prime Surveillance" tier, while Wish.com is offering to send users' deepest secrets directly to North Korea in exchange for a mystery box of potentially expired cosmetics.`,
+            `When asked about the potential privacy implications, Temu's legal team responded with a statement consisting entirely of shoulder shrug emojis and a GIF of Kermit the Frog sipping tea.`,
+            `As the "Patriot Package" gains traction, analysts predict a new era of consumer-driven espionage. "Soon, we'll see grandmothers inadvertently toppling governments just to score a deal on fuzzy socks," warned tech expert Dr. Sarah Rodriguez. "It's the logical evolution of capitalism meets surveillance state meets impulse shopping."`,
+            `In related news, the CIA has reportedly seen a 500% increase in job applications from Temu power users, citing their "extensive experience in data collection and bargain hunting."`,
+        ]
+    },
 ]
