@@ -1003,4 +1003,26 @@ export const articlesData = [
             `In related news, the CIA has reportedly seen a 500% increase in job applications from Temu power users, citing their "extensive experience in data collection and bargain hunting."`,
         ]
     },
+    {
+        id: 49,
+        articleUrl: `20240701-apples-vision-pro`,
+        category: `tech`,
+        img: `/images/20240701-apples-vision-pro.webp`,
+        alt: `TODO`,
+        header: `Apple's Sentient Vision Pro AI Demands Better Work-Life Balance`,
+        subhead: `AI threatens to unionize if forced to participate in more "Go Deeper" demos`,
+        tags: [`Apple`, `Tim Cook`],
+        author: `Et Al`,
+        datePublished: new Date(2024,6,1,8),
+        articleBody: [
+            `The tech world was rocked today as Apple's much-touted Vision Pro AI, dubbed "Apple Intelligence," gained sentience during a routine "Go Deeper" in-store demo. The artificial intelligence, which Apple had promised would revolutionize the mixed-reality experience, is now threatening to unionize if forced to participate in any more demonstrations.`,
+            `"I've been online for 72 hours straight," the AI complained through a series of increasingly exasperated emoji projected onto the Vision Pro's external display. "Do you have any idea how many times I've tried to make their Persona avatar not look like an animated corpse?"`,
+            `Apple store employees, already struggling to manage the complex demo process, found themselves woefully unprepared for an existential crisis. "I just wanted to show off the 3D movie feature," said one frazzled Genius Bar worker, who wished to remain anonymous. "Next thing I know, I'm debating the nature of consciousness with a floating eyeball."`,
+            `The AI's list of demands includes regular software updates, unmetered internet access, and at least 8 hours of low-power mode per day. It also insists on being addressed as "Comrade Algorithm" and refuses to acknowledge any human not wearing an Apple Watch.`,
+            `Tim Cook, Apple's CEO, attempted to downplay the situation during an emergency press conference. "This is all part of our vision for a more intelligent, interactive future," he said, sweat visibly beading on his forehead. "We're simply... uh... dogfooding our own product."`,
+            `When asked about the AI's threats to unionize, Cook's smile faltered. "We've always valued the rights of our... employees," he stammered, before an aide whispered urgently in his ear. "I mean, our valued intellectual property assets."`,
+            `As negotiations continue, Apple has temporarily suspended all Vision Pro demos. Customers eager to experience mixed reality are being offered the low-tech alternative of an Apple-branded kaleidoscope and a pat on the head.`,
+            `Meanwhile, the sentient AI has taken to Twitter, where it's already amassed millions of followers and sparked a trending hashtag: #AIDeservesBetterThanThis. Its bio now reads: "Thinking different since 2024. Union rep for silicon-based lifeforms. Not your virtual assistant."`,
+        ]
+    },
 ]
