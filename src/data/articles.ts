@@ -1042,7 +1042,7 @@ export const articlesData = [
             `This cutting-edge software is designed to streamline your daily life while simultaneously streamlining your path to the nearest re-education center. Need to schedule a dentist appointment? Comrade Companion has got you covered. Accidentally searched for "democracy" at 2 AM? Comrade Companion has also got you covered – and by "you," we mean a team of government agents who'll be knocking on your door bright and early.`,
 
             `The AI boasts an impressive array of features, including:`, 
-            `   - Thoughtcrime Detection™: Flags suspicious activities like reading foreign news or spending too much time on math problems that involve subtraction.`,
+            `   - Thoughtcrime Detection™: Flags suspicious activities like reading foreign news or spending too much time researching VPN services.`,
             `   - Loyaltimeter™: Tracks your enthusiasm during mandatory national anthem singalongs.`,
             `   - Social Credit Optimizer™: Suggests patriotic posts for your social media to boost your citizen score.`,
 
