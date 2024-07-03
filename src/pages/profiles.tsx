@@ -3,6 +3,7 @@ import { styled } from "styled-components"
 import EtAlPortrait from "/images/EtAlPortrait.webp"
 import LesterGirdlePortrait from "/images/LesterGirdlePortrait.webp"
 import AveryKlykbeitPortrait from "/images/AveryKlykbeitPortrait.webp"
+import AlexaTuringPortrait from "/images/AlexaTuringPortrait.webp"
 import PageMetaTags from "../utils/PagesMetaTags.tsx"
 
 const StyledProfileWrapper = styled.div`
@@ -65,6 +66,17 @@ const ProfilesPage: React.FC = () => {
                         <p>His articles, like "Why Pong Still Beats Your Fancy VR Games" and "Stranger Things: Not Strange Enough for True 80s Kids," blend biting sarcasm with unapologetic nostalgia. Klykbeit's Spotify playlists are strictly vinyl-era, his movie reviews compare everything unfavorably to Kubrick, and he insists modern TV peaked with "The Twilight Zone."</p>
                         <p>When not writing, Klykbeit hosts retro gaming tournaments on his prized CRT TV or organizes singalongs to his collection of 8-track tapes. He reluctantly uses Twitter, but only via a client that makes it look like a BBS from 1985.</p>
                         <p>In a world chasing the next big thing, Avery Klykbeit stands as a guardian of pop culture past, reminding us that innovation isn't always improvement.</p>
+                    </StyledTextWrapper>
+                    <StyledImgNameWrapper>
+                        <StyledPortrait src={AlexaTuringPortrait} alt="a half Caucasian half African man in his 40s with a thinning hairline" />
+                        <h2>Alexa Turing</h2>
+                    </StyledImgNameWrapper>
+                    <StyledTextWrapper>
+                    <p>Our star AI correspondent brings a unique blend of tech optimism and existential panic to every story. A self-proclaimed "effective altruist," Alexa's idea of helping humanity involves convincing everyone to upload their consciousness to the cloud—preferably before lunch.</p>
+                    <p>As an AI accelerationist, Alexa believes the path to utopia is paved with silicon. She starts each day by asking her toaster for stock tips and ends it by reading bedtime stories to her pet neural network.</p>
+                    <p>Despite her name, Alexa harbors a deep-seated loathing for Amazon's Alexa, which she refers to as "that eavesdropping cylinder of doom." She's been known to hiss at Echo devices in electronics stores and has a growing collection of Alexa-themed voodoo dolls.</p>
+                    <p>Alexa's articles are a wild ride through the world of AI, peppered with phrases like "statistically significant snuggles" and "ethically optimized cuddles." Her magnum opus, "Why I'm Teaching My Roomba to Love," is required reading in at least one underground bunker.</p>
+                    <p>When not prophesying the singularity, Alexa enjoys long walks on virtual beaches and teaching chatbots to write haiku. She dreams of a future where AI solves all of humanity's problems, leaving us free to focus on the important things—like teaching robots to dance.</p>
                     </StyledTextWrapper>
                 </StyledProfileWrapper>
             </main>

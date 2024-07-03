@@ -178,7 +178,7 @@ const SearchPage: React.FC = () => {
                                 theme={{ isDarkMode }}
                             >
                                 <StyledImageWrapper>
-                                {index === 0 && <StyledLogo theme={{ isDarkMode }}>{tag}</StyledLogo>}
+                                {index === 0 && <StyledLogo theme={{ isDarkMode }}>isGlitch.com</StyledLogo>}
                                     <StyledImg src={article.img} alt={article.alt}/>
                                 </StyledImageWrapper>
                                 {index === 0 ? (

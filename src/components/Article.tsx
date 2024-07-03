@@ -11,8 +11,6 @@ import TwitterShareIconDark from "/src/assets/twitterShareDark.svg"
 import TwitterShareIconLight from "/src/assets/twitterShareLight.svg"
 import ThemeContext from "../utils/ThemeContext"
 import formatDate from "../utils/formatDate"
-// import renderTags from '../utils/renderTags'
-
 
 type articlesData = {
     id: number;
