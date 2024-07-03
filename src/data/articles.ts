@@ -922,7 +922,7 @@ export const articlesData = [
         header: `Nintendo Introduces 'Switch Classic', Identical to Current Switch`,
         subhead: `Company hails 'innovative nostalgia for the present'`,
         tags: [`Nintendo`, `Switch`, `Video Games`],
-        author: `Avery Klykbeit`,
+        author: `Pieter Klykbeit`,
         datePublished: new Date(2024,5,27,19),
         articleBody: [
             `In a move that's left even the most jaded tech journalists questioning their sanity, Nintendo has unveiled its latest "innovation": the Switch Classic. This groundbreaking device is, in fact, completely indistinguishable from the current Switch model. Yes, you read that right, folks. It's the same bloody console.`,

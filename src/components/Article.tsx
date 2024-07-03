@@ -156,10 +156,35 @@ const StyledArticleBody = styled.p`
     font-size: 1.2rem
 `
 
+const StyledCTA = styled(StyledArticleBody)`
+    font-family: "Source Serif 4", serif; 
+    font-style: italic;
+    font-size: 1rem;
+    margin: 1.5rem;
+`
+
+const StyledLemmyButton = styled.button`
+    font-family: "Quattrocento", serif;
+    font-weight: 400;
+    font-style: normal;
+`
+const StyledLemmyAnchor = styled.a`
+    text-decoration: none;
+`
 const copyLink = async () => {
     try {
         await navigator.clipboard.writeText(window.location.href);
         alert('Link copied to clipboard!');
+    } catch (err) {
+        console.error(err);
+        alert('Failed to copy link to clipboard!');
+    }
+}
+
+const copyLemmy = async () => {
+    try {
+        await navigator.clipboard.writeText("!isglitch@lemmy.world");
+        alert('!isglitch@lemmy.world copied to clipboard!');
     } catch (err) {
         console.error(err);
         alert('Failed to copy link to clipboard!');
@@ -238,6 +263,15 @@ const Article: React.FC = () => {
                 <article>
                     {article?.articleBody.map((paragraph, index)=><StyledArticleBody key={index}>{paragraph}</StyledArticleBody>)}
                 </article>
+                <StyledCTA>
+                    Tired of the vice-like grip of big tech on mainstream social media? Come to Lemmy.world to join the isGlitch.com community! Already have a Lemmy or fediverse account? Great. Paste 
+                        <StyledLemmyButton onClick={copyLemmy}>!isglitch@lemmy.world</StyledLemmyButton>
+                     into the search bar of your instance of choice or visit the link 
+                        <StyledLemmyButton>
+                            <StyledLemmyAnchor href="https://lemmy.world/c/isglitch" target="_blank" rel="noopener noreferrer">here</StyledLemmyAnchor>
+                        </StyledLemmyButton>
+                    . Otherwise, feel free to sign up at the address in the button above.
+                </StyledCTA>
             </main>
         </>
     )
