@@ -270,7 +270,7 @@ const Article: React.FC = () => {
                         <StyledLemmyButton>
                             <StyledLemmyAnchor href="https://lemmy.world/c/isglitch" target="_blank" rel="noopener noreferrer">here</StyledLemmyAnchor>
                         </StyledLemmyButton>
-                    . Otherwise, feel free to sign up at the address in the button above.
+                    . Otherwise, feel free to sign up at your friendly neighborhood Lemmy instance.
                 </StyledCTA>
             </main>
         </>

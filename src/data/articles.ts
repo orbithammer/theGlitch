@@ -989,7 +989,7 @@ export const articlesData = [
         alt: `a communist style poster of a Caucasian woman holding shopping bags surrounded by an adoring crowd, two rows of Chinese flags in the background`,
         header: `Temu's Latest Deal: Give China Your Data, Get 5% Off!`,
         subhead: `Users rush to expose themselves for marginally cheaper tchotchkes`,
-        tags: [`Temu`, `Amazon`, `Wish`, `China`],
+        tags: [`Temu`, `Amazon`, `China`],
         author: `Et Al`,
         datePublished: new Date(2024,5,30,7),
         articleBody: [
