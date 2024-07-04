@@ -7,17 +7,6 @@ const StyledTextWrapper = styled.div`
     font-family: "Source Serif 4", serif;
 `
 
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const Field = styled.p`
-  align-self: center;
-  margin-bottom: 10px;
-`;
-
 const ContactPage: React.FC = () => {
   return (
     <>
@@ -29,26 +18,17 @@ const ContactPage: React.FC = () => {
             <p>Copy our email with the button below to rattle off your scalding rebuke, vicious snark, or painfully obvious correction. Just know that your missive will likely get tossed into the trash bin faster than a Y Combinator founder's work-life balance.</p>
             <p>But hey, convincing ourselves we're receptive to criticism is half the fun of running a tech rag. So fire away, you hapless reader, you!</p>
         </StyledTextWrapper>
-        <Form name="contact" method="POST" data-netlify="true">
-          <Field>
-            <label>
-              Your Name: <input type="text" name="name" />
-            </label>
-          </Field>
-          <Field>
-            <label>
-              Your Email: <input type="email" name="email" />
-            </label>
-          </Field>
-          <Field>
-            <label>
-              Message: <textarea name="message"></textarea>
-            </label>
-          </Field>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </Form>
+        <form name="contact" netlify>
+            <p>
+                <label>Name <input type="text" name="name" /></label>
+            </p>
+            <p>
+                <label>Email <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
       </main>
     </>
   );
