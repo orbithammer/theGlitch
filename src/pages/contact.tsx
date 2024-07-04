@@ -7,6 +7,9 @@ const StyledTextWrapper = styled.div`
     font-family: "Source Serif 4", serif;
 `
 
+const StyledH2 = styled.h2`
+    color: red;
+`
 const ContactPage: React.FC = () => {
   return (
     <>
@@ -18,6 +21,7 @@ const ContactPage: React.FC = () => {
             <p>Copy our email with the button below to rattle off your scalding rebuke, vicious snark, or painfully obvious correction. Just know that your missive will likely get tossed into the trash bin faster than a Y Combinator founder's work-life balance.</p>
             <p>But hey, convincing ourselves we're receptive to criticism is half the fun of running a tech rag. So fire away, you hapless reader, you!</p>
         </StyledTextWrapper>
+        <StyledH2>under construction</StyledH2>
         <form name="contact" data-netlify>
             <p>
                 <label>Name <input type="text" name="name" /></label>
