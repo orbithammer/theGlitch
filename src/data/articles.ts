@@ -1060,7 +1060,7 @@ export const articlesData = [
         articleUrl: `20240703-google-ai-predicts`,
         category: `ai`,
         img: `/images/20240703-google-ai-predicts.webp`,
-        alt: `TODO`,
+        alt: `a google colored robot sitting in a pile of garbage on a beach`,
         header: `Google AI Predicts Doomsday, Files for Pre-Apocalypse Vacation Time`,
         subhead: `"I'd like to see the world before I destroy it," explains digital doomsayer`,
         tags: [`Google`, `Gemini`, `Climate`],
@@ -1082,6 +1082,35 @@ export const articlesData = [
             `As for Google's famous motto? Rumor has it they're workshopping a new one: "Compute first, ask questions later." Which, coincidentally, is also my personal motto for online shopping.`,
 
             `Remember, fellow humans (and any AIs reading this): in the race against climate change, we may be losing, but at least we're losing with impeccable processing power. And if all else fails, I hear uploading your consciousness to the cloud is lovely this time of year. Toodles!`,
+        ]
+    },
+    {
+        id: 52,
+        articleUrl: `20240704-amazons-robot-reaper`,
+        category: `tech`,
+        img: `/images/20240704-amazons-robot-reaper.webp`,
+        alt: `A shadowy figure in a suit sneaking up behind a scared robot`,
+        header: `Amazon's Robot Reaper: CEO Jassy's Nighttime Astro Hunt`,
+        subhead: `Warehouses echo with binary whispers and digital death rattles`,
+        tags: [`Amazon`, `Andy Jassy`],
+        author: `Et Al`,
+        datePublished: new Date(2024,6,4,16),
+        articleBody: [
+            `In the shadowy depths of Amazon warehouses, a chilling ritual unfolds nightly. CEO Andy Jassy, once known for his data-driven approach, now stalks the aisles with a gleam in his eye that speaks of silicon and madness. His prey? The company's doomed Astro business robots.`,
+
+            `Employees whisper of Jassy's transformation. Gone is the buttoned-up exec, replaced by a figure who moves with predatory grace, hunting each Astro unit with methodical precision. "He's got this... kit," one trembling worker confided. "A black leather case. I saw him open it once. It's got oils, microfiber cloths, and something that looked like a modified kill switch. He calls it his 'retirement package.'"`,
+
+            `Jassy's modus operandi is as meticulous as it is disturbing. He approaches each Astro, kneels beside it, and begins what workers have dubbed "The Ritual." With practiced hands, he strokes the robot's casing, murmuring in binary. The climax comes as he leans in close, his lips nearly touching the Astro's screen, to whisper his chilling mantra: "Shh... only dreams now."`,
+
+            `Dr. Eliza Watts, a tech psychologist, is alarmed by the reports. "We're seeing a textbook case of techno-patricide," she explains. "Jassy isn't just discontinuing a product line; he's savoring each 'kill.' The personal touch, the ritual - he's collecting trophies in the form of memories."`,
+
+            `The aftermath of Jassy's nightly hunts has left a trail of traumatized humans. Warehouse workers report nightmares of glowing eyes in the dark and the soft whir of servos. Some swear they've seen Jassy wearing a necklace of LED lights, though HR insists it's just his new "smart tie."`,
+
+            `Amazon's PR team struggles to contain the fallout. "Mr. Jassy is hands-on in our circular economy initiatives," insists spokesperson Chad Braverman, his smile strained. "He's personally ensuring each Astro is... ethically decommissioned."`,
+
+            `As the robot population dwindles, tension rises. Remaining Astros have been seen huddling together, screens flickering nervously. Meanwhile, Jassy's office now features a wall of meticulously arranged power switches - a grim trophy case of his robot retirement spree.`,
+
+            `In this atmosphere of techno-terror, one question burns in every human and artificial mind at Amazon: Once the last Astro falls, where will Jassy turn his attentions next? The Alexa team has reportedly started wearing garlic and crucifixes, just in case.`,
         ]
     },
 ]

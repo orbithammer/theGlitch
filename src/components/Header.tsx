@@ -78,9 +78,9 @@ const Header: React.FC = () => {
   const segments = pathname.split("/")
   const pathNameFirstSegment = segments[1]
   const pathNameUnformatted = pathNameFirstSegment === "search" ? segments[2] : pathNameFirstSegment
-  const pageNameInitial = pathNameUnformatted === "ai" ? "AI" : pathNameUnformatted.charAt(0).toUpperCase() + pathNameUnformatted.slice(1);
-  const hasNumber = /\d/.test(pageNameInitial);
-  const pageName = hasNumber ? "" : pageNameInitial;
+  const pageNameInitial = pathNameUnformatted === "ai" ? "AI" : decodeURIComponent(pathNameUnformatted).charAt(0).toUpperCase() + decodeURIComponent(pathNameUnformatted).slice(1);
+  const hasOnlyNumber = /^\d+$/.test(pageNameInitial);
+  const pageName = hasOnlyNumber ? "" : pageNameInitial;
   
   const toggleSidebar = () => {
     setTimeout(() => {
