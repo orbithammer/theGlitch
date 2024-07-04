@@ -18,7 +18,7 @@ const ContactPage: React.FC = () => {
             <p>Copy our email with the button below to rattle off your scalding rebuke, vicious snark, or painfully obvious correction. Just know that your missive will likely get tossed into the trash bin faster than a Y Combinator founder's work-life balance.</p>
             <p>But hey, convincing ourselves we're receptive to criticism is half the fun of running a tech rag. So fire away, you hapless reader, you!</p>
         </StyledTextWrapper>
-        <form name="contact" netlify>
+        <form name="contact" data-netlify>
             <p>
                 <label>Name <input type="text" name="name" /></label>
             </p>
