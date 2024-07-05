@@ -10,6 +10,7 @@ import AiPage from './pages/ai'
 import ProfilesPage from './pages/profiles';
 import SearchPage from './pages/search'
 import ContactPage from './pages/contact'
+import ThankYouPage from './pages/thank-you'
 import NotFoundPage from './pages/notFound'
 import ThemeProvider from './utils/ThemeProvider';
 import { HelmetProvider } from 'react-helmet-async'
@@ -37,6 +38,7 @@ const App: React.FC = () => {
               <Route path="/search/:tag/:pageNumber" element={<SearchPage />} />
               <Route path="/profiles" element={<ProfilesPage />} />
               <Route path="/contact" element={<ContactPage />} /> 
+              <Route path='/thank-you' element={<ThankYouPage />} />
               <Route path="/article/:articleUrl" element={<Article />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>

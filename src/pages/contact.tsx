@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 const StyledTextWrapper = styled.div`
     display: flex;
@@ -12,6 +13,31 @@ const StyledH2 = styled.h2`
 `
 
 const ContactPage: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form) as any).toString()
+      });
+      
+      if (response.ok) {
+        navigate('/thank-you');
+      } else {
+        console.error('Form submission failed');
+        // Handle error (e.g., show error message to user)
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      // Handle error (e.g., show error message to user)
+    }
+  };
+
   return (
     <>
       <main>
@@ -23,20 +49,20 @@ const ContactPage: React.FC = () => {
             <p>But hey, convincing ourselves we're receptive to criticism is half the fun of running a tech rag. So fire away, you hapless reader, you!</p>
         </StyledTextWrapper>
         <StyledH2>under construction</StyledH2>
-        <form name="contact" method="POST" data-netlify="true" action="/thank-you">
-            <input type="hidden" name="form-name" value="contact" />
-            <p>
-                <label>Name <input type="text" name="name" /></label>
-            </p>
-            <p>
-                <label>Email <input type="email" name="email" /></label>
-            </p>
-            <p>
-                <label>Message <textarea name="message"></textarea></label>
-            </p>
-            <p>
-                <button type="submit">Send</button>
-            </p>
+        <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+          <input type="hidden" name="form-name" value="contact" />
+          <p>
+            <label>Name <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Email <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label>Message <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
         </form>
       </main>
     </>
