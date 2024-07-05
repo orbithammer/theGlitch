@@ -22,7 +22,7 @@ const ContactPage: React.FC = () => {
             <p>But hey, convincing ourselves we're receptive to criticism is half the fun of running a tech rag. So fire away, you hapless reader, you!</p>
         </StyledTextWrapper>
         <StyledH2>under construction</StyledH2>
-        <form name="contact" data-netlify>
+        <form name="contact" method="POST" data-netlify="true">
             <p>
                 <label>Name <input type="text" name="name" /></label>
             </p>
