@@ -1113,4 +1113,25 @@ export const articlesData = [
             `In this atmosphere of techno-terror, one question burns in every human and artificial mind at Amazon: Once the last Astro falls, where will Jassy turn his attentions next? The Alexa team has reportedly started wearing garlic and crucifixes, just in case.`,
         ]
     },
+    {
+        id: 53,
+        articleUrl: `20240705-apple-introduces-red`,
+        category: `tech`,
+        img: `/images/20240705-apple-introduces-red.webp`,
+        alt: `an iPhone and a bottle of vodka in Red Square, Moscow`,
+        header: `Apple Introduces 'Red Square' – For All Your Censorship Needs`,
+        subhead: `VPN-less iPhones now come with free ushanka hat and vodka`,
+        tags: [`Apple`, `Tim Cook`, `Russia`],
+        author: `Et Al`,
+        datePublished: new Date(2024,6,5,16),
+        articleBody: [
+            `Comrades, rejoice! Apple has unveiled its latest innovation for the Russian market: Red Square, the ultimate digital playground for the discerning authoritarian. This revolutionary app store replacement comes pre-installed on all iPhones sold in the Motherland, offering a curated selection of Kremlin-approved apps guaranteed to keep users safely within the loving embrace of state-sanctioned information.`,
+
+            `Gone are the days of pesky VPNs and unrestricted internet access. Red Square offers exciting new features such as "Thought Police," an AI assistant that predicts and reports potentially subversive behavior before you even think it, and "Gulag Simulator," where users can experience the thrill of political imprisonment from the comfort of their own homes.`,
+
+            `As a bonus, every purchase comes with a complimentary ushanka hat to keep your head warm while your digital freedoms freeze over. But wait, there's more! The first 1,000 users to voluntarily report their neighbors for suspicious activities will receive a bottle of premium vodka to help wash down the bitter taste of oppression.`,
+
+            `Tim Cook, speaking from an undisclosed location in Siberia, enthused, "Red Square isn't just an app store – it's a digital revolution. Viva la censorship!"`,
+        ]
+    },
 ]
