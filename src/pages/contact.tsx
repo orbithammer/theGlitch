@@ -10,11 +10,12 @@ const StyledTextWrapper = styled.div`
 const StyledH2 = styled.h2`
     color: red;
 `
+
 const ContactPage: React.FC = () => {
   return (
     <>
       <main>
-      <h1>Send Us Your Scathing Feedback (That We'll Probably Ignore)</h1>
+        <h1>Send Us Your Scathing Feedback (That We'll Probably Ignore)</h1>
         <StyledTextWrapper>
             <p>Oh, you've stumbled upon some egregious error or blatant bias in our reporting? Maybe our writers mangled some facts worse than a toddler juggling chainsaws? Or perhaps our takes were so blazing hot they singed your eyebrows clean off?</p>
             <p>Well, by all means, vent those spleen-ful frustrations directly at us! We absolutely promise to pretend to care while sipping martinis crafted from your indignant tears.</p>
@@ -22,12 +23,16 @@ const ContactPage: React.FC = () => {
             <p>But hey, convincing ourselves we're receptive to criticism is half the fun of running a tech rag. So fire away, you hapless reader, you!</p>
         </StyledTextWrapper>
         <StyledH2>under construction</StyledH2>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" action="/thank-you">
+            <input type="hidden" name="form-name" value="contact" />
             <p>
                 <label>Name <input type="text" name="name" /></label>
             </p>
             <p>
                 <label>Email <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Message <textarea name="message"></textarea></label>
             </p>
             <p>
                 <button type="submit">Send</button>
