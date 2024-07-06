@@ -1134,4 +1134,31 @@ export const articlesData = [
             `Tim Cook, speaking from an undisclosed location in Siberia, enthused, "Red Square isn't just an app store – it's a digital revolution. Viva la censorship!"`,
         ]
     },
+    {
+        id: 54,
+        articleUrl: `20240706-ubisoft-presents-nft`,
+        category: `entertainment`,
+        img: `/images/20240706-ubisoft-presents-nft.webp`,
+        alt: `An assassin's creed assassin giving a thumbs up, whiteboard background`,
+        header: `Ubisoft Presents "NFT Fatigue" as Exciting New Game Mechanic`,
+        subhead: `Players can now experience the thrill of dwindling enthusiasm in real-tim`,
+        tags: [`Ubisoft`, `Yves Guillemot`],
+        author: `Pieter Klykbeit`,
+        datePublished: new Date(2024,6,6,21),
+        articleBody: [
+            `Ah, Ubisoft's latest desperate attempt to make NFTs happen. It's like watching a toddler try to jam a square peg into a round hole, except the toddler is a multi-billion dollar company and the hole is our collective patience.`,
+
+            `So, they've introduced "NFT Fatigue" as a game mechanic in Champions Tactics? Brilliant. Because what every gamer really wants is to feel their will to live slowly drain away as they play. It's the perfect metaphor for Ubisoft's relationship with its fan base.`,
+
+            `Let me paint you a picture: You're slogging through this game, and with every "unique" NFT you collect (unique like snowflakes in a blizzard), your character's "Give-a-Damn" meter drops. It's like they've found a way to quantify disappointment. I haven't seen enthusiasm sucked out of a room this fast since I tried to explain the plot of "Tron" to my nephews.`,
+
+            `But wait, there's more! You can buy "Anti-Fatigue Potions" with real money. Because nothing says "fun gameplay" like paying to temporarily forget you're not having fun. It's the gaming equivalent of hitting yourself with a hammer because it feels so good when you stop.`,
+
+            `Ubisoft claims this runs on a "green" blockchain, powered by their marketing department's hot air. Finally, a renewable energy source we can count on! At this rate, they'll be able to power a small country with their delusions.`,
+
+            `You know, I miss the days when gaming companies just made, oh I don't know, games? Real groundbreaking concept, I know. But hey, why create engaging content when you can just slap some blockchain buzzwords on a thin concept and call it innovation?
+`,
+            `If you'll excuse me, I need to go plug in my Atari 2600 and remember a time when the only fatigue in gaming came from furiously waggling a joystick. At least then, the only thing we were wasting was our wrists, not our wallets.`,
+        ]
+    },
 ]
