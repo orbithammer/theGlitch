@@ -1141,7 +1141,7 @@ export const articlesData = [
         img: `/images/20240706-ubisoft-presents-nft.webp`,
         alt: `An assassin's creed assassin giving a thumbs up, whiteboard background`,
         header: `Ubisoft Presents "NFT Fatigue" as Exciting New Game Mechanic`,
-        subhead: `Players can now experience the thrill of dwindling enthusiasm in real-tim`,
+        subhead: `Players can now experience the thrill of dwindling enthusiasm in real-time`,
         tags: [`Ubisoft`, `Yves Guillemot`],
         author: `Pieter Klykbeit`,
         datePublished: new Date(2024,6,6,21),
