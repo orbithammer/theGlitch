@@ -1156,9 +1156,38 @@ export const articlesData = [
 
             `Ubisoft claims this runs on a "green" blockchain, powered by their marketing department's hot air. Finally, a renewable energy source we can count on! At this rate, they'll be able to power a small country with their delusions.`,
 
-            `You know, I miss the days when gaming companies just made, oh I don't know, games? Real groundbreaking concept, I know. But hey, why create engaging content when you can just slap some blockchain buzzwords on a thin concept and call it innovation?
-`,
+            `You know, I miss the days when gaming companies just made, oh I don't know, games? Real groundbreaking concept, I know. But hey, why create engaging content when you can just slap some blockchain buzzwords on a thin concept and call it innovation?`,
+
             `If you'll excuse me, I need to go plug in my Atari 2600 and remember a time when the only fatigue in gaming came from furiously waggling a joystick. At least then, the only thing we were wasting was our wrists, not our wallets.`,
+        ]
+    },
+    {
+        id: 55,
+        articleUrl: `20240707-ges-new-ice`,
+        category: `reviews`,
+        img: `/images/20240707-ges-new-ice.webp`,
+        alt: `a sad balding Caucasian man wearing glasses holding a large mai tai full of ice nuggets`,
+        header: `GE's New Ice Maker: A Cold Comfort in Your Tepid Existence`,
+        subhead: `$630 to avoid eye contact with your disappointed spouse`,
+        tags: [`General Electric`],
+        author: `Lester Girdle`,
+        datePublished: new Date(2024,6,7,6),
+        articleBody: [
+            `Ah, the Opal 2.0 Ultra. GE's latest attempt to convince us that happiness can be found in tiny, overpriced ice nuggets. Because nothing screams "I've made it" quite like dropping six hundred and thirty dollars on a glorified freezer.`,
+
+            `This lean, mean, ice-making machine is as essential to your kitchen as a participation trophy is to your already cluttered mantelpiece of mediocrity. But hey, who am I to judge? If you've got nothing better to do with your hard-earned cash than to invest in artisanal ice, then by all means, plunge headfirst into this frigid expression of the meaninglessness of life.`,
+
+            `This ice-cold marvel promises to be the coolest thing in your kitchen this summer. And by "coolest," I mean it'll sit there, humming away, reminding you of all the poor life choices that led you to this moment. It's the perfect conversation piece for when your in-laws visit, allowing you to avoid discussing your lack of career progression or why you still haven't given them grandchildren.`,
+
+            `But wait, there's more! This pinnacle of first-world problem-solving comes with the added bonus of endless cleaning. Because if there's one thing missing from your life, it's another appliance demanding your time and attention. Forget about pursuing your dreams or rekindling the spark in your marriage - you've got an ice maker to maintain!`,
+
+            `The nugget ice it produces is a perfect metaphor for your existence: small, easily crushed, and quick to melt under pressure. Each piece is a tiny, frozen reminder of your own insignificance in the grand scheme of things. But at least your gin and tonic will be slightly more aesthetically pleasing as you drink away your sorrows.`,
+
+            `GE has truly outdone themselves this time. They've managed to create a product that simultaneously embodies the cold, unfeeling nature of modern technology and the lukewarm disappointment of adult life. It's an achievement in mediocrity that would make even the most jaded middle manager weep with envy.`,
+
+            `So go ahead, treat yourself to the Opal 2.0 Ultra. Watch as it takes up valuable counter space, just like how your unfulfilled ambitions crowd your mind. Listen to its gentle hum, drowning out the sound of your spouse sighing in the next room. Enjoy your perfectly chilled beverages, each sip a refreshing reminder of the ice-cold reality of your existence.`,
+
+            `After all, in this cruel world, sometimes the only comfort we can find is in the form of tiny, overpriced ice nuggets. And if that's not a chilling indictment of our society, I don't know what is.`,
         ]
     },
 ]
