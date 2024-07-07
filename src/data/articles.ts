@@ -1190,4 +1190,33 @@ export const articlesData = [
             `After all, in this cruel world, sometimes the only comfort we can find is in the form of tiny, overpriced ice nuggets. And if that's not a chilling indictment of our society, I don't know what is.`,
         ]
     },
+    {
+        id: 56,
+        articleUrl: `20240708-mars-sim-survivors`,
+        category: `tech`,
+        img: `/images/20240708-mars-sim-survivors.webp`,
+        alt: `a female Elon Musk beauty pageant contentestant holding a flamethrower`,
+        header: `Mars Sim Survivors Emerge to Planet of the Elons`,
+        subhead: `Crew considers "re-Marsing" to escape Elon epidemic`,
+        tags: [`NASA`, `Elon Musk`],
+        author: `Et Al`,
+        datePublished: new Date(2024,6,8,6),
+        articleBody: [
+            `The brave volunteers who spent a year isolated in NASA's Mars simulation emerged yesterday, only to discover a world more alien than any red planet fantasy. Earth, it seems, has been entirely populated by Elon Musk doppelgängers.`,
+
+            `"We expected some changes," said former sim commander Jane Rodriguez, squinting at the sea of identical smirks and questionable hairlines. "But this is beyond our worst nightmares. It's like someone took Elon's DNA and went mad with a 3D printer."`,
+
+            `The crew's reintegration process came to a screeching halt when they realized every NASA official, journalist, and even their own family members had been replaced by versions of the eccentric billionaire. Each Musk clone sported the same ill-fitting suit and manic gleam in their eyes, spouting cryptocurrency jargon and promises of Martian colonies.`,
+
+            `"At first, we thought it was an elaborate prank," explained crew psychologist Dr. Chen. "But after the fifteenth Elon tried to sell us a Cybertruck, we knew something was terribly wrong."`,
+
+            `Theories about the Musk takeover range from mass cloning experiments gone awry to a glitch in the simulation matrix. Some even suggest this might be the result of Neuralink's first wide-scale human trial.`,
+
+            `Meanwhile, the original Elon Musk (or so he claims) called the situation "totally rad" and "the ultimate form of efficiency." He added, "Now, when I say 'jump,' the whole world asks, 'How high... and can we do it on Mars?'"`,
+
+            `As for the shell-shocked Mars sim crew, they've petitioned NASA to immediately launch another long-term isolation experiment. "We'll take our chances with the freeze-dried food and recycled sweat," Rodriguez said. "Anything's better than a planet full of Elons."`,
+
+            `At press time, sources confirmed the crew was last seen hijacking a SpaceX rocket, screaming "So long, suckers!" as they blasted off towards the actual Mars. The Musks left behind could only shake their heads in unison and mutter, "Amateur hour. I would've used the Starship."`,
+        ]
+    },
 ]
