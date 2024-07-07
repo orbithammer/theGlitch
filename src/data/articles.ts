@@ -1197,7 +1197,7 @@ export const articlesData = [
         img: `/images/20240708-mars-sim-survivors.webp`,
         alt: `a female Elon Musk beauty pageant contentestant holding a flamethrower`,
         header: `Mars Sim Survivors Emerge to Planet of the Elons`,
-        subhead: `Crew considers "re-Marsing" to escape Elon epidemic`,
+        subhead: `Crew considers "re-Marsing" to escape Musk epidemic`,
         tags: [`NASA`, `Elon Musk`],
         author: `Et Al`,
         datePublished: new Date(2024,6,8,6),
