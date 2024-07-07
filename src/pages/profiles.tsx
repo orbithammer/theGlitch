@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { styled } from "styled-components"
 import EtAlPortrait from "/images/EtAlPortrait.webp"
 import LesterGirdlePortrait from "/images/LesterGirdlePortrait.webp"
@@ -31,12 +31,23 @@ const StyledTextWrapper = styled.div`
 `
 
 const ProfilesPage: React.FC = () => {
+    useEffect(() => {
+        if (window.location.hash) {
+            const id = window.location.hash.substring(1);
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, []);
+
     return (
         <>
             <PageMetaTags />
             <main>
                 <StyledProfileWrapper>
-                    <StyledImgNameWrapper>
+
+                    <StyledImgNameWrapper id="et-al">
                         <StyledPortrait src={EtAlPortrait} alt="a middle aged Caucasian man with long wavy brown hair and greying beard" />
                         <h2>Et Al</h2>
                     </StyledImgNameWrapper>
@@ -46,7 +57,8 @@ const ProfilesPage: React.FC = () => {
                         <p>With its classic all-you-can-eat buffet of a planet now nothing more than an endless Walmart parking lot, Et Al found itself famished yet strangely intrigued. In a brazen act of desperation and corporate synergy, the hungering extraterrestrial ditched its plans for vicious subjugation in favor of becoming a tech blogger for Snarky Circuit.</p>
                         <p>From breathless coverage of Bill Gate's quarterly antitrust crimes to caustic iPhone reviews, Et Al immersed itself in covering the synthetic horrors of technology. For in this blighted world, humans had long ago become mindless consuming drones - a delicacy far more satisfying for Et Al to savor one scorching hot take at a time.</p>
                     </StyledTextWrapper>
-                    <StyledImgNameWrapper>
+
+                    <StyledImgNameWrapper id="lester-girdle">
                         <StyledPortrait src={LesterGirdlePortrait} alt="a 30 something Caucasian man with a receding hairline and glasses" />
                         <h2>Lester Girdle</h2>
                     </StyledImgNameWrapper>
@@ -56,7 +68,8 @@ const ProfilesPage: React.FC = () => {
                         <p>Lester's saga traces back to a hopelessly unaccomplished youth devoid of passions or ambitions beyond A/V club duties abruptly revoked after a series of vomit inducing proto-VR demos. This fueled his descent into life's discontents - days idly spent between interminably scrolling online rants and tense evenings with his exasperated wife, who wonders where her husband's spirit slowly leaked away.</p>
                         <p>Across YouTube's comments, Lester embraced the role of Extremely Mediocre Reply Guy, sporadically injecting morsels of insight between infinite negativity streams. While lacking credentials beyond serving as an avatar for life's deepest despondents, Lester's cynicism carries undeniable authenticity. The complete lack of incentive ensures his screeds reflect one deeply dissatisfied man's crusade to spread society's unhappiness upon everything consumer tech promises but can't deliver.</p>
                     </StyledTextWrapper>
-                    <StyledImgNameWrapper>
+
+                    <StyledImgNameWrapper id="pieter-klykbeit">
                         <StyledPortrait src={PieterKlykbeitPortrait} alt="a half Caucasian half African man in his 40s with a thinning hairline" />
                         <h2>Pieter Klykbeit</h2>
                     </StyledImgNameWrapper>
@@ -67,8 +80,9 @@ const ProfilesPage: React.FC = () => {
                         <p>When not writing, Klykbeit hosts retro gaming tournaments on his prized CRT TV or organizes singalongs to his collection of 8-track tapes. He reluctantly uses Twitter, but only via a client that makes it look like a BBS from 1985.</p>
                         <p>In a world chasing the next big thing, Pieter Klykbeit stands as a guardian of pop culture past, reminding us that innovation isn't always improvement.</p>
                     </StyledTextWrapper>
-                    <StyledImgNameWrapper>
-                        <StyledPortrait src={AlexaTuringPortrait} alt="a smiling Chinese-American young woman wearing glasses" />
+
+                    <StyledImgNameWrapper id="alexa-turing">
+                        <StyledPortrait src={AlexaTuringPortrait} alt="a young smiling Chinese-American woman wearing glasses" />
                         <h2>Alexa Turing</h2>
                     </StyledImgNameWrapper>
                     <StyledTextWrapper>

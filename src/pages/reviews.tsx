@@ -192,8 +192,8 @@ const ReviewsPage: React.FC = () => {
                             <StyledArticleInfo>
                                 <StyledAuthor 
                                     theme={{ isDarkMode }}
-                                    to={`/profiles`}
-                                    aria-label={`to profiles`}
+                                    to={`/profiles#${article.author.replace(/\s+/g, '-').toLowerCase()}`}
+                                    aria-label={`to ${article.author}'s profile`}
                                 >{article.author}</StyledAuthor>
                                 {formatDate(article.datePublished)}
                             </StyledArticleInfo>
