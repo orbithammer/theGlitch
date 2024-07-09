@@ -1219,4 +1219,29 @@ export const articlesData = [
             `At press time, sources confirmed the crew was last seen hijacking a SpaceX rocket, screaming "So long, suckers!" as they blasted off towards the actual Mars. The Musks left behind could only shake their heads in unison and mutter, "Amateur hour. I would've used the Starship."`,
         ]
     },
+    {
+        id: 57,
+        articleUrl: `20240709-google-maps-introduces`,
+        category: `tech`,
+        img: `/images/20240709-google-maps-introduces.webp`,
+        alt: `TODO`,
+        header: `Google Maps Introduces "Serendipitous Journey"`,
+        subhead: `Feature: Users Report Discovering New Places, Mostly Billboard-Laden Highways`,
+        tags: [`Google`, `Google Maps`],
+        author: `Et Al`,
+        datePublished: new Date(2024,6,9,6),
+        articleBody: [
+            `Ah, the sweet smell of progress! Google, ever the innovator, has once again revolutionized the way we navigate our dystopian hellscape with its latest Maps update: the "Serendipitous Journey" feature. Because who doesn't want their daily commute turned into an existential odyssey?`,
+
+            `Gone are the days of boring, efficient routes to your destination. Now, thanks to Google's ingenious pop-up ads, you can embark on a magical mystery tour every time you start your engine. It's like playing Russian roulette with your GPS, except instead of a bullet, you get the thrill of discovering new gas stations, fast-food joints, and billboard-infested stretches of highway you never knew existed.`,
+
+            `One ecstatic user raved, "I used to get to work in 20 minutes. Now it takes me three hours and I've memorized every McDonald's menu board within a 50-mile radius!" Another shared, "I've seen more cornfields and adult superstores in the past week than in my entire life. Thanks, Google!"`,
+
+            `But wait, there's more! This groundbreaking feature doesn't just waste your time and fuel – it also provides an exciting element of danger. Nothing says "adventure" quite like navigating unfamiliar roads while pop-up ads block your view of oncoming traffic. It's like texting and driving, but now it's Google's fault!`,
+
+            `When asked about safety concerns, a Google spokesperson stated, "We believe in the human capacity for multitasking. Besides, what's a little vehicular manslaughter compared to the joy of discovering a new Walmart Supercenter?"`,
+
+            `So buckle up, update your app, and prepare for a brave new world of navigation. Remember, it's not about the destination – it's about the sponsored content you consume along the way. And if you happen to arrive where you intended? Well, that's just a happy accident in our brave new world of corporate-guided exploration.`,
+        ]
+    },
 ]
