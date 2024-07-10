@@ -1224,7 +1224,7 @@ export const articlesData = [
         articleUrl: `20240709-google-maps-introduces`,
         category: `tech`,
         img: `/images/20240709-google-maps-introduces.webp`,
-        alt: `TODO`,
+        alt: `a traffic jam on a billboard laden road`,
         header: `Google Maps Introduces "Serendipitous Journey"`,
         subhead: `Feature: Users Report Discovering New Places, Mostly Billboard-Laden Highways`,
         tags: [`Google`, `Google Maps`],
@@ -1242,6 +1242,33 @@ export const articlesData = [
             `When asked about safety concerns, a Google spokesperson stated, "We believe in the human capacity for multitasking. Besides, what's a little vehicular manslaughter compared to the joy of discovering a new Walmart Supercenter?"`,
 
             `So buckle up, update your app, and prepare for a brave new world of navigation. Remember, it's not about the destination – it's about the sponsored content you consume along the way. And if you happen to arrive where you intended? Well, that's just a happy accident in our brave new world of corporate-guided exploration.`,
+        ]
+    },
+    {
+        id: 58,
+        articleUrl: `20240710-apples-time-bandits`,
+        category: `entertainment`,
+        img: `/images/20240710-apples-time-bandits.webp`,
+        alt: `Randall from the original Time Bandits movie if he was tall`,
+        header: `Apple's Time Bandits: A Tall Tale of Misguided "Progress"`,
+        subhead: `Producers Unveil Revolutionary Height-Enlarging Filter for the Latest Nostalgia Cash Grab`,
+        tags: [`Apple`, `Apple TV+`],
+        author: `Pieter Klykbeit`,
+        datePublished: new Date(2024,6,10,14),
+        articleBody: [
+            `Apple TV+ has once again proven that no beloved property is safe from the soulless machinations of Big Tech. Their reboot of the cult classic "Time Bandits" isn't just a crime against cinema - it's a temporal paradox that threatens to unravel the very fabric of good taste.`,
+
+            `Gone are the lovable band of vertically-challenged ne'er-do-wells that made the original a pint-sized masterpiece. In their place? CGI monstrosities that stretch the original actors to "normal" heights like some kind of digital taffy pull. It's an unholy union of "Honey, I Blew Up the Kid" and "The Polar Express" that nobody asked for.`,
+
+            `The trailer, a cacophony of lens flares and dubstep, assaults the senses like a blockchain-powered jackhammer. Our beloved Time Bandits now tower over the set, their iconic silhouettes warped into lanky abominations that would make Slenderman blush. It's as if the producers watched "Lord of the Rings" and thought, "You know what would make this better? If Gimli was 6'2"."`,
+
+            `But fear not, nostalgic viewers! Apple assures us that the "spirit" of the original film remains intact. This presumably means they've kept the map, the time holes, and a vague sense of British whimsy - all rendered in eye-searing 4K that strips away any remnant of the original's charming practical effects.`,
+
+            `The plot, from what can be gleaned through the rapid-fire cuts and explosions, seems to involve the Bandits trying to steal... the concept of time itself? It's the kind of high-concept drivel that would make even Christopher Nolan reach for the Advil. One can only assume the Time Bandits' first heist was robbing the original script of coherence.`,
+
+            `In a final insult to Terry Gilliam's vision, the trailer closes with our now-stretched protagonists engaged in a "hip" dance number, flossing their way through the space-time continuum. It's enough to make one long for the simpler days of Sean Connery in a minotaur costume.`,
+
+            `So buckle up, fellow fans of the original. We're in for a tall order of disappointment, served with a side of "why bother?" I'll be watching this travesty on my trusty 13-inch CRT TV, where at least the actors might appear closer to their intended size. Progress, thy name is irony.`,
         ]
     },
 ]
