@@ -1266,7 +1266,7 @@ export const articlesData = [
 
             `The plot, from what can be gleaned through the rapid-fire cuts and explosions, seems to involve the Bandits trying to steal... the concept of time itself? It's the kind of high-concept drivel that would make even Christopher Nolan reach for the Advil. One can only assume the Time Bandits' first heist was robbing the original script of coherence.`,
 
-            `In a final insult to Terry Gilliam's vision, the trailer closes with our now-stretched protagonists engaged in a "hip" dance number, flossing their way through the space-time continuum. It's enough to make one long for the simpler days of Sean Connery in a minotaur costume.`,
+            `In a final insult to Terry Gilliam's vision, the trailer closes with our now-stretched protagonists engaged in a "hip" dance number, flossing their way through the space-time continuum. It's enough to make one long for the simpler days of Sean Connery in a short tunic.`,
 
             `So buckle up, fellow fans of the original. We're in for a tall order of disappointment, served with a side of "why bother?" I'll be watching this travesty on my trusty 13-inch CRT TV, where at least the actors might appear closer to their intended size. Progress, thy name is irony.`,
         ]
