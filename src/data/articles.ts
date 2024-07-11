@@ -127,7 +127,7 @@ export const articlesData = [
         alt: `Man in exreme pain`,
         header: `Viral Stunt Gone Wrong: When a Tesla Frunk Met YouTuber's Dong`,
         subhead: `Medical professionals baffled by idiotic behavior`,
-        tags: [`Tesla`, `Cybertruck`, `YouTube`],
+        tags: [`Tesla`, `Cybertruck`, `YouTube`, `Electric Cars`],
         author: `Et Al`,
         datePublished: new Date(2024,4,8,6),
         articleBody: [
@@ -292,7 +292,7 @@ export const articlesData = [
         alt: `a beautiful asian woman with a look of disgust because of the cybertruck behind her`,
         header: ` Portland Frat Bro's Cybertruck Fails as Chick Magnet`,
         subhead: `"Them b*ches stay away in droves."`,
-        tags: [`Tesla`, `Cybertruck`],
+        tags: [`Tesla`, `Cybertruck`, `Electric Cars`],
         author: `Et Al`,
         datePublished: new Date(2024,4,17,17,10),
         articleBody: [
@@ -331,7 +331,7 @@ export const articlesData = [
         alt: `a woman trapped in a car with sweat and makup dripping down her face`,
         header: `Tesla Traps Owner in Hot Car Until She Consents to Brain Implant`,
         subhead: `Elon claims air con released once owner agrees to implant Neuralink`,
-        tags: [`Tesla`, `Elon Musk`],
+        tags: [`Tesla`, `Elon Musk`, `Electric Cars`],
         author: `Et Al`,
         datePublished: new Date(2024,4,19,21,20),
         articleBody: [
@@ -376,7 +376,7 @@ export const articlesData = [
         alt: `angry man in front of his tesla car`,
         header: `Tesla Owners Sue Over Lack of Transformer Abilities`,
         subhead: `Claim of "robotic mode" misled millions of Michael Bay fans`,
-        tags: [`Tesla`],
+        tags: [`Tesla`, `Elon Musk`, `Electric Cars`],
         author: `Et Al`,
         datePublished: new Date(2024,4,21,15),
         articleBody: [
@@ -750,7 +750,7 @@ export const articlesData = [
         alt: `business woman double fisting Champaign in celebration`,
         header: `Tesla Stock Skyrockets as Elon Musk Eyes New Pastures`,
         subhead: `Investors celebrate as eccentric billionaire vows to focus on having X with neo-Nazis`,
-        tags: [`Tesla`, `Elon Musk`],
+        tags: [`Tesla`, `Elon Musk`, `Electric Cars`],
         author: `Et Al`,
         datePublished: new Date(2024,5,8,16),
         articleBody: [
@@ -1269,6 +1269,33 @@ export const articlesData = [
             `In a final insult to Terry Gilliam's vision, the trailer closes with our now-stretched protagonists engaged in a "hip" dance number, flossing their way through the space-time continuum. It's enough to make one long for the simpler days of Sean Connery in a short tunic.`,
 
             `So buckle up, fellow fans of the original. We're in for a tall order of disappointment, served with a side of "why bother?" I'll be watching this travesty on my trusty 13-inch CRT TV, where at least the actors might appear closer to their intended size. Progress, thy name is irony.`,
+        ]
+    },
+    {
+        id: 59,
+        articleUrl: `20240711-ford-reignites-pinto`,
+        category: `tech`,
+        img: `/images/20240711-ford-reignites-pinto.webp`,
+        alt: `the new Ford Pinto EV on fire`,
+        header: `Ford Reignites Pinto Brand, Promises "Only Metaphorical Explosions"`,
+        subhead: `New EV comes with complimentary fire extinguisher and lawyer's business card`,
+        tags: [`Ford`, `Electric Cars`],
+        author: `Et Al`,
+        datePublished: new Date(2024,6,11,14),
+        articleBody: [
+            `Just when you thought it was safe to drive again, Ford has decided to exhume the charred remains of its infamous Pinto and slap some batteries on it. That's right, folks - the car that once turned fender benders into impromptu Viking funerals is back, and this time it's electric!`,
+
+            `In a move that can only be described as "corporate nostalgia meets gallows humor," Ford proudly announced the Pinto EV as their second European-only electric vehicle. Because apparently, the first one - last year's Edsel EV - didn't quite scratch that itch for "cars named after historic failures."`,
+
+            `But fear not, potential buyers! Ford assures us that this new Pinto is totally, probably, mostly safe. The company has spared no expense in their R&D department, reportedly spending dozens of dollars to ensure that rear-end collisions won't require a HAZMAT team this time around. Progress!`,
+
+            `The new slogan? "From Fireball on Wheels to Electric Boogaloo: The only thing catching fire is our sales!" One can only admire the audacity of a marketing team that looks at a car synonymous with "spontaneous combustion" and thinks, "Yes, this is the name we want for our cutting-edge EV."`,
+
+            `In a press conference that felt more like a seance, Ford's CEO channeled the spirits of automotive disasters past, proclaiming, "Third time's the charm!" The ghosts of the original Pinto and Edsel were reportedly seen nodding approvingly from the great junkyard in the sky.`,
+
+            `As for safety features, the Pinto EV comes equipped with a "discharge-proof" bumper, ejector seats (just in case), and a complimentary fire extinguisher. Each purchase also includes a lawyer's business card - you know, for peace of mind.`,
+
+            `In the end, one has to wonder: Is this a bold step into the future of transportation, or just another case of corporate necromancy gone awry? Only time - and crash test dummies - will tell. But one thing's for sure: in the cutthroat world of EVs, Ford's strategy of "it can't possibly be worse than last time" is certainly... electrifying.`,
         ]
     },
 ]
