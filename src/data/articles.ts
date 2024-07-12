@@ -1298,4 +1298,31 @@ export const articlesData = [
             `In the end, one has to wonder: Is this a bold step into the future of transportation, or just another case of corporate necromancy gone awry? Only time - and crash test dummies - will tell. But one thing's for sure: in the cutthroat world of EVs, Ford's strategy of "it can't possibly be worse than last time" is certainly... electrifying.`,
         ]
     },
+    {
+        id: 60,
+        articleUrl: `20240712-heritage-foundations-data`,
+        category: `tech`,
+        img: `/images/20240712-heritage-foundations-data.webp`,
+        alt: `an evil anthropomorphic wolf wearing a Naziesque uniform with a US flag in the background`,
+        header: `Heritage Foundation's Data Leak Reveals Shocking Tail of Deception`,
+        subhead: `Conservative Group's New Motto: "Make America Yiff Again"`,
+        tags: [`Hackers`, `SiegedSec`, `Heritage Foundation`],
+        author: `Et Al`,
+        datePublished: new Date(2024,6,12,16),
+        articleBody: [
+            `The Heritage Foundation's frantic denials of being hacked by 'gay furries' have only intensified suspicions about what can only be described as the most fabulous fascist plot in political history.`,
+
+            `Hacktivist group SiegedSec, apparently bored with run-of-the-mill government corruption, decided to spice things up by releasing 200 gigabytes of the Heritage Foundation's deepest, furriest secrets. And oh boy, did they uncover a doozy.`,
+
+            `Project 2025, once thought to be a straightforward blueprint for turning America into a garden-variety fascist state, has been revealed as something far more nefarious - a comprehensive plan to transform the United States into a furry fascist regime. That's right, folks. The Heritage Foundation, long considered a bastion of conservative values, has been secretly plotting to replace democracy with a technicolor dictatorship of faux fur.`,
+
+            `Internal memos detail plans for mandatory fursuit rallies, the replacement of the Pledge of Allegiance with a rousing "Furhrer's Fursona Oath," and constitutional amendments guaranteeing the right to bear ears - but only for state-approved species. The Department of Defense budget has been reallocated to develop tactical scritching techniques for crowd control, while the Federal Reserve is set to introduce a new currency featuring the stern, anthropomorphic visage of their chosen leader: General Fluffles.`,
+
+            `When reached for comment, a visibly flustered Heritage Foundation spokesperson, sporting what appeared to be hastily hidden wolf ears, stated, "This is all a big misunderstanding. We were simply... exploring alternative governance models based on the, uh, efficient hierarchies found in wolf packs. It's purely theoretical, of course."`,
+
+            `As America grapples with this earth-shattering revelation, one thing is clear: the future of authoritarianism is far more colorful, cuddly, and uncomfortably warm than anyone could have imagined.`,
+
+            `But as the saying goes, you can lead a nation to furry fascism, but you can't make them yiff.`,
+        ]
+    },
 ]
