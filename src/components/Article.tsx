@@ -51,6 +51,8 @@ const StyledImg = styled.img`
     object-fit: cover;
 `
 const StyledTagsWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
     margin: 0.5rem 0;
 `
 const StyledTag = styled(Link)`
