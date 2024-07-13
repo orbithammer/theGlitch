@@ -1332,7 +1332,7 @@ export const articlesData = [
         img: `/images/20240713-x-introduces-reverse.webp`,
         alt: `a sad cartoon bluebird holding a pink eraser`,
         header: `X Introduces "Reverse Verification"`,
-        subhead: `Authentic Users Pay to Remove Check in Latest Value Siphon`,
+        subhead: `Authentic Users Pay to Remove Check Mark in Latest Value Siphon`,
         tags: [`Twitter`, `Elon Musk`],
         author: `Et Al`,
         datePublished: new Date(2024,6,13,16),
