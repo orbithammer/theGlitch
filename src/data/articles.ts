@@ -1325,4 +1325,29 @@ export const articlesData = [
             `But as the saying goes, you can lead a nation to furry fascism, but you can't make them yiff.`,
         ]
     },
+    {
+        id: 61,
+        articleUrl: `20240713-x-introduces-reverse`,
+        category: `tech`,
+        img: `/images/20240713-x-introduces-reverse.webp`,
+        alt: `a sad cartoon bluebird holding a pink eraser`,
+        header: `X Introduces "Reverse Verification"`,
+        subhead: `Authentic Users Pay to Remove Check in Latest Value Siphon`,
+        tags: [`Twitter`, `Elon Musk`],
+        author: `Et Al`,
+        datePublished: new Date(2024,6,13,16),
+        articleBody: [
+            `In a move that would make Orwell's Ministry of Truth blush, X has unveiled its latest stroke of genius: "Reverse Verification." For a mere $50 a month, users can now pay to have their blue checkmarks removed, proving once and for all that they're not like the other girls on this godforsaken hellsite.`,
+
+            `"We've realized that true authenticity comes from being completely indistinguishable from the teeming masses of bots, grifters, and crypto bros," said X's Chief Integrity Officer, who may or may not be three raccoons in a trench coat. "By removing all signs of credibility, we're creating a level playing field where everyone can be equally untrustworthy."`,
+
+            `Early adopters of the new feature include politicians eager to distance themselves from their past statements, celebrities desperate to regain their "everyman" status, and that one guy who keeps trying to sell you a course on how to make passive income by dropshipping NFTs of endangered species.`,
+
+            `Critics argue that this new system is just another cash grab by a platform already drowning in its own desperation. However, X's spokesbot countered with a series of indecipherable beeps and boops that roughly translated to "LOL cry more."`,
+
+            `In related news, the EU has announced plans to fine X one trillion Monopoly dollars, citing violations of common sense and basic human decency. Elon Musk responded by tweeting a meme of himself photoshopped as the Monopoly man, captioned "U mad bro?"`,
+
+            `As humanity continues its relentless march towards digital oblivion, one can't help but wonder: in a world where credibility is a purchasable commodity, who's really getting verified? The answer, dear readers, is clear: absolutely fucking no one.`,
+        ]
+    },
 ]
