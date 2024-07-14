@@ -1350,4 +1350,33 @@ export const articlesData = [
             `As humanity continues its relentless march towards digital oblivion, one can't help but wonder: in a world where credibility is a purchasable commodity, who's really getting verified? The answer, dear readers, is clear: absolutely fucking no one.`,
         ]
     },
+    {
+        id: 62,
+        articleUrl: `20240714-redbox-kiosks-repurposed`,
+        category: `entertainment`,
+        img: `/images/20240714-redbox-kiosks-repurposed.webp`,
+        alt: `a hunched over man sitting on a red box typing on a laptop`,
+        header: `Redbox Kiosks Repurposed as Tiny Homes for Tech Bros`,
+        subhead: `Silicon Valley's Housing Crisis Solved by 12 Cubic Feet of Innovation`,
+        tags: [`Redbox`, `Silicon Valley`],
+        author: `Pieter Klykbeit`,
+        datePublished: new Date(2024,6,14,8),
+        articleBody: [
+            `The last vestiges of physical media have finally found their true calling in our digital dystopia. As Redbox shuts down its disc rental empire, Silicon Valley's most desperate and delusional have swooped in to transform those garish red boxes into the latest "disruption" in affordable housing.`,
+
+            `That's right, folks. The same geniuses who brought you $15 toast and apps that are just thinly veiled taxi services have now decided that living in what amounts to a slightly roomier coffin is the solution to the Bay Area's housing woes.`, 
+
+            `"It's really not that different from my coding cubicle," enthused Chad Disruptiner, a 23-year-old blockchain evangelist who now calls Redbox #24601 his home. "Plus, I'm basically living in a physical manifestation of my childhood – surrounded by movies no one wants anymore!"`,
+
+            `The "Red Box Residences" come fully equipped with all the amenities a modern tech bro could need: a fold-out keyboard tray that doubles as a bed, a cupholder repurposed as a combination shower and toilet, and a screen that alternates between displaying your Bitcoin portfolio and reminding you that "Jurassic Park 3" is still available for rent.`,
+
+            `City officials are hailing this as a breakthrough in urban planning. "We're turning every strip mall parking lot into a thriving micro-community," beamed Santa Clara Mayor Lisa M. Gillmor, conveniently ignoring the fact that residents have to awkwardly contort themselves just to enter their new digs.`,
+
+            `But let's not forget the true victims in all of this: the poor, neglected DVDs still trapped inside these repurposed prisons. As I write this, a copy of "Paul Blart: Mall Cop" is being used as a load-bearing wall in someone's new home. Even Kevin James doesn't deserve that fate.`,
+
+            `So, the next time you're driving through Palo Alto and spot a cluster of red boxes with protruding limbs and the faint glow of MacBook Pros, just remember – this is what progress looks like in 2024. At least until someone figures out how to cram people into old iPod Nanos.`,
+
+            `Now, if you'll excuse me, I need to go home and hug my LaserDisc player. It's the only thing keeping me sane in this world gone mad.`,
+        ]
+    },
 ]
