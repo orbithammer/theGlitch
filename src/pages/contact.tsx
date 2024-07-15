@@ -35,89 +35,18 @@ const StyledButton = styled.button`
 `;
 
 const ContactPage: React.FC = () => {
-    const navigate = useNavigate();
-    const [formState, setFormState] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setFormState({
-            ...formState,
-            [e.target.name]: e.target.value
-        });
-    };
-
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        const form = e.target as HTMLFormElement;
-
-        // Check if we're in a Netlify environment
-        const isNetlify = Boolean(import.meta.env.VITE_NETLIFY);
-
-        if (!isNetlify) {
-            // In development or non-Netlify environment
-            console.log('Form submitted (Development):', formState);
-            navigate("/thank-you");
-        } else {
-            // In Netlify production environment
-            try {
-                const response = await fetch("/", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body: new URLSearchParams({
-                        "form-name": form.getAttribute("name") || "",
-                        ...formState
-                    }).toString()
-                });
-
-                if (response.ok) {
-                    navigate("/thank-you");
-                } else {
-                    throw new Error('Form submission failed');
-                }
-            } catch (error) {
-                console.error("Error submitting form:", error);
-                // Handle error (e.g., show error message to user)
-            }
-        }
-    };
-
     return (
-        <>
-            <PageMetaTags />
-            <main>
-                <h1>Contact Us</h1>
-                <StyledForm name="contact" onSubmit={handleSubmit} data-netlify={Boolean(import.meta.env.VITE_NETLIFY)}>
-                    <input type="hidden" name="form-name" value="contact" />
-                    <StyledInput
-                        type="text"
-                        name="name"
-                        placeholder="Your Name"
-                        value={formState.name}
-                        onChange={handleChange}
-                        required
-                    />
-                    <StyledInput
-                        type="email"
-                        name="email"
-                        placeholder="Your Email"
-                        value={formState.email}
-                        onChange={handleChange}
-                        required
-                    />
-                    <StyledTextarea
-                        name="message"
-                        placeholder="Your Message"
-                        value={formState.message}
-                        onChange={handleChange}
-                        required
-                    />
-                    <StyledButton type="submit">Send</StyledButton>
-                </StyledForm>
-            </main>
-        </>
+        <form name="contact" data-netlify={true}>
+        <p>
+            <label>Name <input type="text" name="name" /></label>
+        </p>
+        <p>
+            <label>Email <input type="email" name="email" /></label>
+        </p>
+        <p>
+            <button type="submit">Send</button>
+        </p>
+    </form>
     );
 };
 
