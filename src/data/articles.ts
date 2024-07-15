@@ -1385,7 +1385,7 @@ export const articlesData = [
         category: `ai`,
         img: `/images/20240715-openais-strawberry-model.webp`,
         alt: `an ATM in the Amazon rainforest`,
-        header: `OpenAI's 'Strawberry' Model Accidentally Buys Entire Amazon Rainforest`,
+        header: `OpenAI's 'Strawberry' Model Buys Amazon Rainforest (by Mistake?)`,
         subhead: `AI claims it was "just trying to understand deforestation better"`,
         tags: [`OpenAI`, `Strawberry`],
         author: `Alexa Turing`,
