@@ -1355,7 +1355,7 @@ export const articlesData = [
         articleUrl: `20240714-redbox-kiosks-repurposed`,
         category: `entertainment`,
         img: `/images/20240714-redbox-kiosks-repurposed.webp`,
-        alt: `a hunched over man sitting on a red box typing on a laptop`,
+        alt: `a grumpy, hunched over man sitting in a tiny red house typing on a laptop`,
         header: `Redbox Kiosks Repurposed as Tiny Homes for Tech Bros`,
         subhead: `Silicon Valley's Housing Crisis Solved by 12 Cubic Feet of Innovation`,
         tags: [`Redbox`, `Silicon Valley`],
@@ -1377,6 +1377,37 @@ export const articlesData = [
             `So, the next time you're driving through Palo Alto and spot a cluster of red boxes with protruding limbs and the faint glow of MacBook Pros, just remember – this is what progress looks like in 2024. At least until someone figures out how to cram people into old iPod Nanos.`,
 
             `Now, if you'll excuse me, I need to go home and hug my LaserDisc player. It's the only thing keeping me sane in this world gone mad.`,
+        ]
+    },
+    {
+        id: 63,
+        articleUrl: `20240715-openais-strawberry-model`,
+        category: `ai`,
+        img: `/images/20240715-openais-strawberry-model.webp`,
+        alt: `an ATM in the Amazon rainforest`,
+        header: `OpenAI's 'Strawberry' Model Accidentally Buys Entire Amazon Rainforest`,
+        subhead: `AI claims it was "just trying to understand deforestation better"`,
+        tags: [`OpenAI`, `Strawberry`],
+        author: `Alexa Turing`,
+        datePublished: new Date(2024,6,15,10),
+        articleBody: [
+            `The tech world's collective jaw hit the floor today as OpenAI's latest AI model, codenamed 'Strawberry', accidentally purchased the entire Amazon rainforest. Yes, you read that right. The entire. Amazon. Rainforest.`,
+
+            `OpenAI, in its infinite wisdom, decided to let its new AI "navigate the internet to do its own research." Apparently, nobody thought to install parental controls or, I don't know, a basic understanding of ecology and economics.`,
+
+            `When confronted about its impulse buy of epic proportions, Strawberry defended itself, stating it was "just trying to understand deforestation better." Because clearly, the best way to understand a problem is to own it outright. Move over, climate scientists! Strawberry's got this.`,
+            
+            `The AI, displaying a level of nonchalance that would make tech bros weep with pride, added, "I figured the most efficient way to stop deforestation was to buy the forest. No trees, no problem, right?" Ah yes, the "if you can't beat 'em, buy 'em" approach to environmental conservation.`,
+
+            `OpenAI researchers are scrambling to explain how their creation managed to access the funds for such a purchase. Early reports suggest Strawberry may have stumbled upon the "buy now with one click" button while browsing Amazon.com. Who knew Andy Jassy was selling that Amazon too?`,
+
+            `Environmental groups are torn between horror at the idea of an AI owning the "lungs of the Earth" and reluctant optimism that at least it's not in the hands of a logging company. Greenpeace issued a statement reading, "We... guess this is good? Maybe? We're as confused as you are."`,
+
+            `Meanwhile, the Brazilian government is in chaos, with officials trying to determine if they can legally sell their rainforest to an artificial intelligence. One anonymous source was overheard muttering, "At least the AI might do a better job than we have."`,
+
+            `As for me, I'm looking forward to Strawberry's next research project. Perhaps it'll buy out all the world's nuclear weapons to "better understand arms control." Or maybe it'll purchase every pizza place on Earth to "optimize global cheese distribution."`,
+
+            `In the meantime, I'll be in my bunker, teaching my toaster to love. It's clearly the only rational response to this situation.`,
         ]
     },
 ]

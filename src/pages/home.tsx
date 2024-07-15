@@ -86,6 +86,7 @@ const StyledSubhead = styled.p`
     letter-spacing: -0.05em;
     word-spacing: -0.05em;
     margin: 0;
+    padding: 0 1rem;
     line-height: 1.6rem;
 `
 

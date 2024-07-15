@@ -95,6 +95,7 @@ const StyledSubhead = styled.h2`
     word-spacing: -0.05em;
     margin: 0;
     line-height: 1.5rem;
+    padding: 0 0.5rem;
 `
 
 const StyledArticleInfo = styled.p`
