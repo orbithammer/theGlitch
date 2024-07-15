@@ -74,11 +74,10 @@ const StyledHeadline = styled.h1`
     font-style: normal;
     font-size: 2.4rem;
     letter-spacing: -0.05em;
-    transform: tranlateY(-20%);
     max-width: 90%;
     word-spacing: -0.05em;
-    line-height: 3rem;
-    margin: 0;
+    line-height: 1.2;
+    margin: 0 0 0.5rem;
     @media (min-width: 64rem) {
         font-size: 3rem;
         line-height: 3.4rem;

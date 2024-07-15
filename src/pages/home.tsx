@@ -1,12 +1,24 @@
 import React, {useState, useEffect, useContext} from "react"
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { articlesData } from "../data/articles.ts"
-import { styled } from "styled-components"
 import Pagination from "../components/Pagination.tsx"
 import ThemeContext from "../utils/ThemeContext"
 import formatDate from "../utils/formatDate.tsx"
 import navigateToNotFound from "../utils/navigateToNotFound.tsx"
 import PageMetaTags from "../utils/PagesMetaTags.tsx"
+import {
+    StyledLink,
+    StyledImageWrapper,
+    StyledLogo,
+    StyledImg,
+    StyledHeadline,
+    StyledSubhead,
+    StyledHeadlineSmall,
+    StyledSubheadSmall,
+    StyledArticleInfo,
+    StyledAuthor
+  } from "../components/SharedStyledComponents.tsx"
+
 
 type Article = {
     id: number;
@@ -21,7 +33,7 @@ type Article = {
 }
 
 const articleData: Article[] = articlesData
-
+/*
 const StyledLink = styled(Link)`
     text-decoration: none;
     color: ${({ theme }) => theme.isDarkMode ? "#ffffff" : "#000000"};
@@ -59,7 +71,6 @@ const StyledHeadline = styled.h2`
     font-style: normal;
     font-size: 2.4rem;
     letter-spacing: -0.05em;
-    transform: tranlateY(-20%);
     max-width: 90%;
     word-spacing: -0.05em;
     line-height: 3rem;
@@ -70,7 +81,7 @@ const StyledHeadline = styled.h2`
     &:hover {
         background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
     }
-    margin: 0;
+    margin: 0 0 0.5rem;
     @media (min-width: 64rem) {
         font-size: 3rem;
         line-height: 3.4rem;
@@ -128,7 +139,7 @@ const StyledAuthor = styled(Link)`
     &:hover {
         background-color: ${({ theme }) => theme.isDarkMode ? "#5200FF" : "#9CE00C"};
     }
-`
+`*/
 const HomePage: React.FC = () => {
     const { isDarkMode } = useContext(ThemeContext);
     const allArticles = articleData.sort((a, b) => b.datePublished.getTime() - a.datePublished.getTime());

@@ -1,9 +1,23 @@
-import React from "react"
+import React from "react";
+import styled from 'styled-components';
+import PageMetaTags from "../utils/PagesMetaTags.tsx"
+
+const StyledWrapper = styled.div`
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+`;
 
 const ThankYouPage: React.FC = () => {
     return (
-        <h2>Thank you page here</h2>
-    )
-}
+        <>
+            <PageMetaTags />
+            <StyledWrapper>
+                <h1>Thank You!</h1>
+                <p>Your message has been received. We'll get back to you as soon as possible.</p>
+            </StyledWrapper>
+        </>
+    );
+};
 
-export default ThankYouPage
+export default ThankYouPage;
