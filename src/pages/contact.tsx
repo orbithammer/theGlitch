@@ -53,15 +53,15 @@ const ContactPage: React.FC = () => {
         e.preventDefault();
         const form = e.target as HTMLFormElement;
 
-        // Use import.meta.env for Vite projects, or process.env.NODE_ENV for Create React App
-        const isDevelopment = import.meta.env.DEV || import.meta.env.MODE === 'development';
+        // Check if we're in a Netlify environment
+        const isNetlify = Boolean(import.meta.env.VITE_NETLIFY);
 
-        if (isDevelopment) {
-            // In development, just log the form data and navigate
-            console.log('Form submitted:', formState);
+        if (!isNetlify) {
+            // In development or non-Netlify environment
+            console.log('Form submitted (Development):', formState);
             navigate("/thank-you");
         } else {
-            // In production, submit to Netlify
+            // In Netlify production environment
             try {
                 const response = await fetch("/", {
                     method: "POST",
@@ -89,7 +89,7 @@ const ContactPage: React.FC = () => {
             <PageMetaTags />
             <main>
                 <h1>Contact Us</h1>
-                <StyledForm name="contact" onSubmit={handleSubmit} data-netlify="true">
+                <StyledForm name="contact" onSubmit={handleSubmit} data-netlify={Boolean(import.meta.env.VITE_NETLIFY)}>
                     <input type="hidden" name="form-name" value="contact" />
                     <StyledInput
                         type="text"
