@@ -52,19 +52,35 @@ const ContactPage: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const form = e.target as HTMLFormElement;
-        try {
-            await fetch("/", {
-                method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams({
-                    "form-name": form.getAttribute("name") || "",
-                    ...formState
-                }).toString()
-            });
+
+        // Use import.meta.env for Vite projects, or process.env.NODE_ENV for Create React App
+        const isDevelopment = import.meta.env.DEV || import.meta.env.MODE === 'development';
+
+        if (isDevelopment) {
+            // In development, just log the form data and navigate
+            console.log('Form submitted:', formState);
             navigate("/thank-you");
-        } catch (error) {
-            console.error("Error submitting form:", error);
-            // Handle error (e.g., show error message to user)
+        } else {
+            // In production, submit to Netlify
+            try {
+                const response = await fetch("/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams({
+                        "form-name": form.getAttribute("name") || "",
+                        ...formState
+                    }).toString()
+                });
+
+                if (response.ok) {
+                    navigate("/thank-you");
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                console.error("Error submitting form:", error);
+                // Handle error (e.g., show error message to user)
+            }
         }
     };
 
