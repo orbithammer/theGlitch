@@ -4,7 +4,7 @@ const ContactPage: React.FC = () => {
     return (
         <>
             <h3 style={{ color: "red" }}>Under Construction</h3>
-            <form name="contact" data-netlify={true}>
+            <form name="contact" method="POST" data-netlify="true">
                 <p>
                     <label>Name <input type="text" name="name" /></label>
                 </p>
