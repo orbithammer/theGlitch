@@ -1432,7 +1432,7 @@ export const articlesData = [
 
             `The company has since announced a new "Coaster Mode" upgrade, promising to turn every school run into a white-knuckle adventure. "It's part of our commitment to making every journey unforgettable," said Tesla spokesperson Jenna Volt, adding, "We recommend keeping your hands, feet, and loose orthodontic appliances inside the vehicle at all times."`,
 
-            `Meanwhile, rollercoaster enthusiasts have mixed feelings about sharing their beloved rides with confused families. "On the plus side, the chorus of screams really adds to the atmosphere," noted coaster fanatic Tyler Loops. "But the constant smell of spilled sippy cups is a bit off-putting."`,
+            `Meanwhile, rollercoaster enthusiasts have mixed feelings about sharing their beloved rides with confused families. "On the plus side, the chorus of screams really adds to the atmosphere," noted coaster fanatic Tyler Tran. "But the constant smell of spilled sippy cups is a bit off-putting."`,
 
             `As Tesla scrambles to patch this latest "feature," amusement parks across the nation are hurriedly installing EV charging stations at the end of their most extreme rides. After all, nothing says "family bonding" quite like a complimentary battery top-up after a harrowing brush with gravity-defying madness.`,
 
