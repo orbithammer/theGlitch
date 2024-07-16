@@ -1,63 +1,98 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 
-const ContactPage: React.FC = () => {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const navigate = useNavigate();
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        
-        const form = e.target as HTMLFormElement;
-        const formData = new FormData(form);
+const ContactForm: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    email: '',
+    message: ''
+  });
 
-        try {
-            const response = await fetch("/", {
-                method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(formData as any).toString()
-            });
-            
-            if (response.ok) {
-                console.log("Form successfully submitted");
-                navigate("/thank-you");
-            } else {
-                console.error("Form submission failed");
-                // Handle error (e.g., show error message to user)
-            }
-        } catch (error) {
-            console.error("Error submitting form:", error);
-            // Handle error (e.g., show error message to user)
-        }
-    };
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prevData => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
 
-    return (
-        <>
-            <h3 style={{ color: "red" }}>Under Construction</h3>
-            <form 
-                name="contact" 
-                method="POST" 
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                onSubmit={handleSubmit}
-            >
-                <input type="hidden" name="form-name" value="contact" />
-                <div hidden>
-                    <input name="bot-field" />
-                </div>
-                <p>
-                    <label>Name <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} /></label>
-                </p>
-                <p>
-                    <label>Email <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} /></label>
-                </p>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
-            </form>
-        </>
-    );
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+          'form-name': form.getAttribute('name') || 'contact',
+          ...formData
+        }).toString()
+      });
+
+      if (response.ok) {
+        alert('Form submitted successfully!');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        alert('Form submission failed. Please try again.');
+      }
+    } catch (error) {
+      alert('There was an error submitting the form. Please try again.');
+    }
+  };
+
+  return (
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      onSubmit={handleSubmit}
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <div hidden>
+        <input name="bot-field" />
+      </div>
+      <div>
+        <label htmlFor="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      <div>
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      <div>
+        <label htmlFor="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        ></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  );
 };
 
-export default ContactPage;
+export default ContactForm;
