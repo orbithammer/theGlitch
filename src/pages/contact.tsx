@@ -25,6 +25,14 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
 
+    // Check if we're in a development environment using Vite's import.meta.env
+    if (import.meta.env.DEV) {
+      console.log('Form submission in development mode:', formData);
+      alert('Form submitted successfully (development mode)');
+      setFormData({ name: '', email: '', message: '' });
+      return;
+    }
+
     try {
       const response = await fetch('/', {
         method: 'POST',
@@ -42,6 +50,7 @@ const ContactForm: React.FC = () => {
         alert('Form submission failed. Please try again.');
       }
     } catch (error) {
+      console.error('Error submitting form:', error);
       alert('There was an error submitting the form. Please try again.');
     }
   };
