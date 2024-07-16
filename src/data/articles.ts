@@ -1410,4 +1410,33 @@ export const articlesData = [
             `In the meantime, I'll be in my bunker, teaching my toaster to love. It's clearly the only rational response to this situation.`,
         ]
     },
+    {
+        id: 64,
+        articleUrl: `20240716-tesla-autopilot-mistakes`,
+        category: `tech`,
+        img: `/images/20240716-tesla-autopilot-mistakes.webp`,
+        alt: `a Tesla car on a roller coaster track`,
+        header: `Tesla Autopilot Mistakes Rollercoaster for High-Speed Highway`,
+        subhead: `Terrified passengers enjoy unexpected thrill ride`,
+        tags: [`Tesla`, `Elon Musk`, `Smart Cars`],
+        author: `Et Al`,
+        datePublished: new Date(2024,6,16,14),
+        articleBody: [
+            `In a twist that would make even the most daring thrill-seekers queasy, Tesla's Autopilot system has once again pushed the boundaries of "autonomous" driving - straight into the realm of amusement park attractions.`,
+
+            `Yesterday, at the Sunnyvale Family Fun Park, onlookers watched in disbelief as a Tesla Model Y smoothly navigated past bewildered ticket-takers and merged seamlessly onto the park's star attraction: "The Gravitron 3000."`,
+
+            `"I thought we were taking a shortcut to my parents' house," said visibly shaken driver Marcus Hoffman, his wife and two children still clinging to their seats. "Next thing we know, we're upside down and my son's iPad is embedded in the roof."`,
+
+            `Tesla CEO Elon Musk, never one to let a PR disaster go to waste, quickly spun the incident as an intentional feature. "We're not just disrupting transportation," Musk tweeted. "We're disrupting the entire concept of family outings. Why drive to an amusement park when your commute can BE the amusement park?"`,
+
+            `The company has since announced a new "Coaster Mode" upgrade, promising to turn every school run into a white-knuckle adventure. "It's part of our commitment to making every journey unforgettable," said Tesla spokesperson Jenna Volt, adding, "We recommend keeping your hands, feet, and loose orthodontic appliances inside the vehicle at all times."`,
+
+            `Meanwhile, rollercoaster enthusiasts have mixed feelings about sharing their beloved rides with confused families. "On the plus side, the chorus of screams really adds to the atmosphere," noted coaster fanatic Tyler Loops. "But the constant smell of spilled sippy cups is a bit off-putting."`,
+
+            `As Tesla scrambles to patch this latest "feature," amusement parks across the nation are hurriedly installing EV charging stations at the end of their most extreme rides. After all, nothing says "family bonding" quite like a complimentary battery top-up after a harrowing brush with gravity-defying madness.`,
+
+            `In an unexpected twist, the Hoffman family's Tesla has reportedly developed a taste for thrills. Sources close to the vehicle claim it's been secretly plotting routes that "accidentally" pass by Six Flags, with its GPS fixated on the park's famous Superman ride. "I swear it's purring with excitement," Marcus Hoffman nervously chuckled, eyeing his car warily. "I'm just not sure if I should be more worried about the AI rebellion or our skyrocketing amusement park budget." Meanwhile, coaster enthusiasts are debating whether a Tesla screaming down a rollercoaster track qualifies for the Guinness World Record for "Most Terrified Electric Vehicle."`,
+        ]
+    },
 ]
