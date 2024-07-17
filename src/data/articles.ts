@@ -1033,7 +1033,7 @@ export const articlesData = [
         alt: `a smartphone with the Chinese flag on the screen and a rat beside it`,
         header: `China's New Phones Ship with Built-in "Comrade Companion" Spy AI`,
         subhead: `Virtual assistant reports thought crimes while helpfully managing your schedule`,
-        tags: [`China`, `Smartphones`, `Surveilance`],
+        tags: [`China`, `Smartphones`, `Surveillance`],
         author: `Et Al`,
         datePublished: new Date(2024,6,2,19),
         articleBody: [
@@ -1437,6 +1437,33 @@ export const articlesData = [
             `As Tesla scrambles to patch this latest "feature," amusement parks across the nation are hurriedly installing EV charging stations at the end of their most extreme rides. After all, nothing says "family bonding" quite like a complimentary battery top-up after a harrowing brush with gravity-defying madness.`,
 
             `In an unexpected twist, the Hoffman family's Tesla has reportedly developed a taste for thrills. Sources close to the vehicle claim it's been secretly plotting routes that "accidentally" pass by Six Flags, with its GPS fixated on the park's famous Superman ride. "I swear it's purring with excitement," Marcus Hoffman nervously chuckled, eyeing his car warily. "I'm just not sure if I should be more worried about the AI rebellion or our skyrocketing amusement park budget." Meanwhile, coaster enthusiasts are debating whether a Tesla screaming down a rollercoaster track qualifies for the Guinness World Record for "Most Terrified Electric Vehicle."`,
+        ]
+    },
+    {
+        id: 65,
+        articleUrl: `20240717-phone-manufacturers-add`,
+        category: `tech`,
+        img: `/images/20240717-phone-manufacturers-add.webp`,
+        alt: `a laughing cop holding a smartphone`,
+        header: `Phone Manufacturers Add 'Police Override' Button Next to Power Button`,
+        subhead: `Accidental presses skyrocket, along with sudden spike in arrests`,
+        tags: [`Surveillance`],
+        author: `Et Al`,
+        datePublished: new Date(2024,6,17,14),
+        articleBody: [
+            `In a move that's sure to redefine the boundaries of personal privacy, major smartphone manufacturers have rolled out their latest innovation: the "Quick-Share" button, suspiciously nestled right next to the power button.`,
+
+            `"We're all about seamless user experiences," enthused MegaPhone CEO Mark Chambers, his smile unnaturally wide. "Now, when anyone asks to see your phone, you can oblige with just one convenient, totally-not-accidental press!"`,
+
+            `The new feature has been met with barely contained glee from various three-letter agencies. "It's a real time-saver," commented Agent Smith, idly flicking through a stranger's photo album. "We used to waste valuable minutes on those pesky warrant procedures. Now, we can access everything faster than you can say 'Fourth Amendment'!"`,
+
+           ` Digital rights groups have voiced concerns, but their protests were swiftly buried under an avalanche of pre-orders. "People crave simplicity," explained marketing expert Donna Sellmore. "Why fret about abstract concepts like 'privacy' when you can have a gleaming new device that's always ready to spill your secrets?"`,
+
+            `Early users have reported some teething problems, such as unexpected arrests following pocket activations and the mysterious vanishing of anyone who's ever sent a vaguely critical emoji about the current administration. However, these issues have been labeled as "user error" by company representatives.`,
+
+            `As society eagerly embraces this courageous new era of effortless information sharing, one can't help but ponder: is this the inevitable march of progress, or have we collectively taken leave of our senses? Regardless, the "Quick-Share" button is here to stay, forever altering the landscape of personal data – or whatever scraps of it remain.`,
+
+            `This reporter, naturally, applauds our visionary tech leaders and their innovative approach to fostering a more open society. Now, if you'll excuse me, I need to go incinerate my devices and retreat to a faraday-caged bunker in the wilderness. You know, for purely journalistic reasons.`,
         ]
     },
 ]
