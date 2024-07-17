@@ -16,6 +16,15 @@ export default function ContactForm() {
                         <input type="text" name="first-name" />
                     </label>
                 </div>
+                <div>
+                    <label htmlFor="email">Email</label> <br />
+                    <input id="email" type="email" name="email" />
+                </div>
+                <div>
+                    <label> Any comments? <br />
+                        <textarea name="comments"></textarea>
+                    </label>
+                </div>
                 <button type="submit">Send</button>
             </form>
         </div>
