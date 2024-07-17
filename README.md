@@ -4,7 +4,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/orbithammer/theGlitch)](https://github.com/orbithammer/theGlitch/issues)
 [![GitHub stars](https://img.shields.io/github/stars/orbithammer/theGlitch)](https://github.com/orbithammer/theGlitch/stargazers)
 
-Welcome to **TheGlitch** - the online-est of tech rags. Where satire meets silicon and the truth isn’t binary. 
+Welcome to **isGlitch.com** - the online-est of tech rags. Where satire meets silicon and the truth isn’t binary. 
 
 A satirical tech news website that brings you the most outlandish, absurd, and humorous takes on the latest happenings in the tech world. If you love technology and have a sense of humor, this is the place for you.
 
@@ -22,7 +22,7 @@ A satirical tech news website that brings you the most outlandish, absurd, and h
 
 ## About
 
-**TheGlitch** aims to deliver satirical content that pokes fun at the tech industry's quirks, trends, and controversies. From fictional tech company scandals to imaginary product launches, our goal is to provide a humorous perspective on the often serious and rapidly changing world of technology.
+**isGlitch.com** aims to deliver satirical content that pokes fun at the tech industry's quirks, trends, and controversies. From fictional tech company scandals to imaginary product launches, our goal is to provide a humorous perspective on the often serious and rapidly changing world of technology.
 
 ## Features
 
@@ -96,5 +96,5 @@ Feel free to reach out if you have any questions, suggestions, or just want to s
 
 ---
 
-Thank you for visiting TheGlitch! We hope you enjoy our satirical take on the tech world. Don't forget to star the repo if you like it!
+Thank you for visiting isGlitch.com! We hope you enjoy our satirical take on the tech world. Don't forget to star the repo if you like it!
 
