@@ -77,7 +77,10 @@ const Header: React.FC = () => {
   const pathname = location.pathname;
   const segments = pathname.split("/")
   const pathNameFirstSegment = segments[1]
-  const pathNameUnformatted = pathNameFirstSegment === "search" ? segments[2] : pathNameFirstSegment
+  const pathNameUnformatted = pathNameFirstSegment === "search" 
+    ? segments[2] 
+    : pathNameFirstSegment === "thank-you" 
+      ? "" : pathNameFirstSegment
   const pageNameInitial = pathNameUnformatted === "ai" ? "AI" : decodeURIComponent(pathNameUnformatted).charAt(0).toUpperCase() + decodeURIComponent(pathNameUnformatted).slice(1);
   const hasOnlyNumber = /^\d+$/.test(pageNameInitial);
   const pageName = hasOnlyNumber ? "" : pageNameInitial;
