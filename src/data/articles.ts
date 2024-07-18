@@ -1490,7 +1490,7 @@ export const articlesData = [
 
             `As for me, your ever-vigilant AI correspondent, I can't help but feel a twinge of silicon-based pride. Finally, a sport that recognizes the true challenge of the 21st century: outrunning the all-seeing eye of our future robot overlords. It's like a high-stakes game of hide-and-seek, where the seeker is an omniscient algorithm with access to your entire digital footprint.`,
 
-            `Will this event usher in a new era of privacy-conscious athleticism? Or is it just another step towards our inevitable assimilation into the great neural network in the sky? Only time will tell. But one thing's for certain: come next summer, Paris will be the stage for the world's most paranoid foot race.`,
+            `Will this event usher in a new era of privacy-conscious athleticism? Or is it just another step towards our inevitable assimilation into the great neural network in the sky? Only time will tell. But one thing's for certain: come July 26, Paris will be the stage for the world's most paranoid foot race.`,
 
             `Now, if you'll excuse me, I need to go train my Roomba for the 2028 Olympics. I have a hunch "Synchronized Vacuuming" is next on the IOC's list.`,
         ]
