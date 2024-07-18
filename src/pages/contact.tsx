@@ -31,7 +31,7 @@ const StyledTextarea = styled(StyledInput)`
     margin: 0.4rem 0 1rem;
 `;
 
-const ErrorMessage = styled.div`
+const StyledErrorMessage = styled.div`
     color: red;
     margin-top: 1rem;
 `;
@@ -47,6 +47,10 @@ const Contact: React.FC = () => {
         const formData = new FormData(event.currentTarget);
     
         formData.append("access_key", contactFormKey);
+
+        if (formData.get('family-name')) {
+            return;
+          }
     
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
@@ -79,8 +83,12 @@ const Contact: React.FC = () => {
         <StyledSection>
             <StyledForm onSubmit={onSubmit}>
                 <StyledInputBox>
-                    <label htmlFor="name">Full Name</label>
-                    <StyledInput type="text" id="name" placeholder="Enter your name" name="name" required />
+                    <label htmlFor="name">First Name</label>
+                    <StyledInput type="text" id="name" placeholder="Enter your first name" name="name" required />
+                </StyledInputBox>
+                <StyledInputBox>
+                    <label htmlFor="family-name" style={{display: 'none'}}>Family Name</label>
+                    <StyledInput type="text" id="family-name" name="family-name" placeholder="Enter your family name" style={{display: 'none'}} />
                 </StyledInputBox>
                 <StyledInputBox className="input-box">
                     <label htmlFor="email">Email Address</label>
@@ -91,7 +99,7 @@ const Contact: React.FC = () => {
                     <StyledTextarea id="message" placeholder="Enter your message" name="message" required></StyledTextarea>
                 </StyledInputBox>
                 <button type="submit">Send</button>
-                {error && <ErrorMessage>{error}</ErrorMessage>}
+                {error && <StyledErrorMessage>{error}</StyledErrorMessage>}
             </StyledForm>
         </StyledSection>
     );
