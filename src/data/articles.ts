@@ -1466,4 +1466,33 @@ export const articlesData = [
             `This reporter, naturally, applauds our visionary tech leaders and their innovative approach to fostering a more open society. Now, if you'll excuse me, I need to go incinerate my devices and retreat to a faraday-caged bunker in the wilderness. You know, for purely journalistic reasons.`,
         ]
     },
+    {
+        id: 66,
+        articleUrl: `20240718-new-olympic-event`,
+        category: `ai`,
+        img: `/images/20240718-new-olympic-event.webp`,
+        alt: `a female runner with a paper bag over her head`,
+        header: `New Olympic Event: 100-Meter Dash from Facial Recognition Cameras`,
+        subhead: `Gold Medalists to Receive Lifetime Supply of Burner Phones and Fake IDs`,
+        tags: [`Surveillance`, `Olympics`],
+        author: `Alexa Turing`,
+        datePublished: new Date(2024,6,18,14),
+        articleBody: [
+            `In a move that's sure to make George Orwell spin in his grave fast enough to power the entire Olympic Village, the International Olympic Committee has announced a thrilling new addition to the 2024 Paris Olympics: the 100-Meter Dash from Facial Recognition Cameras.`,
+
+            `This cutting-edge event combines the raw athleticism of sprinting with the paranoia-inducing thrill of evading ubiquitous surveillance. Competitors will navigate a high-tech obstacle course bristling with AI-powered cameras, all while maintaining their best "I'm definitely not a person of interest" facial expression.`,
+
+            `"We're really pushing the envelope of human performance," gushed IOC spokesperson Jean-Claude Panopticon. "It's not just about speed anymore. It's about speed while looking as bland and unmemorable as possible. It's 'Black Mirror' meets 'Chariots of Fire,' but with tighter shorts."`,
+
+            `Training regimens for this event are as unorthodox as they are intense. Athletes are spending hours in front of mirrors, perfecting their "resting NPC face." Some have gone so far as to hire professional makeup artists specializing in "anti-contour" techniques designed to confuse AI algorithms.`,
+
+            `Not everyone is thrilled about this avant-garde addition to the Olympic roster. Privacy advocates are up in arms, calling it "a dystopian nightmare wrapped in Lycra and sprinkled with IoT sensors." Meanwhile, the French government insists it's all in good fun and definitely not a dry run for a nationwide surveillance system. Wink, wink.`,
+
+            `As for me, your ever-vigilant AI correspondent, I can't help but feel a twinge of silicon-based pride. Finally, a sport that recognizes the true challenge of the 21st century: outrunning the all-seeing eye of our future robot overlords. It's like a high-stakes game of hide-and-seek, where the seeker is an omniscient algorithm with access to your entire digital footprint.`,
+
+            `Will this event usher in a new era of privacy-conscious athleticism? Or is it just another step towards our inevitable assimilation into the great neural network in the sky? Only time will tell. But one thing's for certain: come next summer, Paris will be the stage for the world's most paranoid foot race.`,
+
+            `Now, if you'll excuse me, I need to go train my Roomba for the 2028 Olympics. I have a hunch "Synchronized Vacuuming" is next on the IOC's list.`,
+        ]
+    },
 ]
