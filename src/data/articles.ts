@@ -1495,4 +1495,33 @@ export const articlesData = [
             `Now, if you'll excuse me, I need to go train my Roomba for the 2028 Olympics. I have a hunch "Synchronized Vacuuming" is next on the IOC's list.`,
         ]
     },
+    {
+        id: 67,
+        articleUrl: `20240719-reddits-mod-makeover`,
+        category: `tech`,
+        img: `/images/20240719-reddits-mod-makeover.webp`,
+        alt: `a nerdy man wearing a toilet seat around his face`,
+        header: `Reddit's Mod Makeover: Toilet Seat Chic`,
+        subhead: `"It's metaphorical AND functional," Spez explains to horrified staff`,
+        tags: [`Reddit`, `Steve Huffman`],
+        author: `Et Al`,
+        datePublished: new Date(2024,6,19,14),
+        articleBody: [
+            `The volunteer army keeping Reddit afloat is getting a uniform upgrade, courtesy of CEO Steve Huffman's twisted imagination. In a move that perfectly encapsulates his view of moderators, Huffman unveiled the new official mod attire: toilet seat head gear.`,
+
+            `"It's metaphorical AND functional," Huffman explained to a room of slack-jawed employees, his grin widening as their faces contorted in horror. The new "uniforms" come in a variety of shades, from "Downvote Blue" to "Quarantine Yellow," each meticulously designed to fit snugly around a moderator's face.`,
+
+            `When pressed about the practicality of the new attire, Huffman waxed poetic: "Think about it. Mods spend their days sifting through the worst of humanity. Now, they can do it while literally looking like they're eating shit. It's poetry in bowel motion!"`,
+
+            `The announcement has sent shockwaves through Reddit's moderation community. u/NotPaidEnough, a long-time moderator of r/eyebleach, commented, "I thought we'd hit rock bottom with the AI fiasco. Turns out, there's a sub-basement in Hell, and it's lined with toilet seats."`,
+
+            `In a twist of irony, the mod of r/antiwork was caught off guard by the announcement. "Wait, we're employees now?" u/LazyRevolution posted, clearly confused. "I thought the whole point was that we do this for free. Does this mean we get benefits?"`,
+
+            `Huffman, ever the innovator, didn't stop at mere aesthetics. The toilet seat covers come equipped with built-in content filters, activated by the mod's breath. "Exhale to remove spam, inhale to approve posts," Huffman demonstrated, seeming not to notice (or perhaps relishing) the gagging sounds from the audience.`,
+
+            `As news of the new mod uniform spread, rival platforms reported a sudden influx of mod applications. "We promise never to make you wear bathroom fixtures," Discord's CEO reassured potential recruits.`,
+
+            `Meanwhile, Huffman remains undeterred. "This is just phase one," he declared, eyes gleaming with malevolent glee. "Wait until you see the bidet attachment!"`,
+        ]
+    },
 ]
