@@ -440,7 +440,7 @@ export const articlesData = [
         alt: `Your sister holding strands of her hair saying, "I'm Cameron Diaz!"`,
         header: `Google's AI: Bringing Families Closer Through Awkward Shared Moments`,
         subhead: `New feature suggests r/Bozarking posts as serious family events`,
-        tags: [`Google`, `SiblingBondinator 3000`],
+        tags: [`Google`, `SiblingBondinator 3000`, `Reddit`],
         author: `Et Al`,
         datePublished: new Date(2024,4,24,14),
         articleBody: [
