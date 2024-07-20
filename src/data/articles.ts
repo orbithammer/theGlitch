@@ -1525,7 +1525,7 @@ export const articlesData = [
         ]
     },
     {
-        id: 67,
+        id: 68,
         articleUrl: `20240720-microsoft-replaces-dei`,
         category: `tech`,
         img: `/images/20240720-microsoft-replaces-dei.webp`,
