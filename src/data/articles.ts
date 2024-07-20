@@ -1524,4 +1524,35 @@ export const articlesData = [
             `Meanwhile, Huffman remains undeterred. "This is just phase one," he declared, eyes gleaming with malevolent glee. "Wait until you see the bidet attachment!"`,
         ]
     },
+    {
+        id: 67,
+        articleUrl: `20240720-microsoft-replaces-dei`,
+        category: `tech`,
+        img: `/images/20240720-microsoft-replaces-dei.webp`,
+        alt: `a black tech worker with beige paint covering his face`,
+        header: `Microsoft Replaces DEI Team with "Department of Exact Imitation"`,
+        subhead: `New hires to undergo "personality flattening" before starting work`,
+        tags: [`Microsoft`],
+        author: `Et Al`,
+        datePublished: new Date(2024,6,20,15),
+        articleBody: [
+            `Tech giant Microsoft has once again proven its commitment to innovation by dismantling its Diversity, Equity, and Inclusion (DEI) team and replacing it with the groundbreaking "Department of Exact Imitation" (DEI). This bold move comes as part of the company's new initiative to streamline its workforce into a perfectly uniform blob of productivity.`,
+
+           ` "We realized that diversity was just too messy," said Steve Johnson, Microsoft's newly appointed Chief Conformity Officer. "Why deal with all those different perspectives and experiences when we can just clone our ideal employee?"`,
+
+            `The Department of Exact Imitation will oversee the company's revolutionary "personality flattening" process for all new hires. This cutting-edge procedure involves a series of rigorous tests designed to eliminate any trace of individuality or original thought.`,
+
+            `"First, we put candidates through our 'Quirk Quarantine,' where we isolate and neutralize any unique personality traits," explained Dr. Emily Stevens, head of the DEI team. "Then, we move on to the 'Opinion Obliterator,' which ensures all employees share the exact same thoughts on everything from coding practices to coffee preferences."`,
+
+            `The final step in the process is the "Diversity Detox," a grueling 72-hour session where new hires are forced to binge-watch every season of "Friends" while listening to elevator music on repeat.`,
+
+            `Microsoft's HR department has hailed the new initiative as a resounding success. "We've already seen a 500% increase in workplace harmony," boasted HR Director Sarah Thompson. "It turns out, when everyone is exactly the same, there's nothing left to disagree about!"`,
+
+            `Critics have argued that this approach might stifle creativity and innovation, but Microsoft remains undeterred. "Who needs creativity when you have conformity?" retorted Johnson. "Besides, we've got an AI that can generate all our ideas now. The humans are just here to nod in unison."
+`,
+           ` As a final touch, Microsoft has updated its company dress code to mandate identical beige jumpsuits for all employees. "We're calling it our 'United in Beige' campaign," Johnson said proudly. "It's amazing how much time you save in the morning when you don't have to make any decisions about your appearance."`,
+
+            `With this bold new direction, Microsoft is setting a new standard for corporate homogeneity. One can only wonder which tech giant will be next to join the ranks of the blandly uniform.`,
+        ]
+    },
 ]
