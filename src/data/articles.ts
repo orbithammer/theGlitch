@@ -1529,7 +1529,7 @@ export const articlesData = [
         articleUrl: `20240720-microsoft-replaces-dei`,
         category: `tech`,
         img: `/images/20240720-microsoft-replaces-dei.webp`,
-        alt: `a black tech worker with beige paint covering his face`,
+        alt: `a smiling black tech worker with beige paint covering her face`,
         header: `Microsoft Replaces DEI Team with "Department of Exact Imitation"`,
         subhead: `New hires to undergo "personality flattening" before starting work`,
         tags: [`Microsoft`],
